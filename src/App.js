@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./App.css"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p className="fs-1 text-primary">Click</p>
+      <p className="fs-1 text-secondary">Click</p>
+      <p className="fs-1 text-success">Click</p>
+      <p className="fs-1 text-danger">Click</p>
+      <p className="fs-1 text-warning">Click</p>
+      <p className="fs-1 text-info">Click</p>
+      <p className="fs-1 text-light">Click</p>
+      <p className="fs-1 text-dark">Click</p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.text-primary {
+  color: #5b5b5b !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-secondary {
+  color: #5d6b48 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-success {
+  color: #94aa63 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text-danger {
+  color: #dc3e0a !important;
+}
+
+.text-warning {
+  color: #ffaa00 !important;
+}
+
+.text-info {
+  color: #006b9d !important;
+}
+
+.text-light {
+  color: #d9d9d9 !important;
+}
+
+.text-beige {
+  color: #c0b8b0 !important;
+}
+
+.text-azure {
+  color: #b5bfc3 !important;
+}
+
+.button-primary {
+  background-color: #5b5b5b !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button-secondary {
+  background-color: #5d6b48 !important;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-success {
+  background-color: #94aa63 !important;
+  color: white;
+}
+
+.button-danger {
+  background-color: #dc3e0a !important;
+  color: white;
+}
+
+.button-warning {
+  background-color: #ffaa00 !important;
+  color: white;
+}
+
+.button-info {
+  background-color: #006b9d !important;
+  color: white;
+}
+
+.button-light {
+  background-color: #d9d9d9 !important;
+  color: black;
+}
+
+.button-beige {
+  background-color: #c0b8b0 !important;
+  color: black;
+}
+
+.button-azure {
+  background-color: #b5bfc3 !important;
+  color: black;
 }
