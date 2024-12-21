@@ -1,3 +1,7 @@
+body {
+  font-family: "Ayuthaya", sans-serif;
+}
+
 .text-primary {
   color: #5b5b5b !important;
 }
@@ -77,4 +81,8 @@
 .button-azure {
   background-color: #b5bfc3 !important;
   color: black;
+}
+
+.nav-link:hover {
+  color: #ffaa00 !important;
 }
