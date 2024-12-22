@@ -5,10 +5,10 @@ import "./App.css"
 import Layout from "../src/Components/Layout/Layout"
 import Home from "../src/Pages/Home/Home"
 import O_me from "../src/Pages/O_me/O_me"
-import Znalosti from "../src/Pages/Znalosti/Znalosti"
-import Projekty from "../src/Pages/Projekty/Projekty"
-import Konicky from "../src/Pages/Konicky/Konicky"
-import Kontakt from "../src/Pages/Kontakt/Kontakt"
+import Skills from "../src/Pages/Skills/Skills"
+import Projects from "../src/Pages/Projects/Projects"
+import Hobbies from "../src/Pages/Hobbies/Hobbies"
+import Contact from "../src/Pages/Contact/Contact"
 
 const App = () => {
   return (
@@ -17,10 +17,10 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/o_me" element={<O_me />} />
-          <Route path="/znalosti" element={<Znalosti />} />
-          <Route path="/projekty" element={<Projekty />} />
-          <Route path="/konicky" element={<Konicky />} />
-          <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/hobbies" element={<Hobbies />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
