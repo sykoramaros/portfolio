@@ -33,27 +33,27 @@ const Navbar = () => {
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to={"/o_me"}>
+                <Link class="nav-link" to={"/about"}>
                   O mě
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to={"/znalosti"}>
+                <Link class="nav-link" to={"/skills"}>
                   Znalosti
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to={"/projekty"}>
+                <Link class="nav-link" to={"/projects"}>
                   Projekty
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to={"/konicky"}>
+                <Link class="nav-link" to={"/hobbies"}>
                   Koníčky
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to={"/kontakt"}>
+                <Link class="nav-link" to={"/contact"}>
                   Kontakt
                 </Link>
               </li>

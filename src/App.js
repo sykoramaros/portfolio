@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
 import Layout from "../src/Components/Layout/Layout"
 import Home from "../src/Pages/Home/Home"
-import O_me from "../src/Pages/O_me/O_me"
+import About from "../src/Pages/About/About"
 import Skills from "../src/Pages/Skills/Skills"
 import Projects from "../src/Pages/Projects/Projects"
 import Hobbies from "../src/Pages/Hobbies/Hobbies"
@@ -16,7 +16,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/o_me" element={<O_me />} />
+          <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/hobbies" element={<Hobbies />} />
