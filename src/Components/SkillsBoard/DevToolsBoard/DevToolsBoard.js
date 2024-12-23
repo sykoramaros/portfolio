@@ -9,7 +9,6 @@ const DevToolsBoard = () => {
 
   return (
     <div className="container">
-      <h1>DevToolsBoard</h1>
       <div
         className="row display-1 text-center border border-warning bg-warning rounded-1 align-items-center justify-content-center m-auto p-4"
         style={{ transform: "rotate(0.5deg)" }}

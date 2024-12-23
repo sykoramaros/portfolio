@@ -83,6 +83,10 @@ body {
   color: black;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 10px #c0b8b0;
+}
+
 .nav-link:hover {
   color: #ffaa00 !important;
 }

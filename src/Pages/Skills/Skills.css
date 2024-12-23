@@ -1,0 +1,10 @@
+.pin-fixed-size {
+  width: 40px;
+  height: auto;
+  filter: drop-shadow(1px 0px 5px grey);
+  position: absolute;
+  z-index: 1000;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}

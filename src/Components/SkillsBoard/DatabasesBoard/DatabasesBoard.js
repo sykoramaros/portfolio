@@ -7,7 +7,6 @@ const DatabasesBoard = () => {
 
   return (
     <div className="container">
-      <h1>DatabasesBoard</h1>
       <div
         className="row display-1 text-center border border-warning bg-warning  align-items-center m-auto p-4"
         style={{ transform: "rotate(-1.5deg)" }}

@@ -7,7 +7,6 @@ const OthersBoard = () => {
 
   return (
     <div className="container">
-      <h1>OthersBoard</h1>
       <div
         className="row display-1 text-center border border-warning bg-warning align-items-center m-auto p-4"
         style={{ transform: "rotate(-0.5deg)" }}

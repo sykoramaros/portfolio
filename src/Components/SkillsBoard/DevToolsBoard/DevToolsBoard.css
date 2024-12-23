@@ -3,6 +3,7 @@
 }
 
 .img-thumbnail {
+  width: 100px;
   transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
   border: 3px dotted #ffaa00;
 }
