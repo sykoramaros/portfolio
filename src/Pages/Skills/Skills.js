@@ -10,7 +10,9 @@ const Skills = () => {
   return (
     <div>
       <div className="container">
-        <h1 className="display-3 mt-5 text-center text-primary text-shadow">Znalosti</h1>
+        <h1 className="display-3 mt-5 text-center text-primary text-shadow">
+          Znalosti
+        </h1>
         <noscript>Efekt zobrazeni ikonek znalosti</noscript>
 
         <div className="row gy-5 gx-0 mt-2">
