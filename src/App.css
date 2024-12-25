@@ -38,6 +38,42 @@ body {
   color: #b5bfc3 !important;
 }
 
+.bg-primary {
+  background-color: #5b5b5b !important;
+}
+
+.bg-secondary {
+  background-color: #5d6b48 !important;
+}
+
+.bg-success {
+  background-color: #94aa63 !important;
+}
+
+.bg-danger {
+  background-color: #dc3e0a !important;
+}
+
+.bg-warning {
+  background-color: #ffaa00 !important;
+}
+
+.bg-info {
+  background-color: #006b9d !important;
+}
+
+.bg-light {
+  background-color: #d9d9d9 !important;
+}
+
+.bg-beige {
+  background-color: #c0b8b0 !important;
+}
+
+.bg-azure {
+  background-color: #b5bfc3 !important;
+}
+
 .button-primary {
   background-color: #5b5b5b !important;
   color: white;
