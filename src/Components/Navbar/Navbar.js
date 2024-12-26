@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand fs-1 text-secondary" href="#">
-            Marosh_SeekOrA
+            MaroSh_SeekOrA
           </a>
           <button
             class="navbar-toggler"
