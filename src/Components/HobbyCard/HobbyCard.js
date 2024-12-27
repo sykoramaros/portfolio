@@ -1,23 +1,41 @@
 import React from "react"
+import { useState } from "react"
+import "./HobbyCard.css"
 
-const HobbyCard = ({ rotation, image, title, text, weblink }) => {
+const HobbyCard = ({ rotation, image, title, backText }) => {
+  const [flipped, setFlipped] = useState(false)
+  // Funkce pro přepnutí stavu karty (flip)
+  const handleClick = () => setFlipped(!flipped)
+
   return (
     <div className="col">
-      <div
-        className="card rounded-5 h-100 position-relative overflow-hidden"
-        style={{ transform: `rotate(${rotation}deg)` }}
-      >
-        <img src={image} class="card-img-top" alt="..." />
-        <div className="card-body w-75 rounded-5 bg-white bg-opacity-25 mb-3 position-absolute bottom-0 start-50 translate-middle-x text-white text-center text-shadow">
-          <h5 className="card-title fs-3">{title}</h5>
-          <p className="card-text fs-6">{text}</p>
-          {/* <a
-            href={weblink}
-            className="btn-link text-decoration-none text-beige fs-6"
-            target="_blank"
+      <div className="card-flipper" onClick={handleClick}>
+        <div
+          className="card rounded-5 h-100 position-relative overflow-hidden shadow-lg"
+          style={{ transform: `rotate(${rotation}deg)` }} // uhel vytoceni karty
+        >
+          <div
+            className={`card-inner ${flipped ? "flipped" : ""}`}
+            style={{
+              transittion: "transform 0.6s",
+              transformStyle: "preserve-3d",
+            }}
           >
-            Google
-          </a> */}
+            <div className="card-front">
+              <img src={image} class="card-img-top" alt="..." />
+            </div>
+            <div className="card-back">
+              <img
+                src="/img/hobbies/white.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div className="card-body rounded-5 bg-light bg-opacity-25 position-absolute bottom-0 start-50 translate-middle-x text-shadow d-flex flex-column justify-content-center align-items-center h-100 w-100">
+                <h5 className="card-title fs-3 text-center">{title}</h5>
+                <p className="card-text fs-6 text-center mx-3">{backText}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

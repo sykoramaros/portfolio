@@ -1,0 +1,61 @@
+/* Styl pro hlavní kontejner stránky, která obklopuje kartu */
+.about-page {
+  display: flex; /* Používá Flexbox pro uspořádání obsahu */
+  justify-content: center; /* Vycentruje obsah horizontálně */
+  align-items: center; /* Vycentruje obsah vertikálně */
+  height: 100vh; /* Nastaví výšku stránky na 100% výšky okna prohlížeče */
+}
+
+/* Kontejner pro samotnou kartu */
+.about-card-container {
+  display: flex; /* Používá Flexbox pro uspořádání karty */
+  justify-content: center; /* Vycentruje kartu horizontálně */
+  align-items: center; /* Vycentruje kartu vertikálně */
+}
+
+/* Styl pro samotnou kartu */
+.about-card {
+  width: 400px; /* Nastaví šířku karty na 400 pixelů */
+  height: 300px; /* Nastaví výšku karty na 300 pixelů */
+  cursor: pointer; /* Změní kurzor na ruku při najetí myší na kartu */
+  transform-style: preserve-3d; /* Udržuje 3D efekt pro flipování */
+  transition: transform 0.6s; /* Přidá plynulý přechod pro otáčení karty (0.6 sekundy) */
+}
+
+/* Styl pro vnitřní strukturu karty (přední a zadní strana) */
+.about-card-inner {
+  position: relative; /* Umožňuje absolutní pozicování pro vnitřní části (front a back) */
+  width: 100%; /* Šířka je 100% rodičovského prvku (karty) */
+  height: 100%; /* Výška je 100% rodičovského prvku (karty) */
+}
+
+/* Styl pro přední a zadní stranu karty */
+.about-card-front,
+.about-card-back {
+  position: absolute; /* Umístí je absolutně v rámci vnitřní struktury karty */
+  backface-visibility: hidden; /* Skrývá zadní stranu při otáčení karty */
+  width: 100%; /* Šířka je 100% karty */
+  height: 100%; /* Výška je 100% karty */
+  display: flex; /* Používá Flexbox pro uspořádání obsahu na každé straně karty */
+  justify-content: center; /* Vycentruje obsah horizontálně */
+  align-items: center; /* Vycentruje obsah vertikálně */
+  text-align: center; /* Zarovná text na střed */
+}
+
+/* Styl pro přední stranu karty */
+.about-card-front {
+  background-color: #4caf50; /* Nastaví pozadí na zelenou barvu */
+  color: white; /* Nastaví text na bílou barvu */
+}
+
+/* Styl pro zadní stranu karty */
+.about-card-back {
+  background-color: #f44336; /* Nastaví pozadí na červenou barvu */
+  color: white; /* Nastaví text na bílou barvu */
+  transform: rotateY(180deg); /* Otočí zadní stranu karty o 180 stupňů, takže je původně otočena */
+}
+
+/* Třída pro aktivaci otočení karty (flip) */
+.flipped {
+  transform: rotateY(180deg); /* Otočí kartu o 180 stupňů na základě stavu flipped */
+}

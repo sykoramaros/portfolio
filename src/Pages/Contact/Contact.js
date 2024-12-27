@@ -115,6 +115,14 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <br />
+        <p className="text-center fs-5">
+          * Prozatím mě můžete kontaktovat klasicky na můj gmail😊
+          <br />{" "}
+          <a className="text-info" href="mailto:8yVt0@example.com">
+            sykoramaros@gmail.com
+          </a>
+        </p>
         <img
           className="img-fluid opacity-75 mx-auto d-block w-75 mt-5"
           src="./img/contact/decorations/pencil_paper.png"

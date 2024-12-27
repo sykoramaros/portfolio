@@ -1,5 +1,4 @@
 import React from "react"
-import { useState } from "react"
 import HobbyCard from "../../Components/HobbyCard/HobbyCard"
 
 const Hobbies = () => {
@@ -8,44 +7,38 @@ const Hobbies = () => {
       rotation: -3,
       image: "./img/hobbies/friends/friends_circle.jpeg",
       title: "Kamarádi",
-      text: "",
-      weblink: "",
+      backText: "Ve svém volnu rád trávím čas s neslyšícími kamarády",
     },
     {
       rotation: 2,
       image: "./img/hobbies/animals/horse_riding.jpg",
       title: "Zvířata",
-      text: "",
-      weblink: "https://www.google.com",
+      backText: "Rád jezdím na koních a celkově si zvířecí společnost užívám🐾",
     },
     {
       rotation: -3,
       image: "./img/hobbies/sign_language/terelj_sign_language.jpg",
-      title: "Znakový jazyk",
-      text: "",
-      weblink: "",
+      title: "Cizí jazyk",
+      backText: "Učím se rád novým jazykům (i těm neprogramovým😊)",
     },
     {
       rotation: 3,
       image: "./img/hobbies/music/happy_mandolin.png",
       title: "Hudba",
-      text: "",
-      weblink: "https://www.google.com",
+      backText: "Rád poslouchám hudbu a hraju na mandolínu",
     },
     {
       rotation: -2,
       image: "../img/hobbies/snowboard/snowboarding.jpg",
       title: "Snowboard",
-      text: "",
-      weblink: "https://www.google.com",
+      backText: "Když se mám už hýbat, tak radši z kopce☺️",
     },
-    {
-      rotation: 2,
-      image: "./img/computer.png",
-      title: "Zkouska",
-      text: "Jen tak info",
-      weblink: "https://www.google.com",
-    },
+    // {
+    //   rotation: 2,
+    //   image: "./img/computer.png",
+    //   title: "Zkouska",
+    //   backText: "Zkusebni text",
+    // },
   ]
 
   return (
@@ -61,8 +54,7 @@ const Hobbies = () => {
             rotation={card.rotation}
             image={card.image}
             title={card.title}
-            text={card.text}
-            weblink={card.weblink}
+            backText={card.backText}
           />
         ))}
       </div>
