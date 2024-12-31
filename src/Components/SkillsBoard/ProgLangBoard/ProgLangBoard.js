@@ -7,14 +7,17 @@ const ProgLangBoard = () => {
     {
       imageSrc: "./img/skills/classics/Cp.png",
       hoverImageSrc: "./img/skills/blackwhite/Cp.png",
+      backText: "C#",
     },
     {
       imageSrc: "./img/skills/classics/Ja.png",
       hoverImageSrc: "./img/skills/blackwhite/Ja.png",
+      backText: "Java",
     },
     {
       imageSrc: "./img/skills/classics/Js.png",
       hoverImageSrc: "./img/skills/blackwhite/Js.png",
+      backText: "JavaScript",
     },
   ]
 
@@ -29,6 +32,7 @@ const ProgLangBoard = () => {
             key={index}
             imageSrc={card.imageSrc}
             hoverImageSrc={card.hoverImageSrc}
+            backText={card.backText}
           />
         ))}
       </div>

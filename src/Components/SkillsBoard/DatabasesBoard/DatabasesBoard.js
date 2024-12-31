@@ -6,10 +6,12 @@ const DatabasesBoard = () => {
     {
       imageSrc: "./img/skills/classics/Ma.png",
       hoverImageSrc: "./img/skills/blackwhite/Ma.png",
+      backText: "MariaDB",
     },
     {
       imageSrc: "./img/skills/classics/My.png",
       hoverImageSrc: "./img/skills/blackwhite/My.png",
+      backText: "MySQL",
     },
   ]
 
@@ -24,6 +26,7 @@ const DatabasesBoard = () => {
             key={index}
             imageSrc={card.imageSrc}
             hoverImageSrc={card.hoverImageSrc}
+            backText={card.backText}
           />
         ))}
       </div>

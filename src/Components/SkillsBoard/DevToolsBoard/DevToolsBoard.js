@@ -8,14 +8,17 @@ const DevToolsBoard = () => {
     {
       imageSrc: "./img/skills/classics/Gi.png",
       hoverImageSrc: "./img/skills/blackwhite/Gi.png",
+      backText: "Git",
     },
     {
       imageSrc: "./img/skills/classics/Do.png",
       hoverImageSrc: "./img/skills/blackwhite/Do.png",
+      backText: "Docker",
     },
     {
       imageSrc: "./img/skills/classics/Az.png",
       hoverImageSrc: "./img/skills/blackwhite/Az.png",
+      backText: "Azure",
     },
   ]
 
@@ -30,6 +33,7 @@ const DevToolsBoard = () => {
             key={index}
             imageSrc={card.imageSrc}
             hoverImageSrc={card.hoverImageSrc}
+            backText={card.backText}
           />
         ))}
       </div>

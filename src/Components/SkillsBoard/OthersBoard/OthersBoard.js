@@ -8,6 +8,7 @@ const OthersBoard = () => {
     {
       imageSrc: "./img/skills/classics/Bl.png",
       hoverImageSrc: "./img/skills/blackwhite/Bl.png",
+      backText: "Blender",
     }
   ]
 
@@ -19,6 +20,7 @@ const OthersBoard = () => {
             key={index}
             imageSrc={card.imageSrc}
             hoverImageSrc={card.hoverImageSrc}
+            backText={card.backText}
           />
         ))}
       </div>

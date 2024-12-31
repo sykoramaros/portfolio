@@ -7,18 +7,22 @@ const WebTechBoard = () => {
     {
       imageSrc: "./img/skills/classics/Ht.png",
       hoverImageSrc: "./img/skills/blackwhite/Ht.png",
+      backText: "HTML",
     },
     {
       imageSrc: "./img/skills/classics/Cs.png",
       hoverImageSrc: "./img/skills/blackwhite/Cs.png",
+      backText: "CSS",
     },
     {
       imageSrc: "./img/skills/classics/Bo.png",
       hoverImageSrc: "./img/skills/blackwhite/Bo.png",
+      backText: "Bootstrap",
     },
     {
       imageSrc: "./img/skills/classics/Re.png",
       hoverImageSrc: "./img/skills/blackwhite/Re.png",
+      backText: "React",
     },
   ]
 
@@ -33,6 +37,7 @@ const WebTechBoard = () => {
             key={index}
             imageSrc={card.imageSrc}
             hoverImageSrc={card.hoverImageSrc}
+            backText={card.backText}
           />
         ))}
       </div>
