@@ -18,7 +18,7 @@ const Hobbies = () => {
     {
       rotation: -3,
       image: "./img/hobbies/sign_language/terelj_sign_language.jpg",
-      title: "Cizí jazyk",
+      title: "Znakový jazyk",
       backText: "Učím se rád novým jazykům (i těm neprogramovým😊)",
     },
     {

@@ -1,9 +1,17 @@
 import React from "react"
-import { useState } from "react"
-
+import SkillCard from "../../SkillCard/SkillCard"
+// mariadb mysql
 const DatabasesBoard = () => {
-  const [isHoveredMariadb, setIsHoveredMariadb] = useState(false)
-  const [isHoveredMysql, setIsHoveredMysql] = useState(false)
+  const cardsDataSkillsList = [
+    {
+      imageSrc: "./img/skills/classics/Ma.png",
+      hoverImageSrc: "./img/skills/blackwhite/Ma.png",
+    },
+    {
+      imageSrc: "./img/skills/classics/My.png",
+      hoverImageSrc: "./img/skills/blackwhite/My.png",
+    },
+  ]
 
   return (
     <div className="container">
@@ -11,30 +19,13 @@ const DatabasesBoard = () => {
         className="row display-1 text-center border border-warning bg-warning  align-items-center m-auto p-4"
         style={{ transform: "rotate(-1.5deg)" }}
       >
-        <div className="col">
-          <img
-            className="img-thumbnail shadow-sm"
-            src={
-              isHoveredMariadb
-                ? "./img/skills/classics/Ma.png"
-                : "./img/skills/blackwhite/Ma.png"
-            }
-            onMouseEnter={() => setIsHoveredMariadb(true)}
-            onMouseLeave={() => setIsHoveredMariadb(true)}
+        {cardsDataSkillsList.map((card, index) => (
+          <SkillCard
+            key={index}
+            imageSrc={card.imageSrc}
+            hoverImageSrc={card.hoverImageSrc}
           />
-        </div>
-        <div className="col">
-          <img
-            className="img-thumbnail shadow-sm"
-            src={
-              isHoveredMysql
-                ? "./img/skills/classics/My.png"
-                : "./img/skills/blackwhite/My.png"
-            }
-            onMouseEnter={() => setIsHoveredMysql(true)}
-            onMouseLeave={() => setIsHoveredMysql(true)}
-          />
-        </div>
+        ))}
       </div>
     </div>
   )
