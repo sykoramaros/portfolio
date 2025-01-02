@@ -26,6 +26,8 @@ const Hobbies = () => {
       image: "./img/hobbies/music/happy_mandolin.png",
       title: "Hudba",
       backText: "Rád poslouchám hudbu a hraju na mandolínu",
+      link: "https://open.spotify.com/artist/4wvv7SSwrDCRlSvT9B5dim",
+      textLink: "Happy Mandolin",
     },
     {
       rotation: -2,
@@ -55,6 +57,8 @@ const Hobbies = () => {
             image={card.image}
             title={card.title}
             backText={card.backText}
+            link={card.link}
+            textLink={card.textLink}
           />
         ))}
       </div>
