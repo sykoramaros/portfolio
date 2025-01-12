@@ -31,7 +31,7 @@ const Hobbies = () => {
     },
     {
       rotation: -2,
-      image: "../img/hobbies/snowboard/snowboarding.jpg",
+      image: "./img/hobbies/snowboard/snowboarding.jpg",
       title: "Snowboard",
       backText: "Když se mám už hýbat, tak radši z kopce☺️",
     },

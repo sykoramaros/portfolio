@@ -12,11 +12,12 @@ const ProjectCard = ({
   return (
     <div>
       <div className="col shadow-sm">
-        <a href={webLink} className="text-decoration-none" target="_blank">
+        <a href={webLink} className="text-decoration-none" target="_blank" rel="noreferrer noopener">
           <div className="card h-100" style={{ position: "relative" }}>
             <img
               className="img-fluid top-paper-tape"
               src="./img/projects/decorations/paper_tape.png"
+              alt="Paper tape"
             />
 
             <img

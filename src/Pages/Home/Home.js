@@ -27,7 +27,9 @@ const Home = () => {
           <div className="col-lg-6">
             <img
               className="img-fluid rounded-circle border shadow-sm"
-              src="./img/computer.png"
+              src={`${process.env.PUBLIC_URL}/img/computer.png`}
+              alt="Person sitting behind a computer"
+              
             />
           </div>
           <div className="col">

@@ -13,42 +13,45 @@ const Skills = () => {
         <h1 className="display-3 mt-5 text-center text-primary text-shadow">
           Znalosti
         </h1>
-        <noscript>Efekt zobrazeni ikonek znalosti</noscript>
-
         <div className="row gy-5 gx-0 mt-2">
           <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
             <ProgLangBoard />
             <img
               className="img-fluid pin-fixed-size"
-              src="../img/skills/decorations/right_blue_pin.png"
+              src="./img/skills/decorations/right_blue_pin.png"
+              alt="Right blue pin"
             />
           </div>
           <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
             <WebTechBoard />
             <img
               className="img-fluid pin-fixed-size"
-              src="../img/skills/decorations/left_red_pin.png"
+              src="./img/skills/decorations/left_red_pin.png"
+              alt="Lef red pin"
             />
           </div>
           <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
             <DevToolsBoard />
             <img
               className="img-fluid pin-fixed-size"
-              src="../img/skills/decorations/right_green_pin.png"
+              src="./img/skills/decorations/right_green_pin.png"
+              alt="Right green pin"
             />
           </div>
           <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
             <DatabasesBoard />
             <img
               className="img-fluid pin-fixed-size"
-              src="../img/skills/decorations/right_yellow_pin.png"
+              src="./img/skills/decorations/right_yellow_pin.png"
+              alt="Right yellow pin"
             />
           </div>
           <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
             <OthersBoard />
             <img
               className="img-fluid pin-fixed-size"
-              src="../img/skills/decorations/right_blue_pin.png"
+              src="./img/skills/decorations/right_blue_pin.png"
+              alt="Right blue pin"
             />
           </div>
         </div>

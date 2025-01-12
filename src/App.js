@@ -13,7 +13,7 @@ import Contact from "../src/Pages/Contact/Contact"
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
