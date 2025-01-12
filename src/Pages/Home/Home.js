@@ -26,10 +26,9 @@ const Home = () => {
           </div>
           <div className="col-lg-6">
             <img
-              className="img-fluid rounded-circle border shadow-sm"
-              src={`${process.env.PUBLIC_URL}/img/computer.png`}
+              className="img-fluid rounded-circle w-75 m-auto d-block border border-black shadow-sm"
+              src={`${process.env.PUBLIC_URL}/img/computer.jpg`}
               alt="Person sitting behind a computer"
-              
             />
           </div>
           <div className="col">
