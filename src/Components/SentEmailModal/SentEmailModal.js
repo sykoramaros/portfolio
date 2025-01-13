@@ -1,15 +1,14 @@
 import React from "react"
 
-const SentEmailModal = () => {
+const SentEmailModal = ({ show, onClose }) => {
   return (
     <div
-      class="modal-dialog modal-dialog-centered"
+      className={`modal fade ${show ? "d-block" : "d-none"}`}
       id="alertModal"
       tabindex="-1"
       aria-labelledby="alertModalLabel"
-      aria-hidden="true"
     >
-      <div className="modal-dialog">
+      <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title" id="alertModalLabel">
@@ -20,6 +19,7 @@ const SentEmailModal = () => {
               className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
+              onClick={onClose}
             ></button>
           </div>
           <div className="modal-body green" id="modalMessage">
@@ -30,6 +30,7 @@ const SentEmailModal = () => {
               type="button"
               className="btn btn-secondary"
               data-bs-dismiss="modal"
+              onClick={onClose}
             >
               Zavřít
             </button>

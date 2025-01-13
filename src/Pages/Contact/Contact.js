@@ -1,24 +1,25 @@
 import React from "react"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import SentEmailModal from "../../Components/SentEmailModal/SentEmailModal"
 import emailjs from "emailjs-com"
 
 const Contact = () => {
   const form = useRef()
+  const [modalShow, setModalShow] = useState(false)
 
   const sendEmail = (event) => {
     event.preventDefault()
     emailjs
       .sendForm(
         "service_sykoramaros",
-        "template_sykoramaros",
+        "template_email_receive",
         form.current,
         "CHbUmi-K6HoejDiOj"
       )
       .then(
         (result) => {
           alert("Email byl odeslán😊")
-          SentEmailModal()
+          setModalShow(true)
           console.log(result.text)
         },
         (error) => {
@@ -91,7 +92,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <button
-                    className="p-2 text-white bg-info rounded-3 opacity-50"
+                    className="mt-2 py-2 px-3 text-white bg-info rounded-3 border-0"
                     type="submit"
                   >
                     Poslat zpravu
@@ -108,6 +109,7 @@ const Contact = () => {
           alt="Pencil and paper"
         />
       </div>
+      <SentEmailModal show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   )
 }

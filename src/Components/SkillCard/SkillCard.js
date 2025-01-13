@@ -17,9 +17,12 @@ const SkillCard = ({ imageSrc, hoverImageSrc, backText }) => {
         src={isHovered ? imageSrc : hoverImageSrc}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(true)}
+        alt="Skill card"
       />
       {isShowed && (
-        <p className="text-center fs-4  position-absolute mt-3">{backText}</p>
+        <p className="text-center fs-4 text-info text-shadow position-absolute mt-3">
+          {backText}
+        </p>
       )}
     </div>
   )

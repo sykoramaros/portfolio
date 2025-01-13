@@ -23,7 +23,7 @@ const Navbar = () => {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto fs-5">
+            <ul class="navbar-nav ms-auto fs-4">
               <li class="nav-item">
                 <Link
                   class="nav-link active text-info"
