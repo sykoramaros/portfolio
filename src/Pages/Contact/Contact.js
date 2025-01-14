@@ -35,14 +35,14 @@ const Contact = () => {
         <h1 className="display-3 mt-5 text-center text-primary text-shadow">
           Kontakt
         </h1>
-        <div className="row rounded-5 mx-auto shadow mt-4">
-          <div className="col-md-6 m-auto">
+        <div className="row rounded-5 shadow mt-4">
+          <div className="col-md-6 my-5 d-flex g-1">
             <p className="fs-3 m-auto w-75 text-shadow">
               Neváhejte mi napsat třeba Ahoj👋 a pokud máte zájem o spolupráci
               na projektu, dejte mi prosím vědět a budu se těšit🤓
             </p>
           </div>
-          <div className="col-md-6 m-auto">
+          <div className="col-md-6 d-flex">
             <div className="mb-3">
               <form
                 className="row g-2 p-3 m-auto"
