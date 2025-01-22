@@ -7,6 +7,14 @@ const Projects = () => {
 
   const cardsDataFrontendList = [
     {
+      webLink: "https://sykoramaros.github.io/wildlife-reserve-react/#/login",
+      image: "./img/projects/projects/frontend/wildlife_reserve_react.jpg",
+      title: "Wildlife Reserve",
+      text: "Frontend React web napojeny na backend C# web api a nastaveno předávání Jwt tokenů do localStorage a zobrazování obsahu podle rolí.",
+      technologies: "React, Bootstrap",
+      githubLink: "https://github.com/sykoramaros/wildlife-reserve-react",
+    },
+    {
       webLink: "http://booklist.unaux.com",
       image: "./img/projects/projects/frontend/books.jpeg",
       title: "Knihy",
@@ -34,7 +42,7 @@ const Projects = () => {
       webLink: "http://bookflights.unaux.com",
       image: "./img/projects/projects/frontend/fly_tickets.jpeg",
       title: "Letenky",
-      text: "Formulář pro objednání letenek",
+      text: "Formulář pro objednání letenek.",
       technologies: "Bootstrap, JavaScript",
       githubLink: "https://github.com/sykoramaros/book-flights-web",
     },
@@ -42,7 +50,7 @@ const Projects = () => {
       webLink: "http://beekeeper.unaux.com",
       image: "./img/projects/projects/frontend/beekeeper.jpeg",
       title: "Včelařství",
-      text: "Informační statická webová stránka včelaře",
+      text: "Informační statická webová stránka včelaře.",
       technologies: "Bootstrap",
       githubLink: "https://github.com/sykoramaros/beekeeper-web",
     },
@@ -58,11 +66,21 @@ const Projects = () => {
   // image: obrazky jen ve formatu 4:3 pri ipad air rozliseni 2360x1640 pixelu (ne jine 16:9 nevypada dobre)
   const cardsDataBackendList = [
     {
+      webLink: "https://wildlife-reserve.runasp.net/swagger/index.html",
+      image:
+        "./img/projects/projects/backend/wildlife_reserve_swagger_csharp.jpg",
+      title: "Wildlife Reserve",
+      text: "Backendová C# WEB API využívající MariaDB databázi a je napojená na externí iNaturalist WEB API. Endpointy propojené s React frontendem (viz. Frontend portfolio)",
+      technologies: "C# ASP.NET Core, iNaturalist API, MariaDB, Swagger UI",
+      githubLink:
+        "https://github.com/sykoramaros/wildlife-reserve-webapi-csharp",
+    },
+    {
       webLink: "http://weather.unaux.com/",
       image: "./img/projects/projects/backend/weather_react_java.jpeg",
       title: "Počasí🌤️",
-      text: "Webová aplikace zobrazující počasí různých částí světa. Napojení v backendu na weatherapi.com",
-      technologies: "Bootstrap, React, Java Spring",
+      text: "Webová aplikace zobrazující počasí různých částí světa. Napojení v backendu na weatherapi.com.",
+      technologies: "Bootstrap, React, Java Spring, weatherapi API, Swagger UI",
       githubLink: "https://github.com/sykoramaros/weatherapp-react",
     },
     {
