@@ -1,4 +1,5 @@
 import React from "react"
+import { Trans } from "@lingui/react"
 import TypedTextSkills from "../../Components/TypedText/TypedTextSkills"
 
 const Home = () => {
@@ -8,20 +9,26 @@ const Home = () => {
         <div className="row g-2 g-md-0 align-items-center m-auto mt-5">
           <div className="col-lg-6">
             <h1 className="display-6 text-primary text-center">
-              Ahoj👋 jmenuju se
+              <Trans id="home.welcome">home.welcome</Trans>
             </h1>
             <h2 className="display-3 text-secondary text-center">
-              Maroš Sýkora
+              <Trans id="home.name">name</Trans>
             </h2>
-            <h3 className="fs-2 text-center text-uppercase">Jsem junior:</h3>
+            <h3 className="fs-2 text-center text-uppercase">
+              <Trans id="home.junior">junior</Trans>
+            </h3>
             <p className="fs-1 text-center">
               <TypedTextSkills />
             </p>
             <p className="fs-3 text-center mt-5">
-              pocházím z Ostravy a tady jsem taky absolvolal kurz programování
-              na Technické univerzitě.
+              <Trans id="home.p1a">p1a</Trans>
               <br />
-              P.S. Programování mě fakt <span className="text-info">baví</span>.
+              <Trans id="home.p1b">p1b</Trans>
+              <span className="text-info">
+                {" "}
+                <Trans id="home.span1">span1</Trans>
+              </span>
+              .
             </p>
           </div>
           <div className="col-lg-6">
@@ -39,11 +46,16 @@ const Home = () => {
           </div>
           <div className="col">
             <p className="fs-3 text-center w-75 m-auto mt-5">
-              Mým cílem je neustále se{" "}
-              <span className="text-warning">učit</span> a používat nové
-              technologie a taky
-              <span className="text-secondary"> rozšiřovat</span> možnosti
-              designu a přispívat ke spokojenosti uživatelů.
+              <Trans id="home.p2a">p2a</Trans>{" "}
+              <span className="text-warning">
+                <Trans id="home.span2a">span2a</Trans>{" "}
+              </span>
+              <Trans id="home.p2b">p2b</Trans>
+              <span className="text-secondary">
+                {" "}
+                <Trans id="home.span2b">span2b</Trans>
+              </span>{" "}
+              <Trans id="home.p2c">p2c</Trans>
             </p>
           </div>
         </div>
