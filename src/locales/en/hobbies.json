@@ -1,25 +1,25 @@
 [
   {
     "rotation": -3,
-    "image": "./img/hobbies/friends/friends_circle.jpeg",
+    "image": "/img/hobbies/friends/friends_circle.jpeg",
     "title": "Friends",
     "backText": "In my free time, I like to spend time with deaf friends"
   },
   {
     "rotation": 2,
-    "image": "./img/hobbies/animals/horse_riding.jpg",
+    "image": "/img/hobbies/animals/horse_riding.jpg",
     "title": "Animals",
     "backText": "I enjoy horse riding and generally love spending time with animals🐾"
   },
   {
     "rotation": -3,
-    "image": "./img/hobbies/sign_language/terelj_sign_language.jpg",
+    "image": "/img/hobbies/sign_language/terelj_sign_language.jpg",
     "title": "Sign Language",
     "backText": "I enjoy learning new languages (even non-programming ones😊)"
   },
   {
     "rotation": 3,
-    "image": "./img/hobbies/music/happy_mandolin.png",
+    "image": "/img/hobbies/music/happy_mandolin.png",
     "title": "Music",
     "backText": "I enjoy listening to music and playing the mandolin",
     "link": "https://open.spotify.com/artist/4wvv7SSwrDCRlSvT9B5dim",
@@ -27,7 +27,7 @@
   },
   {
     "rotation": -2,
-    "image": "./img/hobbies/snowboard/snowboarding.jpg",
+    "image": "/img/hobbies/snowboard/snowboarding.jpg",
     "title": "Snowboard",
     "backText": "If I have to move, I prefer going downhill☺️"
   }

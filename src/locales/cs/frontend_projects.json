@@ -1,7 +1,7 @@
 [
   {
     "webLink": "https://sykoramaros.github.io/wildlife-reserve-react/#/login",
-    "image": "./img/projects/projects/frontend/wildlife_reserve_react.jpg",
+    "image": "/img/projects/projects/frontend/wildlife_reserve_react.jpg",
     "title": "Wildlife Reserve",
     "text": "Frontend React web napojeny na backend C# web api a nastaveno předávání Jwt tokenů do localStorage a zobrazování obsahu podle rolí.",
     "technologies": "React, Bootstrap",
@@ -9,7 +9,7 @@
   },
   {
     "webLink": "http://booklist.unaux.com",
-    "image": "./img/projects/projects/frontend/books.jpeg",
+    "image": "/img/projects/projects/frontend/books.jpeg",
     "title": "Knihy",
     "text": "Evidence knih s použítím PHP a MySQL.",
     "technologies": "Bootstrap, PHP, MySQL",
@@ -17,7 +17,7 @@
   },
   {
     "webLink": "http://carsdb.unaux.com",
-    "image": "./img/projects/projects/frontend/car_garage.jpeg",
+    "image": "/img/projects/projects/frontend/car_garage.jpeg",
     "title": "Garáž",
     "text": "Seznam aut spravovaný pomocí PHP napojeného na MySQL.",
     "technologies": "Bootstrap, PHP, MySQL",
@@ -25,7 +25,7 @@
   },
   {
     "webLink": "http://staff.unaux.com",
-    "image": "./img/projects/projects/frontend/it_manager.jpeg",
+    "image": "/img/projects/projects/frontend/it_manager.jpeg",
     "title": "IT Manažer",
     "text": "Kontrola kapacity IT pracovníků (uložených lokálně) a nových projektů.",
     "technologies": "Bootstrap, React",
@@ -33,7 +33,7 @@
   },
   {
     "webLink": "http://bookflights.unaux.com",
-    "image": "./img/projects/projects/frontend/fly_tickets.jpeg",
+    "image": "/img/projects/projects/frontend/fly_tickets.jpeg",
     "title": "Letenky",
     "text": "Formulář pro objednání letenek.",
     "technologies": "Bootstrap, JavaScript",
@@ -41,7 +41,7 @@
   },
   {
     "webLink": "http://beekeeper.unaux.com",
-    "image": "./img/projects/projects/frontend/beekeeper.jpeg",
+    "image": "/img/projects/projects/frontend/beekeeper.jpeg",
     "title": "Včelařství",
     "text": "Informační statická webová stránka včelaře.",
     "technologies": "Bootstrap",
@@ -49,7 +49,7 @@
   },
   {
     "webLink": "http://saihanhotool.unaux.com",
-    "image": "./img/projects/projects/frontend/saihan_hotool.jpeg",
+    "image": "/img/projects/projects/frontend/saihan_hotool.jpeg",
     "title": "Сайханы хөтөл",
     "text": "Statická webová informáční stránka o krásném říčním údolí v mongolském Сайхананы хөтөл",
     "technologies": "Bootstrap",

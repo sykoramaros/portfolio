@@ -38,7 +38,7 @@
   rotate: 5deg;
   position: absolute;
   bottom: -20px;
-  right: -30px;
+  right: -20px;
   z-index: 1001;
   transform-origin: bottom right;
   transition: transform 0.3s ease-in-out;

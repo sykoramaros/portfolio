@@ -1,25 +1,25 @@
 [
   {
     "rotation": -3,
-    "image": "./img/hobbies/friends/friends_circle.jpeg",
+    "image": "/img/hobbies/friends/friends_circle.jpeg",
     "title": "Kamarádi",
     "backText": "Ve svém volnu rád trávím čas s neslyšícími kamarády"
   },
   {
     "rotation": 2,
-    "image": "./img/hobbies/animals/horse_riding.jpg",
+    "image": "/img/hobbies/animals/horse_riding.jpg",
     "title": "Zvířata",
     "backText": "Rád jezdím na koních a celkově si zvířecí společnost užívám🐾"
   },
   {
     "rotation": -3,
-    "image": "./img/hobbies/sign_language/terelj_sign_language.jpg",
+    "image": "/img/hobbies/sign_language/terelj_sign_language.jpg",
     "title": "Znakový jazyk",
     "backText": "Učím se rád novým jazykům (i těm neprogramovým😊)"
   },
   {
     "rotation": 3,
-    "image": "./img/hobbies/music/happy_mandolin.png",
+    "image": "/img/hobbies/music/happy_mandolin.png",
     "title": "Hudba",
     "backText": "Rád poslouchám hudbu a hraju na mandolínu",
     "link": "https://open.spotify.com/artist/4wvv7SSwrDCRlSvT9B5dim",
@@ -27,7 +27,7 @@
   },
   {
     "rotation": -2,
-    "image": "./img/hobbies/snowboard/snowboarding.jpg",
+    "image": "/img/hobbies/snowboard/snowboarding.jpg",
     "title": "Snowboard",
     "backText": "Když se mám už hýbat, tak radši z kopce☺️"
   }

@@ -1,25 +1,25 @@
 [
   {
     "rotation": -3,
-    "image": "./img/hobbies/friends/friends_circle.jpeg",
+    "image": "/img/hobbies/friends/friends_circle.jpeg",
     "title": "Найзууд",
     "backText": "Чөлөөт цагаараа сонсголгүй найзуудтайгаа цагийг өнгөрөөх дуртай"
   },
   {
     "rotation": 2,
-    "image": "./img/hobbies/animals/horse_riding.jpg",
+    "image": "/img/hobbies/animals/horse_riding.jpg",
     "title": "Амьтад",
     "backText": "Морь унах болон амьтдын хамт байх дуртай🐾"
   },
   {
     "rotation": -3,
-    "image": "./img/hobbies/sign_language/terelj_sign_language.jpg",
+    "image": "/img/hobbies/sign_language/terelj_sign_language.jpg",
     "title": "Дохионы хэл",
     "backText": "Шинэ хэл (програмчлалын биш ч гэсэн😊) сурах дуртай"
   },
   {
     "rotation": 3,
-    "image": "./img/hobbies/music/happy_mandolin.png",
+    "image": "/img/hobbies/music/happy_mandolin.png",
     "title": "Хөгжим",
     "backText": "Хөгжим сонсох болон мандолин тоглох дуртай",
     "link": "https://open.spotify.com/artist/4wvv7SSwrDCRlSvT9B5dim",
@@ -27,7 +27,7 @@
   },
   {
     "rotation": -2,
-    "image": "./img/hobbies/snowboard/snowboarding.jpg",
+    "image": "/img/hobbies/snowboard/snowboarding.jpg",
     "title": "Цасны тэшүүр",
     "backText": "Хөдөлгөөн хийх бол уулнаас доош тэшүүрдэхийг илүүд үздэг☺️"
   }

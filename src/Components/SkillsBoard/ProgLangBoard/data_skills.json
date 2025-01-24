@@ -1,0 +1,17 @@
+[
+  {
+    "imageSrc": "/img/skills/classics/Cp.png",
+    "hoverImageSrc": "/img/skills/blackwhite/Cp.png",
+    "backText": "C#"
+  },
+  {
+    "imageSrc": "/img/skills/classics/Ja.png",
+    "hoverImageSrc": "/img/skills/blackwhite/Ja.png",
+    "backText": "Java"
+  },
+  {
+    "imageSrc": "/img/skills/classics/Js.png",
+    "hoverImageSrc": "/img/skills/blackwhite/Js.png",
+    "backText": "JavaScript"
+  }
+]

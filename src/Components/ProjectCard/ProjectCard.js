@@ -12,7 +12,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div>
-      <div className="col shadow-sm">
+      <div className="col shadow-sm" style={{ position: "relative" }}>
         {/* Hlavní odkaz pro kartu */}
         <a
           href={webLink}
@@ -20,20 +20,24 @@ const ProjectCard = ({
           target="_blank"
           rel="noreferrer noopener"
         >
-          <div className="card h-100" style={{ position: "relative" }}>
+          <div className="card h-100" >
             <img
               className="img-fluid top-paper-tape"
-              src="./img/projects/decorations/paper_tape.png"
+              src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}
               alt="Paper tape"
             />
 
             <img
               className="img-fluid bottom-paper-tape"
-              src="./img/projects/decorations/paper_tape.png"
+              src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}
               alt="Paper tape"
             />
 
-            <img src={image} className="card-img-top" alt="..." />
+            <img
+              src={`${process.env.PUBLIC_URL}${image}`}
+              className="card-img-top"
+              alt="..."
+            />
             <div className="card-body">
               <h5 className="card-title text-info fs-3">{title}</h5>
               <p className="card-text text-muted">{text}</p>
@@ -55,7 +59,7 @@ const ProjectCard = ({
         >
           <img
             className="img-fluid github-sticker"
-            src="./img/projects/decorations/github_sticker.png"
+            src={`${process.env.PUBLIC_URL}/img/projects/decorations/github_sticker.png`}
             alt="GitHub"
           />
         </a>

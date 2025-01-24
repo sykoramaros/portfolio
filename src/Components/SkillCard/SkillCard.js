@@ -14,7 +14,11 @@ const SkillCard = ({ imageSrc, hoverImageSrc, backText }) => {
     >
       <img
         className="img-thumbnail shadow-sm"
-        src={isHovered ? imageSrc : hoverImageSrc}
+        src={
+          isHovered
+            ? `${process.env.PUBLIC_URL}${imageSrc}`
+            : `${process.env.PUBLIC_URL}${hoverImageSrc}`
+        }
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(true)}
         alt="Skill card"

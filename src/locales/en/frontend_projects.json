@@ -1,7 +1,7 @@
 [
   {
     "webLink": "https://sykoramaros.github.io/wildlife-reserve-react/#/login",
-    "image": "./img/projects/projects/frontend/wildlife_reserve_react.jpg",
+    "image": "/img/projects/projects/frontend/wildlife_reserve_react.jpg",
     "title": "Wildlife Reserve",
     "text": "Frontend React web connected to a C# backend web API with JWT tokens passed to localStorage and content displayed based on roles.",
     "technologies": "React, Bootstrap",
@@ -9,7 +9,7 @@
   },
   {
     "webLink": "http://booklist.unaux.com",
-    "image": "./img/projects/projects/frontend/books.jpeg",
+    "image": "/img/projects/projects/frontend/books.jpeg",
     "title": "Books",
     "text": "Book tracking system using PHP and MySQL.",
     "technologies": "Bootstrap, PHP, MySQL",
@@ -17,7 +17,7 @@
   },
   {
     "webLink": "http://carsdb.unaux.com",
-    "image": "./img/projects/projects/frontend/car_garage.jpeg",
+    "image": "/img/projects/projects/frontend/car_garage.jpeg",
     "title": "Garage",
     "text": "Car list managed using PHP connected to MySQL.",
     "technologies": "Bootstrap, PHP, MySQL",
@@ -25,7 +25,7 @@
   },
   {
     "webLink": "http://staff.unaux.com",
-    "image": "./img/projects/projects/frontend/it_manager.jpeg",
+    "image": "/img/projects/projects/frontend/it_manager.jpeg",
     "title": "IT Manager",
     "text": "Capacity management of IT workers (stored locally) and new projects.",
     "technologies": "Bootstrap, React",
@@ -33,7 +33,7 @@
   },
   {
     "webLink": "http://bookflights.unaux.com",
-    "image": "./img/projects/projects/frontend/fly_tickets.jpeg",
+    "image": "/img/projects/projects/frontend/fly_tickets.jpeg",
     "title": "Flight Tickets",
     "text": "Form for booking flight tickets.",
     "technologies": "Bootstrap, JavaScript",
@@ -41,7 +41,7 @@
   },
   {
     "webLink": "http://beekeeper.unaux.com",
-    "image": "./img/projects/projects/frontend/beekeeper.jpeg",
+    "image": "/img/projects/projects/frontend/beekeeper.jpeg",
     "title": "Beekeeping",
     "text": "Informational static webpage of a beekeeper.",
     "technologies": "Bootstrap",
@@ -49,7 +49,7 @@
   },
   {
     "webLink": "http://saihanhotool.unaux.com",
-    "image": "./img/projects/projects/frontend/saihan_hotool.jpeg",
+    "image": "/img/projects/projects/frontend/saihan_hotool.jpeg",
     "title": "Saihan Hotol",
     "text": "Static informational webpage about a beautiful river valley in Mongolian Saihan Hotol.",
     "technologies": "Bootstrap",

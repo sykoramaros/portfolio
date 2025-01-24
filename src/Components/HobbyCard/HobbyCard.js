@@ -22,7 +22,11 @@ const HobbyCard = ({ rotation, image, title, backText, link, textLink }) => {
             }}
           >
             <div className="card-front">
-              <img src={image} className="card-img-top" alt="..." />{" "}
+              <img
+                src={`${process.env.PUBLIC_URL}${image}`}
+                className="card-img-top"
+                alt="..."
+              />{" "}
               {/* opravené class na className */}
             </div>
             <div className="card-back">

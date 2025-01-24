@@ -1,21 +1,13 @@
 import React from "react"
 import SkillCard from "../../SkillCard/SkillCard.js"
 import "./OthersBoard.css"
+import dataSkills from "./data_skills.json"
 
 const OthersBoard = () => {
-
-  const cardsDataSkillsList = [
-    {
-      imageSrc: "./img/skills/classics/Bl.png",
-      hoverImageSrc: "./img/skills/blackwhite/Bl.png",
-      backText: "Blender",
-    }
-  ]
-
   return (
     <div className="container">
       <div className="row display-1 text-center border border-warning bg-warning align-items-center m-auto p-4">
-        {cardsDataSkillsList.map((card, index) => (
+        {dataSkills.map((card, index) => (
           <SkillCard
             key={index}
             imageSrc={card.imageSrc}
