@@ -1,0 +1,15 @@
+{
+  "home": {
+    "welcome": "Hey👋 my name is",
+    "name": "Marosh Sykora",
+    "junior": "I'm a junior:",
+    "p1a": "I'm from Ostrava, where I also completed a programming course at the Technical University.",
+    "p1b": "P.S. I really",
+    "span1": "enjoy coding",
+    "p2a": "My goal is to keep",
+    "span2a": "learning",
+    "p2b": "and using new technologies while also",
+    "span2b": "expanding",
+    "p2c": "the possibilities of design and contributing to user satisfaction."
+  }
+}

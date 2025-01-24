@@ -4,6 +4,10 @@
   "private": true,
   "homepage": "https://sykoramaros.github.io/portfolio",
   "dependencies": {
+    "@lingui/core": "^5.1.2",
+    "@lingui/loader": "^5.1.2",
+    "@lingui/macro": "^5.1.2",
+    "@lingui/react": "^5.1.2",
     "@svgr/plugin-svgo": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
     "bootstrap": "^5.3.3",

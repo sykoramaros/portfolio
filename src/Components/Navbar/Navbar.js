@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { i18n } from "@lingui/core"
 import "./Navbar.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
@@ -23,6 +24,14 @@ const Navbar = () => {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
+            <div className="ms-auto row col-2">
+              <ul className="navbar-nav">
+                <li>
+                  <button onClick={() => i18n.activate("en")}>EN</button>
+                  <button onClick={() => i18n.activate("cs")}>CS</button>
+                </li>
+              </ul>
+            </div>
             <ul class="navbar-nav ms-auto fs-4">
               <li class="nav-item">
                 <Link
@@ -56,6 +65,11 @@ const Navbar = () => {
               <li class="nav-item">
                 <Link class="nav-link" to={"/contact"}>
                   Kontakt
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to={"/try"}>
+                  Try
                 </Link>
               </li>
             </ul>
