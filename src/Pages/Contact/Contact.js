@@ -105,7 +105,7 @@ const Contact = () => {
         <br />
         <img
           className="img-fluid opacity-75 mx-auto d-block w-75 mt-5"
-          src="./img/contact/decorations/pencil_paper.png"
+          src={`${process.env.PUBLIC_URL}/img/contact/pencil_paper.png`}
           alt="Pencil and paper"
         />
       </div>

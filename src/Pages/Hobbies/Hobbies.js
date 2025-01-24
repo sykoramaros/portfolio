@@ -4,11 +4,17 @@ import HobbyCard from "../../Components/HobbyCard/HobbyCard"
 
 import enHobbiesData from "../../locales/en/hobbies.json"
 import csHobbiesData from "../../locales/cs/hobbies.json"
+import mnHobbiesData from "../../locales/mn/hobbies.json"
 
 const Hobbies = () => {
   const { i18n } = useLingui()
   const currentLanguage = i18n.locale
-  const hobbiesData = currentLanguage === "en" ? enHobbiesData : csHobbiesData
+  const hobbiesData =
+    currentLanguage === "en"
+      ? enHobbiesData
+      : i18n.locale === "mn"
+      ? mnHobbiesData
+      : csHobbiesData
 
   return (
     <div className="container">

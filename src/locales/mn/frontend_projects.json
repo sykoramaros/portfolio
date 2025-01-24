@@ -1,0 +1,58 @@
+[
+  {
+    "webLink": "https://sykoramaros.github.io/wildlife-reserve-react/#/login",
+    "image": "./img/projects/projects/frontend/wildlife_reserve_react.jpg",
+    "title": "Амьтдын нөөц газар",
+    "text": "Frontend React вэб нь backend C# вэб API-тай холбогдож, Jwt токенуудыг localStorage-д хадгалах, мөн агуулгыг хэрэглэгчийн үүргийн дагуу харуулах тохиргоотой.",
+    "technologies": "React, Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/wildlife-reserve-react"
+  },
+  {
+    "webLink": "http://booklist.unaux.com",
+    "image": "./img/projects/projects/frontend/books.jpeg",
+    "title": "Номнууд",
+    "text": "PHP ба MySQL ашиглан ном бүртгэлийн систем.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/books-php"
+  },
+  {
+    "webLink": "http://carsdb.unaux.com",
+    "image": "./img/projects/projects/frontend/car_garage.jpeg",
+    "title": "Гараж",
+    "text": "PHP ба MySQL-т холбогдсон автомашины жагсаалтыг удирдах систем.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/cars-web-php"
+  },
+  {
+    "webLink": "http://staff.unaux.com",
+    "image": "./img/projects/projects/frontend/it_manager.jpeg",
+    "title": "IT Менежер",
+    "text": "Локал хадгалсан IT ажилчдын багтаамж болон шинэ төслүүдийг хянах систем.",
+    "technologies": "Bootstrap, React",
+    "githubLink": "https://github.com/sykoramaros/staff-form-web"
+  },
+  {
+    "webLink": "http://bookflights.unaux.com",
+    "image": "./img/projects/projects/frontend/fly_tickets.jpeg",
+    "title": "Нислэгийн тасалбар",
+    "text": "Нислэгийн тасалбар захиалах маягт.",
+    "technologies": "Bootstrap, JavaScript",
+    "githubLink": "https://github.com/sykoramaros/book-flights-web"
+  },
+  {
+    "webLink": "http://beekeeper.unaux.com",
+    "image": "./img/projects/projects/frontend/beekeeper.jpeg",
+    "title": "Зөгийчин",
+    "text": "Зөгийчний тухай мэдээллийн статик вэб хуудас.",
+    "technologies": "Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/beekeeper-web"
+  },
+  {
+    "webLink": "http://saihanhotool.unaux.com",
+    "image": "./img/projects/projects/frontend/saihan_hotool.jpeg",
+    "title": "Сайханы хөтөл",
+    "text": "Монголын Сайханы хөтөл гэх үзэсгэлэнт голын хөндийн тухай мэдээллийн статик вэб хуудас.",
+    "technologies": "Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/saihan-hotool-web"
+  }
+]

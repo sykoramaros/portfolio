@@ -16,33 +16,45 @@ import Try from "../src/Pages/Try/Try"
 
 import enPages from "./locales/en/pages.json"
 import csPages from "./locales/cs/pages.json"
+import mnPages from "./locales/mn/pages.json"
 import enHobbies from "./locales/en/hobbies.json"
 import csHobbies from "./locales/cs/hobbies.json"
+import mnHobbies from "./locales/mn/hobbies.json"
 import enFrontendProjects from "./locales/en/frontend_projects.json"
 import csFrontendProjects from "./locales/cs/frontend_projects.json"
+import mnFrontendProjects from "./locales/mn/frontend_projects.json"
 import enBackendProjects from "./locales/en/backend_projects.json"
 import csBackendProjects from "./locales/cs/backend_projects.json"
+import mnBackendProjects from "./locales/mn/backend_projects.json"
 
 // Načtení lokalizačních dat
 i18n.loadLocaleData("en", enPages)
 i18n.loadLocaleData("cs", csPages)
+i18n.loadLocaleData("mn", mnPages)
 i18n.loadLocaleData("en", enHobbies)
 i18n.loadLocaleData("cs", csHobbies)
+i18n.loadLocaleData("mn", mnHobbies)
 i18n.loadLocaleData("en", enFrontendProjects)
 i18n.loadLocaleData("cs", csFrontendProjects)
+i18n.loadLocaleData("mn", mnFrontendProjects)
 i18n.loadLocaleData("en", enBackendProjects)
 i18n.loadLocaleData("cs", csBackendProjects)
+i18n.loadLocaleData("mn", mnBackendProjects)
 
 // Načtení a aktivace výchozího jazyka
 i18n.load("en", enPages)
 i18n.load("cs", csPages)
+i18n.load("mn", mnPages)
 i18n.load("en", enHobbies)
 i18n.load("cs", csHobbies)
+i18n.load("mn", mnHobbies)
 i18n.load("en", enFrontendProjects)
 i18n.load("cs", csFrontendProjects)
+i18n.load("mn", mnFrontendProjects)
 i18n.load("en", enBackendProjects)
 i18n.load("cs", csBackendProjects)
-i18n.activate("cs")
+i18n.load("mn", mnBackendProjects)
+i18n.activate("en")
 
 console.log(i18n.language)
 

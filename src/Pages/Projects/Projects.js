@@ -4,17 +4,27 @@ import { Trans, useLingui } from "@lingui/react"
 import ProjectCard from "../../Components/ProjectCard/ProjectCard"
 import enFrontendProjects from "../../locales/en/frontend_projects.json"
 import csFrontendProjects from "../../locales/cs/frontend_projects.json"
+import mnFrontendProjects from "../../locales/mn/frontend_projects.json"
 import enBackendProjects from "../../locales/en/backend_projects.json"
 import csBackendProjects from "../../locales/cs/backend_projects.json"
+import mnBackendProjects from "../../locales/mn/backend_projects.json"
 
 const Projects = () => {
   const [isFrontendListVisible, setIsFrontendListVisible] = useState(true)
   const { i18n } = useLingui() // Používáme aktuální jazyk z i18n
 
   const frontendProjectsData =
-    i18n.locale === "en" ? enFrontendProjects : csFrontendProjects
+    i18n.locale === "en"
+      ? enFrontendProjects
+      : i18n.locale === "mn"
+      ? mnFrontendProjects
+      : csFrontendProjects
   const backendProjectsData =
-    i18n.locale === "en" ? enBackendProjects : csBackendProjects
+    i18n.locale === "en"
+      ? enBackendProjects
+      : i18n.locale === "mn"
+      ? mnBackendProjects
+      : csBackendProjects
 
   return (
     <div className="container">
@@ -35,8 +45,8 @@ const Projects = () => {
           className="switch-button"
           src={
             isFrontendListVisible
-              ? "./img/projects/decorations/switch_off.png"
-              : "./img/projects/decorations/switch_on.png"
+              ? `${process.env.PUBLIC_URL}/img/projects/decorations/switch_off.png`
+              : `${process.env.PUBLIC_URL}/img/projects/decorations/switch_on.png`
           }
           onClick={() => setIsFrontendListVisible(!isFrontendListVisible)}
           alt={"switch"}

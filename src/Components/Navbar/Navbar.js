@@ -8,13 +8,18 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js"
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand fs-1 text-secondary" href="/">
-            MaroSh_SeekOrA
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand fs-1 text-secondary" href="/">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/logo.png`}
+              alt="Logo"
+              width="55px"
+              height="auto"
+            />
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -22,21 +27,70 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div className="ms-auto row col-2">
-              <ul className="navbar-nav">
-                <li>
-                  <button onClick={() => i18n.activate("en")}>EN</button>
-                  <button onClick={() => i18n.activate("cs")}>CS</button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="ms-5 d-flex">
+              <ul className="navbar-nav d-flex gap-3">
+                <li className="nav-item">
+                  {/* <button onClick={() => i18n.activate("en")}>EN</button>
+                  <button onClick={() => i18n.activate("cs")}>CS</button> */}
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault() // Zabrání výchozímu chování odkazu
+                      i18n.activate("cs") // Aktivuje češtinu
+                    }}
+                    aria-label="Switch to Czech language"
+                  >
+                    <img
+                      src={`${process.env.PUBLIC_URL}/img/lang/czech.png`}
+                      alt="Czech language"
+                      width="35"
+                      height="auto"
+                    />
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault() // Zabrání výchozímu chování odkazu
+                      i18n.activate("en") // Aktivuje češtinu
+                    }}
+                    aria-label="Switch to Czech language"
+                  >
+                    <img
+                      src={`${process.env.PUBLIC_URL}/img/lang/english.png`}
+                      alt="English language"
+                      width="35"
+                      height="auto"
+                    />
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault() // Zabrání výchozímu chování odkazu
+                      i18n.activate("mn") // Aktivuje češtinu
+                    }}
+                    aria-label="Switch to Czech language"
+                  >
+                    <img
+                      src={`${process.env.PUBLIC_URL}/img/lang/mongolian.png`}
+                      alt="Mongolian language"
+                      width="35"
+                      height="auto"
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
-            <ul class="navbar-nav ms-auto fs-4">
+            <ul className="navbar-nav ms-auto fs-4">
               <li class="nav-item">
                 <Link
-                  class="nav-link active text-info"
+                  className="nav-link active text-info"
                   aria-current="page"
                   to={"/"}
                 >
@@ -48,28 +102,28 @@ const Navbar = () => {
                   O mě
                 </Link>
               </li> */}
-              <li class="nav-item">
-                <Link class="nav-link" to={"/skills"}>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/skills"}>
                   <Trans id="navbar.skills" />
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to={"/projects"}>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/projects"}>
                   <Trans id="navbar.projects" />
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to={"/hobbies"}>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/hobbies"}>
                   <Trans id="navbar.hobbies" />
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to={"/contact"}>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/contact"}>
                   <Trans id="navbar.contact" />
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to={"/try"}>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/try"}>
                   Try
                 </Link>
               </li>
