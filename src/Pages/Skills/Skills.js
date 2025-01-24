@@ -1,4 +1,5 @@
 import React from "react"
+import { Trans } from "@lingui/react"
 import "./Skills.css"
 import ProgLangBoard from "../../Components/SkillsBoard/ProgLangBoard/ProgLangBoard"
 import WebTechBoard from "../../Components/SkillsBoard/WebTechBoard/WebTechBoard"
@@ -11,7 +12,7 @@ const Skills = () => {
     <div>
       <div className="container">
         <h1 className="display-3 mt-5 text-center text-primary text-shadow">
-          Znalosti
+          <Trans id="skills.h1">skills.title</Trans>
         </h1>
         <div className="row gy-5 gx-0 mt-2">
           <div className="col-lg-6 w-auto" style={{ position: "relative" }}>

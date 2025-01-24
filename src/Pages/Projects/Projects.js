@@ -1,5 +1,6 @@
 import React from "react"
 import { useState } from "react"
+import { Trans } from "@lingui/react"
 import ProjectCard from "../../Components/ProjectCard/ProjectCard"
 
 const Projects = () => {
@@ -122,7 +123,7 @@ const Projects = () => {
   return (
     <div className="container">
       <h1 className="display-3 mt-5 text-center text-primary text-shadow">
-        Projekty
+        <Trans id="projects.h1" />
       </h1>
       <div className="row align-items-center justify-content-center mt-4">
         <span

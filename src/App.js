@@ -14,16 +14,22 @@ import Hobbies from "../src/Pages/Hobbies/Hobbies"
 import Contact from "../src/Pages/Contact/Contact"
 import Try from "../src/Pages/Try/Try"
 
-import enMessages from "./locales/en/messages.json"
-import csMessages from "./locales/cs/messages.json"
+import enPages from "./locales/en/pages.json"
+import csPages from "./locales/cs/pages.json"
+import enHobbies from "./locales/en/hobbies.json"
+import csHobbies from "./locales/cs/hobbies.json"
 
 // Načtení lokalizačních dat
-i18n.loadLocaleData("en", enMessages)
-i18n.loadLocaleData("cs", csMessages)
+i18n.loadLocaleData("en", enPages)
+i18n.loadLocaleData("cs", csPages)
+i18n.loadLocaleData("en", enHobbies)
+i18n.loadLocaleData("cs", csHobbies)
 
 // Načtení a aktivace výchozího jazyka
-i18n.load("en", enMessages)
-i18n.load("cs", csMessages)
+i18n.load("en", enPages)
+i18n.load("cs", csPages)
+i18n.load("en", enHobbies)
+i18n.load("cs", csHobbies)
 i18n.activate("cs")
 
 console.log(i18n.language)

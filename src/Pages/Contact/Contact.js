@@ -1,5 +1,6 @@
 import React from "react"
 import { useRef, useState } from "react"
+import { Trans } from "@lingui/react"
 import SentEmailModal from "../../Components/SentEmailModal/SentEmailModal"
 import emailjs from "emailjs-com"
 
@@ -33,13 +34,12 @@ const Contact = () => {
     <div>
       <div className="container">
         <h1 className="display-3 mt-5 text-center text-primary text-shadow">
-          Kontakt
+          <Trans id="contact.h1" />
         </h1>
         <div className="row rounded-5 shadow mt-4">
           <div className="col-md-6 my-5 d-flex g-1">
             <p className="fs-3 m-auto w-75 text-shadow">
-              Neváhejte mi napsat třeba Ahoj👋 a pokud máte zájem o spolupráci
-              na projektu, dejte mi prosím vědět a budu se těšit🤓
+              <Trans id="contact.p1">contact.p1</Trans>
             </p>
           </div>
           <div className="col-md-6 d-flex">
@@ -56,7 +56,7 @@ const Contact = () => {
                     name="from_name"
                     type="text"
                     className="form-control"
-                    placeholder="Jméno*"
+                    placeholder="Jmeno*"
                     required
                   />
                 </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                     className="mt-2 py-2 px-3 text-white bg-info rounded-3 border-0"
                     type="submit"
                   >
-                    Poslat zpravu
+                    <Trans id="contact.button" />
                   </button>
                 </div>
               </form>
