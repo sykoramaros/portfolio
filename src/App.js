@@ -2,8 +2,6 @@ import React from "react"
 import { HashRouter, Routes, Route } from "react-router-dom"
 import { I18nProvider } from "@lingui/react"
 import { i18n } from "@lingui/core"
-import { I18nProvider } from "@lingui/react"
-import { i18n } from "@lingui/core"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 import "./App.css"
@@ -20,18 +18,30 @@ import enPages from "./locales/en/pages.json"
 import csPages from "./locales/cs/pages.json"
 import enHobbies from "./locales/en/hobbies.json"
 import csHobbies from "./locales/cs/hobbies.json"
+import enFrontendProjects from "./locales/en/frontend_projects.json"
+import csFrontendProjects from "./locales/cs/frontend_projects.json"
+import enBackendProjects from "./locales/en/backend_projects.json"
+import csBackendProjects from "./locales/cs/backend_projects.json"
 
 // Načtení lokalizačních dat
 i18n.loadLocaleData("en", enPages)
 i18n.loadLocaleData("cs", csPages)
 i18n.loadLocaleData("en", enHobbies)
 i18n.loadLocaleData("cs", csHobbies)
+i18n.loadLocaleData("en", enFrontendProjects)
+i18n.loadLocaleData("cs", csFrontendProjects)
+i18n.loadLocaleData("en", enBackendProjects)
+i18n.loadLocaleData("cs", csBackendProjects)
 
 // Načtení a aktivace výchozího jazyka
 i18n.load("en", enPages)
 i18n.load("cs", csPages)
 i18n.load("en", enHobbies)
 i18n.load("cs", csHobbies)
+i18n.load("en", enFrontendProjects)
+i18n.load("cs", csFrontendProjects)
+i18n.load("en", enBackendProjects)
+i18n.load("cs", csBackendProjects)
 i18n.activate("cs")
 
 console.log(i18n.language)

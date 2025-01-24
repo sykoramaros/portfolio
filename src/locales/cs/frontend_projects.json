@@ -1,0 +1,58 @@
+[
+  {
+    "webLink": "https://sykoramaros.github.io/wildlife-reserve-react/#/login",
+    "image": "./img/projects/projects/frontend/wildlife_reserve_react.jpg",
+    "title": "Wildlife Reserve",
+    "text": "Frontend React web napojeny na backend C# web api a nastaveno předávání Jwt tokenů do localStorage a zobrazování obsahu podle rolí.",
+    "technologies": "React, Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/wildlife-reserve-react"
+  },
+  {
+    "webLink": "http://booklist.unaux.com",
+    "image": "./img/projects/projects/frontend/books.jpeg",
+    "title": "Knihy",
+    "text": "Evidence knih s použítím PHP a MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/books-php"
+  },
+  {
+    "webLink": "http://carsdb.unaux.com",
+    "image": "./img/projects/projects/frontend/car_garage.jpeg",
+    "title": "Garáž",
+    "text": "Seznam aut spravovaný pomocí PHP napojeného na MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/cars-web-php"
+  },
+  {
+    "webLink": "http://staff.unaux.com",
+    "image": "./img/projects/projects/frontend/it_manager.jpeg",
+    "title": "IT Manažer",
+    "text": "Kontrola kapacity IT pracovníků (uložených lokálně) a nových projektů.",
+    "technologies": "Bootstrap, React",
+    "githubLink": "https://github.com/sykoramaros/staff-form-web"
+  },
+  {
+    "webLink": "http://bookflights.unaux.com",
+    "image": "./img/projects/projects/frontend/fly_tickets.jpeg",
+    "title": "Letenky",
+    "text": "Formulář pro objednání letenek.",
+    "technologies": "Bootstrap, JavaScript",
+    "githubLink": "https://github.com/sykoramaros/book-flights-web"
+  },
+  {
+    "webLink": "http://beekeeper.unaux.com",
+    "image": "./img/projects/projects/frontend/beekeeper.jpeg",
+    "title": "Včelařství",
+    "text": "Informační statická webová stránka včelaře.",
+    "technologies": "Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/beekeeper-web"
+  },
+  {
+    "webLink": "http://saihanhotool.unaux.com",
+    "image": "./img/projects/projects/frontend/saihan_hotool.jpeg",
+    "title": "Сайханы хөтөл",
+    "text": "Statická webová informáční stránka o krásném říčním údolí v mongolském Сайхананы хөтөл",
+    "technologies": "Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/saihan-hotool-web"
+  }
+]

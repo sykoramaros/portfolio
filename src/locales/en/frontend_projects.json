@@ -1,0 +1,58 @@
+[
+  {
+    "webLink": "https://sykoramaros.github.io/wildlife-reserve-react/#/login",
+    "image": "./img/projects/projects/frontend/wildlife_reserve_react.jpg",
+    "title": "Wildlife Reserve",
+    "text": "Frontend React web connected to a C# backend web API with JWT tokens passed to localStorage and content displayed based on roles.",
+    "technologies": "React, Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/wildlife-reserve-react"
+  },
+  {
+    "webLink": "http://booklist.unaux.com",
+    "image": "./img/projects/projects/frontend/books.jpeg",
+    "title": "Books",
+    "text": "Book tracking system using PHP and MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/books-php"
+  },
+  {
+    "webLink": "http://carsdb.unaux.com",
+    "image": "./img/projects/projects/frontend/car_garage.jpeg",
+    "title": "Garage",
+    "text": "Car list managed using PHP connected to MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/cars-web-php"
+  },
+  {
+    "webLink": "http://staff.unaux.com",
+    "image": "./img/projects/projects/frontend/it_manager.jpeg",
+    "title": "IT Manager",
+    "text": "Capacity management of IT workers (stored locally) and new projects.",
+    "technologies": "Bootstrap, React",
+    "githubLink": "https://github.com/sykoramaros/staff-form-web"
+  },
+  {
+    "webLink": "http://bookflights.unaux.com",
+    "image": "./img/projects/projects/frontend/fly_tickets.jpeg",
+    "title": "Flight Tickets",
+    "text": "Form for booking flight tickets.",
+    "technologies": "Bootstrap, JavaScript",
+    "githubLink": "https://github.com/sykoramaros/book-flights-web"
+  },
+  {
+    "webLink": "http://beekeeper.unaux.com",
+    "image": "./img/projects/projects/frontend/beekeeper.jpeg",
+    "title": "Beekeeping",
+    "text": "Informational static webpage of a beekeeper.",
+    "technologies": "Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/beekeeper-web"
+  },
+  {
+    "webLink": "http://saihanhotool.unaux.com",
+    "image": "./img/projects/projects/frontend/saihan_hotool.jpeg",
+    "title": "Saihan Hotol",
+    "text": "Static informational webpage about a beautiful river valley in Mongolian Saihan Hotol.",
+    "technologies": "Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/saihan-hotool-web"
+  }
+]

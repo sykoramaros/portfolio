@@ -15,5 +15,6 @@
   "hobbies.h1": "Hobbies",
   "contact.h1": "Contact",
   "contact.p1": "Feel free to write me something like Hi👋 and if you're interested in collaborating on a project, please let me know, and I look forward to it🤓",
-  "contact.button": "Send message"
+  "contact.button": "Send message",
+  "project_card.p1": "Created with:"
 }
