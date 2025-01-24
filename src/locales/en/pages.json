@@ -1,6 +1,6 @@
 {
   "home.welcome": "Hi👋 my name is",
-  "home.name": "Maroš Sýkora",
+  "home.name": "Marosh Sykora",
   "home.junior": "I am a junior:",
   "home.p1a": "I'm from Ostrava and I also completed a programming course at the Technical University here.",
   "home.p1b": "P.S. I really",
@@ -16,5 +16,10 @@
   "contact.h1": "Contact",
   "contact.p1": "Feel free to write me something like Hi👋 and if you're interested in collaborating on a project, please let me know, and I look forward to it🤓",
   "contact.button": "Send message",
+  "navbar.home": "Home",
+  "navbar.skills": "Skills",
+  "navbar.projects": "Projects",
+  "navbar.hobbies": "Hobbies",
+  "navbar.contact": "Contact",
   "project_card.p1": "Created with:"
 }

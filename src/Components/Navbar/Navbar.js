@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { i18n } from "@lingui/core"
+import { Trans } from "@lingui/react"
 import "./Navbar.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
@@ -39,7 +40,7 @@ const Navbar = () => {
                   aria-current="page"
                   to={"/"}
                 >
-                  Home
+                  <Trans id="navbar.home" />
                 </Link>
               </li>
               {/* <li class="nav-item">
@@ -49,22 +50,22 @@ const Navbar = () => {
               </li> */}
               <li class="nav-item">
                 <Link class="nav-link" to={"/skills"}>
-                  Znalosti
+                  <Trans id="navbar.skills" />
                 </Link>
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to={"/projects"}>
-                  Projekty
+                  <Trans id="navbar.projects" />
                 </Link>
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to={"/hobbies"}>
-                  Koníčky
+                  <Trans id="navbar.hobbies" />
                 </Link>
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to={"/contact"}>
-                  Kontakt
+                  <Trans id="navbar.contact" />
                 </Link>
               </li>
               <li class="nav-item">

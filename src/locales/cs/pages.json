@@ -16,5 +16,10 @@
   "contact.h1": "Kontakt",
   "contact.p1": "Neváhejte mi napsat třeba Ahoj👋 a pokud máte zájem o spolupráci na projektu, dejte mi prosím vědět a budu se těšit🤓",
   "contact.button": "Poslat zprávu",
+  "navbar.home": "Home",
+  "navbar.skills": "Znalosti",
+  "navbar.projects": "Projekty",
+  "navbar.hobbies": "Koníčky",
+  "navbar.contact": "Kontakt",
   "project_card.p1": "Vytvořeno pomocí:"
 }
