@@ -46,5 +46,21 @@
     "text": "Endpointy počasí různých částí světa vyvedeny do Swagger_UI. Napojení v backendu na weatherapi.com",
     "technologies": "Swagger_UI, Java Spring",
     "githubLink": "https://github.com/sykoramaros/weatherapp-java-spring"
+  },
+  {
+    "webLink": "http://booklist.unaux.com",
+    "image": "/img/projects/projects/frontend/books.jpeg",
+    "title": "Knihy",
+    "text": "Evidence knih s použítím PHP a MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/books-php"
+  },
+  {
+    "webLink": "http://carsdb.unaux.com",
+    "image": "/img/projects/projects/frontend/car_garage.jpeg",
+    "title": "Garáž",
+    "text": "Seznam aut spravovaný pomocí PHP napojeného na MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/cars-web-php"
   }
 ]

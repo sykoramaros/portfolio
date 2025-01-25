@@ -8,23 +8,7 @@
     "githubLink": "https://github.com/sykoramaros/wildlife-reserve-react"
   },
   {
-    "webLink": "http://booklist.unaux.com",
-    "image": "/img/projects/projects/frontend/books.jpeg",
-    "title": "Knihy",
-    "text": "Evidence knih s použítím PHP a MySQL.",
-    "technologies": "Bootstrap, PHP, MySQL",
-    "githubLink": "https://github.com/sykoramaros/books-php"
-  },
-  {
-    "webLink": "http://carsdb.unaux.com",
-    "image": "/img/projects/projects/frontend/car_garage.jpeg",
-    "title": "Garáž",
-    "text": "Seznam aut spravovaný pomocí PHP napojeného na MySQL.",
-    "technologies": "Bootstrap, PHP, MySQL",
-    "githubLink": "https://github.com/sykoramaros/cars-web-php"
-  },
-  {
-    "webLink": "http://staff.unaux.com",
+    "webLink": "https://sykoramaros.github.io/staff-form-web/",
     "image": "/img/projects/projects/frontend/it_manager.jpeg",
     "title": "IT Manažer",
     "text": "Kontrola kapacity IT pracovníků (uložených lokálně) a nových projektů.",
@@ -32,7 +16,7 @@
     "githubLink": "https://github.com/sykoramaros/staff-form-web"
   },
   {
-    "webLink": "http://bookflights.unaux.com",
+    "webLink": "https://sykoramaros.github.io/book-flights-web/",
     "image": "/img/projects/projects/frontend/fly_tickets.jpeg",
     "title": "Letenky",
     "text": "Formulář pro objednání letenek.",
@@ -40,7 +24,7 @@
     "githubLink": "https://github.com/sykoramaros/book-flights-web"
   },
   {
-    "webLink": "http://beekeeper.unaux.com",
+    "webLink": "https://sykoramaros.github.io/beekeeper-web/",
     "image": "/img/projects/projects/frontend/beekeeper.jpeg",
     "title": "Včelařství",
     "text": "Informační statická webová stránka včelaře.",
@@ -48,7 +32,7 @@
     "githubLink": "https://github.com/sykoramaros/beekeeper-web"
   },
   {
-    "webLink": "http://saihanhotool.unaux.com",
+    "webLink": "https://sykoramaros.github.io/saihan-hotool-web/",
     "image": "/img/projects/projects/frontend/saihan_hotool.jpeg",
     "title": "Сайханы хөтөл",
     "text": "Statická webová informáční stránka o krásném říčním údolí v mongolském Сайхананы хөтөл",

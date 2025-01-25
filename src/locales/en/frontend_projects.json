@@ -8,23 +8,7 @@
     "githubLink": "https://github.com/sykoramaros/wildlife-reserve-react"
   },
   {
-    "webLink": "http://booklist.unaux.com",
-    "image": "/img/projects/projects/frontend/books.jpeg",
-    "title": "Books",
-    "text": "Book tracking system using PHP and MySQL.",
-    "technologies": "Bootstrap, PHP, MySQL",
-    "githubLink": "https://github.com/sykoramaros/books-php"
-  },
-  {
-    "webLink": "http://carsdb.unaux.com",
-    "image": "/img/projects/projects/frontend/car_garage.jpeg",
-    "title": "Garage",
-    "text": "Car list managed using PHP connected to MySQL.",
-    "technologies": "Bootstrap, PHP, MySQL",
-    "githubLink": "https://github.com/sykoramaros/cars-web-php"
-  },
-  {
-    "webLink": "http://staff.unaux.com",
+    "webLink": "https://sykoramaros.github.io/staff-form-web/",
     "image": "/img/projects/projects/frontend/it_manager.jpeg",
     "title": "IT Manager",
     "text": "Capacity management of IT workers (stored locally) and new projects.",
@@ -32,7 +16,7 @@
     "githubLink": "https://github.com/sykoramaros/staff-form-web"
   },
   {
-    "webLink": "http://bookflights.unaux.com",
+    "webLink": "https://sykoramaros.github.io/book-flights-web/",
     "image": "/img/projects/projects/frontend/fly_tickets.jpeg",
     "title": "Flight Tickets",
     "text": "Form for booking flight tickets.",
@@ -40,15 +24,15 @@
     "githubLink": "https://github.com/sykoramaros/book-flights-web"
   },
   {
-    "webLink": "http://beekeeper.unaux.com",
+    "webLink": "https://sykoramaros.github.io/beekeeper-web/",
     "image": "/img/projects/projects/frontend/beekeeper.jpeg",
-    "title": "Beekeeping",
+    "title": "Beekeeper",
     "text": "Informational static webpage of a beekeeper.",
     "technologies": "Bootstrap",
     "githubLink": "https://github.com/sykoramaros/beekeeper-web"
   },
   {
-    "webLink": "http://saihanhotool.unaux.com",
+    "webLink": "https://sykoramaros.github.io/saihan-hotool-web/",
     "image": "/img/projects/projects/frontend/saihan_hotool.jpeg",
     "title": "Saihan Hotol",
     "text": "Static informational webpage about a beautiful river valley in Mongolian Saihan Hotol.",

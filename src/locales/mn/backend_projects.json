@@ -46,5 +46,21 @@
     "text": "Дэлхийн янз бүрийн хэсгүүдийн цаг агаарын endpoint-уудыг Swagger_UI-д харуулсан. Backend нь weatherapi.com-той холбогдсон.",
     "technologies": "Swagger_UI, Java Spring",
     "githubLink": "https://github.com/sykoramaros/weatherapp-java-spring"
+  },
+  {
+    "webLink": "http://booklist.unaux.com",
+    "image": "/img/projects/projects/frontend/books.jpeg",
+    "title": "Номнууд",
+    "text": "PHP ба MySQL ашиглан ном бүртгэлийн систем.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/books-php"
+  },
+  {
+    "webLink": "http://carsdb.unaux.com",
+    "image": "/img/projects/projects/frontend/car_garage.jpeg",
+    "title": "Гараж",
+    "text": "PHP ба MySQL-т холбогдсон автомашины жагсаалтыг удирдах систем.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/cars-web-php"
   }
 ]

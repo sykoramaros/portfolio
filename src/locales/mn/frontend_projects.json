@@ -8,23 +8,7 @@
     "githubLink": "https://github.com/sykoramaros/wildlife-reserve-react"
   },
   {
-    "webLink": "http://booklist.unaux.com",
-    "image": "/img/projects/projects/frontend/books.jpeg",
-    "title": "Номнууд",
-    "text": "PHP ба MySQL ашиглан ном бүртгэлийн систем.",
-    "technologies": "Bootstrap, PHP, MySQL",
-    "githubLink": "https://github.com/sykoramaros/books-php"
-  },
-  {
-    "webLink": "http://carsdb.unaux.com",
-    "image": "/img/projects/projects/frontend/car_garage.jpeg",
-    "title": "Гараж",
-    "text": "PHP ба MySQL-т холбогдсон автомашины жагсаалтыг удирдах систем.",
-    "technologies": "Bootstrap, PHP, MySQL",
-    "githubLink": "https://github.com/sykoramaros/cars-web-php"
-  },
-  {
-    "webLink": "http://staff.unaux.com",
+    "webLink": "https://sykoramaros.github.io/staff-form-web/",
     "image": "/img/projects/projects/frontend/it_manager.jpeg",
     "title": "IT Менежер",
     "text": "Локал хадгалсан IT ажилчдын багтаамж болон шинэ төслүүдийг хянах систем.",
@@ -32,7 +16,7 @@
     "githubLink": "https://github.com/sykoramaros/staff-form-web"
   },
   {
-    "webLink": "http://bookflights.unaux.com",
+    "webLink": "https://sykoramaros.github.io/book-flights-web/",
     "image": "/img/projects/projects/frontend/fly_tickets.jpeg",
     "title": "Нислэгийн тасалбар",
     "text": "Нислэгийн тасалбар захиалах маягт.",
@@ -40,7 +24,7 @@
     "githubLink": "https://github.com/sykoramaros/book-flights-web"
   },
   {
-    "webLink": "http://beekeeper.unaux.com",
+    "webLink": "https://sykoramaros.github.io/beekeeper-web/",
     "image": "/img/projects/projects/frontend/beekeeper.jpeg",
     "title": "Зөгийчин",
     "text": "Зөгийчний тухай мэдээллийн статик вэб хуудас.",
@@ -48,7 +32,7 @@
     "githubLink": "https://github.com/sykoramaros/beekeeper-web"
   },
   {
-    "webLink": "http://saihanhotool.unaux.com",
+    "webLink": "https://sykoramaros.github.io/saihan-hotool-web/",
     "image": "/img/projects/projects/frontend/saihan_hotool.jpeg",
     "title": "Сайханы хөтөл",
     "text": "Монголын Сайханы хөтөл гэх үзэсгэлэнт голын хөндийн тухай мэдээллийн статик вэб хуудас.",

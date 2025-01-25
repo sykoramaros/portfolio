@@ -1,12 +1,12 @@
 [
   {
     "imageSrc": "/img/skills/classics/Ma.png",
-    "hoverImageSrc": "./img/skills/blackwhite/Ma.png",
+    "hoverImageSrc": "/img/skills/blackwhite/Ma.png",
     "backText": "MariaDB"
   },
   {
     "imageSrc": "/img/skills/classics/My.png",
-    "hoverImageSrc": "./img/skills/blackwhite/My.png",
+    "hoverImageSrc": "/img/skills/blackwhite/My.png",
     "backText": "MySQL"
   }
 ]

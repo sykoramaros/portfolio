@@ -130,12 +130,12 @@ const Navbar = () => {
                     <Trans id="navbar.contact" />
                   </Link>
                 </li>
-                <span className="nav-link d-none d-xl-block">|</span>
+                {/* <span className="nav-link d-none d-xl-block">|</span>
                 <li className="nav-item">
                   <Link className="nav-link" to={"/try"}>
                     Try
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

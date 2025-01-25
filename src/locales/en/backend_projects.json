@@ -46,5 +46,21 @@
     "text": "Endpoints for weather data of various parts of the world displayed in Swagger_UI. Backend connected to weatherapi.com.",
     "technologies": "Swagger_UI, Java Spring",
     "githubLink": "https://github.com/sykoramaros/weatherapp-java-spring"
+  },
+  {
+    "webLink": "http://booklist.unaux.com",
+    "image": "/img/projects/projects/frontend/books.jpeg",
+    "title": "Books",
+    "text": "Book tracking system using PHP and MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/books-php"
+  },
+  {
+    "webLink": "http://carsdb.unaux.com",
+    "image": "/img/projects/projects/frontend/car_garage.jpeg",
+    "title": "Garage",
+    "text": "Car list managed using PHP connected to MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/cars-web-php"
   }
 ]
