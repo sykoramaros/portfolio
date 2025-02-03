@@ -15,6 +15,7 @@
   "hobbies.h1": "Koníčky",
   "contact.h1": "Kontakt",
   "contact.p1": "Neváhejte mi napsat třeba Ahoj👋 a pokud máte zájem o spolupráci na projektu, dejte mi prosím vědět a budu se těšit🤓",
+  "contact.placeholder.name": "Jméno*",
   "contact.button": "Poslat zprávu",
   "navbar.home": "Home",
   "navbar.skills": "Znalosti",

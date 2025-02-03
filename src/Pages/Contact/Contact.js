@@ -1,6 +1,7 @@
 import React from "react"
 import { useRef, useState } from "react"
 import { Trans } from "@lingui/react"
+import { i18n } from "@lingui/core"
 import SentEmailModal from "../../Components/SentEmailModal/SentEmailModal"
 import emailjs from "emailjs-com"
 
@@ -56,7 +57,7 @@ const Contact = () => {
                     name="from_name"
                     type="text"
                     className="form-control"
-                    placeholder="Jmeno*"
+                    placeholder={i18n._("contact.placeholder.name")}
                     required
                   />
                 </div>

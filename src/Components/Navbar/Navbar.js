@@ -11,14 +11,14 @@ const Navbar = () => {
       <div className="container">
         <nav className="nav-container navbar navbar-expand-lg bg-body-tertiary mt-3">
           <div className="container-fluid">
-            <a className="navbar-brand fs-1 text-secondary" href="/home">
+            <Link className="navbar-brand fs-1 text-secondary" to={"/"}>
               <img
                 src={`${process.env.PUBLIC_URL}/img/logo.png`}
                 alt="Logo"
                 width="55px"
                 height="auto"
               />
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
