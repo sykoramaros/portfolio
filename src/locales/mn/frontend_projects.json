@@ -1,5 +1,13 @@
 [
   {
+    "webLink": "https://sykoramaros.github.io/time_records_react/",
+    "image": "/img/projects/projects/frontend/time_records.jpg",
+    "title": "Time Records",
+    "text": "React frontend вэб нь C# backend TimeRecords вэб API-тай холбогдсон, JWT токенууд нь localStorage-д хадгалагдсан бөгөөд агуулга нь хэрэглэгчийн үүргээс үндэслэн харуулдаг. Мөн ReactDatePicker компонентыг миний өөрийн дизайн дагуу загварчласан.",
+    "technologies": "React, Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/time_records_react"
+  },
+  {
     "webLink": "https://sykoramaros.github.io/wildlife-reserve-react/#/login",
     "image": "/img/projects/projects/frontend/wildlife_reserve_react.jpg",
     "title": "Амьтдын нөөц газар",

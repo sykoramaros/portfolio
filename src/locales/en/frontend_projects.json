@@ -1,5 +1,13 @@
 [
   {
+    "webLink": "https://sykoramaros.github.io/time_records_react/",
+    "image": "/img/projects/projects/frontend/time_records.jpg",
+    "title": "Time Records",
+    "text": "Frontend React web connected to a C# backend TimeRecords web API, with JWT tokens stored in localStorage and content displayed based on user roles. Also, the ReactDatePicker component is styled based on my custom design.",
+    "technologies": "React, Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/time_records_react"
+  },
+  {
     "webLink": "https://sykoramaros.github.io/wildlife-reserve-react/#/login",
     "image": "/img/projects/projects/frontend/wildlife_reserve_react.jpg",
     "title": "Wildlife Reserve",

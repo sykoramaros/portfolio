@@ -10,7 +10,7 @@
   {
     "webLink": "http://weather.unaux.com/",
     "image": "/img/projects/projects/backend/weather_react_java.jpeg",
-    "title": "Цаг агаар🌤️",
+    "title": "Цаг агаар🌤️ (Түр хугацаагаар зогсоосон backend хостинг)",
     "text": "Дэлхийн янз бүрийн хэсгүүдийн цаг агаарыг харуулах вэб програм. Backend нь weatherapi.com-той холбогдсон.",
     "technologies": "Bootstrap, React, Java Spring, weatherapi API, Swagger UI",
     "githubLink": "https://github.com/sykoramaros/weatherapp-react"

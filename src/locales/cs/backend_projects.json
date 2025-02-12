@@ -10,7 +10,7 @@
   {
     "webLink": "http://weather.unaux.com/",
     "image": "/img/projects/projects/backend/weather_react_java.jpeg",
-    "title": "Počasí🌤️",
+    "title": "Počasí🌤️ (Dočasně přerušený backend hosting)",
     "text": "Webová aplikace zobrazující počasí různých částí světa. Napojení v backendu na weatherapi.com.",
     "technologies": "Bootstrap, React, Java Spring, weatherapi API, Swagger UI",
     "githubLink": "https://github.com/sykoramaros/weatherapp-react"
