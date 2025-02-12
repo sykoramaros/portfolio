@@ -1,5 +1,13 @@
 [
   {
+    "webLink": "https://sykoramaros.github.io/time_records_react/",
+    "image": "/img/projects/projects/backend/time_records_csharp.jpg",
+    "title": "Time Records",
+    "text": "Backendová C# WEB API využívající MariaDB databázi. Endpointy propojené s React frontendem (viz. Frontend portfolio)",
+    "technologies": "C# ASP.NET Core, MariaDB, Swagger UI",
+    "githubLink": "https://github.com/sykoramaros/Time_Records"
+  },
+  {
     "webLink": "https://wildlife-reserve.runasp.net/swagger/index.html",
     "image": "/img/projects/projects/backend/wildlife_reserve_swagger_csharp.jpg",
     "title": "Wildlife Reserve",
