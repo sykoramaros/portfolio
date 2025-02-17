@@ -1,6 +1,6 @@
 [
   {
-    "webLink": "https://sykoramaros.github.io/time_records_react/",
+    "webLink": "https://recordsapi.runasp.net/swagger/index.html",
     "image": "/img/projects/projects/backend/time_records_csharp.jpg",
     "title": "Time Records",
     "text": "MariaDB өгөгдлийн санг ашигладаг C# WEB API. Endpoint-үүд React frontend-тэй холбогдсон (Frontend портфолиог үзнэ үү)",

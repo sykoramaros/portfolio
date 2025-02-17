@@ -1,6 +1,6 @@
 [
   {
-    "webLink": "https://sykoramaros.github.io/time_records_react/",
+    "webLink": "https://recordsapi.runasp.net/swagger/index.html",
     "image": "/img/projects/projects/backend/time_records_csharp.jpg",
     "title": "Time Records",
     "text": "Backend C# WEB API utilizing MariaDB database. Endpoints connected to the React frontend (see Frontend portfolio)",

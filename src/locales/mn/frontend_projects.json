@@ -1,5 +1,13 @@
 [
   {
+    "webLink": "https://sykoramaros.github.io/dentist/",
+    "image": "/img/projects/projects/frontend/dentist.jpg",
+    "title": "Шүдний эмч",
+    "text": "Шүдний эмнэлгийн үндсэн мэдээллийг агуулсан статик вэбсайт. Бекенд веб API болон өвчтөний бүртгэлээр өргөжүүлэх боломжтой.",
+    "technologies": "React, Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/dentist"
+  },
+  {
     "webLink": "https://sykoramaros.github.io/time_records_react/",
     "image": "/img/projects/projects/frontend/time_records.jpg",
     "title": "Time Records",

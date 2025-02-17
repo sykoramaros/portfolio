@@ -1,8 +1,16 @@
 [
   {
+    "webLink": "https://sykoramaros.github.io/dentist/",
+    "image": "/img/projects/projects/frontend/dentist.jpg",
+    "title": "Zubař",
+    "text": "Statické webové stránky se základními informacemi zubařství. S možností rozšíření o backend web API a evidenci pacientů.",
+    "technologies": "React, Bootstrap",
+    "githubLink": "https://github.com/sykoramaros/dentist"
+  },
+  {
     "webLink": "https://sykoramaros.github.io/time_records_react/",
     "image": "/img/projects/projects/frontend/time_records.jpg",
-    "title": "Time Records",
+    "title": "Časové záznamy",
     "text": "Frontend web v Reactu připojený k C# backendu TimeRecords web API, s JWT tokeny uloženými v localStorage a obsahem zobrazeným na základě uživatelských rolí. Také komponenta ReactDatePicker je stylována podle mého vlastního návrhu.",
     "technologies": "React, Bootstrap",
     "githubLink": "https://github.com/sykoramaros/time_records_react"
