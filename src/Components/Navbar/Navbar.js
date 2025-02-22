@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="container">
-        <nav className="nav-container navbar navbar-expand-lg bg-body-tertiary mt-3">
+        <nav className="nav-container navbar navbar-expand-lg bg-body-tertiary mt-3 shadow-sm">
           <div className="container-fluid">
             <Link className="navbar-brand fs-1 text-secondary" to={"/"}>
               <img
@@ -17,6 +17,7 @@ const Navbar = () => {
                 alt="Logo"
                 width="55px"
                 height="auto"
+                style={{ boxShadow: "0px 0px 8px", borderRadius: "50%" }}
               />
             </Link>
             <button
@@ -34,8 +35,6 @@ const Navbar = () => {
               <div className="ms-auto d-flex">
                 <ul className="navbar-nav d-flex">
                   <li className="nav-item">
-                    {/* <button onClick={() => i18n.activate("en")}>EN</button>
-                  <button onClick={() => i18n.activate("cs")}>CS</button> */}
                     <a
                       className="nav-link"
                       href="#"
@@ -46,6 +45,7 @@ const Navbar = () => {
                       aria-label="Switch to Czech language"
                     >
                       <img
+                        className="border rounded-5 shadow-sm"
                         src={`${process.env.PUBLIC_URL}/img/lang/czech.png`}
                         alt="Czech language"
                         width="35"
@@ -64,6 +64,7 @@ const Navbar = () => {
                       aria-label="Switch to English language"
                     >
                       <img
+                        className="border rounded-5 shadow-sm"
                         src={`${process.env.PUBLIC_URL}/img/lang/english.png`}
                         alt="English language"
                         width="35"
@@ -82,6 +83,7 @@ const Navbar = () => {
                       aria-label="Switch to Mongolian language"
                     >
                       <img
+                        className="border rounded-5 shadow-sm"
                         src={`${process.env.PUBLIC_URL}/img/lang/mongolian.png`}
                         alt="Mongolian language"
                         width="35"

@@ -7,7 +7,7 @@ const ProgLangBoard = () => {
   return (
     <div className="container">
       <div
-        className="row display-1 text-center border border-warning bg-warning rounded-1 align-items-center justify-content-center m-auto p-4"
+        className="row display-1 text-center border border-warning bg-warning rounded-1 align-items-center justify-content-center m-auto p-4 shadow-sm"
         style={{ transform: "rotate(-2.5deg)" }}
       >
         {dataSkills.map((card, index) => (

@@ -6,7 +6,7 @@ import dataSkills from "./data_skills.json"
 const OthersBoard = () => {
   return (
     <div className="container">
-      <div className="row display-1 text-center border border-warning bg-warning align-items-center m-auto p-4">
+      <div className="row display-1 text-center border border-warning bg-warning align-items-center m-auto p-4 shadow-sm">
         {dataSkills.map((card, index) => (
           <SkillCard
             key={index}
