@@ -35,9 +35,11 @@ const Projects = () => {
         <span
           className={
             isFrontendListVisible
-              ? "fs-2 fs-md-1 col-auto text-center fw-bold"
+              ? "fs-2 fs-md-1 col-auto text-center fw-bold text-info"
               : "fs-2 fs-md-1 col-auto text-center"
           }
+          onClick={() => setIsFrontendListVisible(!isFrontendListVisible)}
+          style={{ cursor: "pointer" }}
         >
           Frontend
         </span>
@@ -56,8 +58,10 @@ const Projects = () => {
           className={
             isFrontendListVisible
               ? "fs-2 fs-sm-1 col-auto text-center"
-              : "fs-2 fs-sm-1 col-auto text-center fw-bold"
+              : "fs-2 fs-sm-1 col-auto text-center fw-bold text-info"
           }
+          onClick={() => setIsFrontendListVisible(!isFrontendListVisible)}
+          style={{ cursor: "pointer" }}
         >
           Backend
         </span>
