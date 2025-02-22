@@ -1,4 +1,5 @@
 import React from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import { i18n } from "@lingui/core"
 import { Trans } from "@lingui/react"
@@ -6,6 +7,12 @@ import "./Navbar.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState("")
+
+  const handleIsOpen = (link) => {
+    setIsOpen(link)
+  }
+
   return (
     <div>
       <div className="container">
@@ -96,7 +103,10 @@ const Navbar = () => {
               <ul className="navbar-nav mx-auto fs-4 gap-1">
                 <li class="nav-item">
                   <Link
-                    className="nav-link active text-info"
+                    className={`nav-link ${
+                      isOpen === "home" ? "text-warning" : "text-secondary"
+                    }`}
+                    onClick={() => handleIsOpen("home")}
                     aria-current="page"
                     to={"/"}
                   >
@@ -110,25 +120,49 @@ const Navbar = () => {
                 </Link>
               </li> */}
                 <li className="nav-item">
-                  <Link className="nav-link" to={"/skills"}>
+                  <Link
+                    className={`nav-link ${
+                      isOpen === "skills" ? "text-warning" : "text-secondary"
+                    }`}
+                    onClick={() => handleIsOpen("skills")}
+                    to={"/skills"}
+                  >
                     <Trans id="navbar.skills" />
                   </Link>
                 </li>
                 <span className="nav-link d-none d-xl-block">|</span>
                 <li className="nav-item">
-                  <Link className="nav-link" to={"/projects"}>
+                  <Link
+                    className={`nav-link ${
+                      isOpen === "projects" ? "text-warning" : "text-secondary"
+                    }`}
+                    onClick={() => handleIsOpen("projects")}
+                    to={"/projects"}
+                  >
                     <Trans id="navbar.projects" />
                   </Link>
                 </li>
                 <span className="nav-link d-none d-xl-block">|</span>
                 <li className="nav-item">
-                  <Link className="nav-link" to={"/hobbies"}>
+                  <Link
+                    className={`nav-link ${
+                      isOpen === "hobbies" ? "text-warning" : "text-secondary"
+                    }`}
+                    onClick={() => handleIsOpen("hobbies")}
+                    to={"/hobbies"}
+                  >
                     <Trans id="navbar.hobbies" />
                   </Link>
                 </li>
                 <span className="nav-link d-none d-xl-block">|</span>
                 <li className="nav-item">
-                  <Link className="nav-link" to={"/contact"}>
+                  <Link
+                    className={`nav-link ${
+                      isOpen === "contact" ? "text-warning" : "text-secondary"
+                    }`}
+                    onClick={() => handleIsOpen("contact")}
+                    to={"/contact"}
+                  >
                     <Trans id="navbar.contact" />
                   </Link>
                 </li>
