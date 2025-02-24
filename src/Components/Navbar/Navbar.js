@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="container">
-        <nav className="nav-container navbar navbar-expand-lg bg-body-tertiary mt-3 shadow-sm">
+        <nav className="nav-container navbar navbar-expand-lg fixed-top bg-body-tertiary mt-3 mx-5 shadow-sm">
           <div className="container-fluid">
             <Link className="navbar-brand fs-1 text-secondary" to={"/"}>
               <img

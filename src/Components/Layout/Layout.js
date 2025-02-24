@@ -6,7 +6,9 @@ const Layout = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div style={{ margin: "150px 0" }}>
+        <Outlet />
+      </div>
       <Footer />
     </div>
   )

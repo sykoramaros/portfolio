@@ -1,11 +1,12 @@
 import React from "react"
+import "./Footer.css"
 
 const Footer = () => {
   return (
     <div>
       <div
-        className="container-fluid bg-success mt-5 d-flex align-items-center"
-        style={{ height: "100px", borderRadius: "20px 20px 0px 0px" }}
+        className="footer container-fluid bg-success d-flex align-items-center fixed-bottom p-2"
+        style={{ borderRadius: "20px 20px 0px 0px" }}
       >
         <div className="row w-100 m-auto">
           <div className="col-8 col-md-9 col-lg-9 col-xl-10"></div>
