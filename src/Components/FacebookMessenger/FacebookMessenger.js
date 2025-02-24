@@ -1,18 +1,18 @@
-// "use client"
-// import React from "react"
-// import { FacebookProvider, CustomChat } from "react-facebook"
+"use client"
+import React from "react"
+import { FacebookProvider, CustomChat } from "react-facebook"
 
-// const FacebookMessenger = () => {
-//   return (
-//     <div>
-//       <FacebookProvider appId="610437348523152" chatSupport>
-//         <CustomChat pageId="556953277507224" minimized={true} />
-//       </FacebookProvider>
-//     </div>
-//   )
-// }
+const FacebookMessenger = () => {
+  return (
+    <div>
+      <FacebookProvider appId="610437348523152" chatSupport>
+        <CustomChat pageId="556953277507224" minimized={true} />
+      </FacebookProvider>
+    </div>
+  )
+}
 
-// export default FacebookMessenger
+export default FacebookMessenger
 
 // import React, { useEffect } from "react"
 
@@ -62,50 +62,50 @@
 
 /* global FB */ // Přidáno pro ESLint
 
-import React, { useEffect } from "react"
+// import React, { useEffect } from "react"
 
-const FacebookMessenger = () => {
-  useEffect(() => {
-    window.fbAsyncInit = function () {
-      console.log(window.FB)
-      // Zkontrolujeme, zda je FB definováno
-      if (typeof FB !== "undefined") {
-        FB.init({
-          appId: "610437348523152", // Nahraď vlastním App ID
-          autoLogAppEvents: true,
-          xfbml: true,
-          version: "v18.0",
-        })
-      }
-    }
-    ;(function (d, s, id) {
-      if (d.getElementById(id)) return
-      let js = d.createElement(s)
-      js.id = id
-      js.src = "https://connect.facebook.net/en_US/sdk.js"
-      js.async = true
-      js.defer = true
-      js.crossOrigin = "anonymous"
-      d.getElementsByTagName("head")[0].appendChild(js)
-    })(document, "script", "facebook-jssdk")
-  }, [])
+// const FacebookMessenger = () => {
+//   useEffect(() => {
+//     window.fbAsyncInit = function () {
+//       console.log(window.FB)
+//       // Zkontrolujeme, zda je FB definováno
+//       if (typeof FB !== "undefined") {
+//         FB.init({
+//           appId: "610437348523152", // Nahraď vlastním App ID
+//           autoLogAppEvents: true,
+//           xfbml: true,
+//           version: "v18.0",
+//         })
+//       }
+//     }
+//     ;(function (d, s, id) {
+//       if (d.getElementById(id)) return
+//       let js = d.createElement(s)
+//       js.id = id
+//       js.src = "https://connect.facebook.net/en_US/sdk.js"
+//       js.async = true
+//       js.defer = true
+//       js.crossOrigin = "anonymous"
+//       d.getElementsByTagName("head")[0].appendChild(js)
+//     })(document, "script", "facebook-jssdk")
+//   }, [])
 
-  return (
-    <div>
-      <div id="fb-root"></div>
-      <script
-        async
-        defer
-        crossOrigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
-      ></script>
-      <div
-        className="fb-customerchat"
-        attribution="setup_tool"
-        page_id="556953277507224" // Nahraď vlastním Page ID
-      ></div>
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <div id="fb-root"></div>
+//       <script
+//         async
+//         defer
+//         crossOrigin="anonymous"
+//         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
+//       ></script>
+//       <div
+//         className="fb-customerchat"
+//         attribution="setup_tool"
+//         page_id="556953277507224" // Nahraď vlastním Page ID
+//       ></div>
+//     </div>
+//   )
+// }
 
-export default FacebookMessenger
+// export default FacebookMessenger
