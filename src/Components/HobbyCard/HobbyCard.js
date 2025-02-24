@@ -31,7 +31,7 @@ const HobbyCard = ({ rotation, image, title, backText, link, textLink }) => {
             </div>
             <div className="card-back">
               <img
-                src="/img/hobbies/white.jpg"
+                src={`${process.env.PUBLIC_URL}/img/hobbies/white.jpg`}
                 className="card-img-top"
                 alt="..."
               />

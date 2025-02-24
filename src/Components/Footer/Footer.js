@@ -1,5 +1,4 @@
 import React from "react"
-import "./Footer.css"
 
 const Footer = () => {
   return (
@@ -17,7 +16,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <img
-                  className="img-fluid mx-auto d-block"
+                  className="img-fluid mx-auto d-block rounded-3"
                   src={`${process.env.PUBLIC_URL}/img/linkedin.svg`}
                   width={"75px"}
                   alt="LinkedIn"
@@ -27,10 +26,23 @@ const Footer = () => {
             <div className="">
               <a href="https://github.com/sykoramaros" target="_blank">
                 <img
-                  className="img-fluid mx-auto d-block"
+                  className="img-fluid mx-auto d-block rounded-3"
                   src={`${process.env.PUBLIC_URL}/img/github.svg`}
                   width={"75px"}
                   alt="GitHub"
+                />
+              </a>
+            </div>
+            <div className="">
+              <a
+                href="https://www.facebook.com/marian.sykora.75/"
+                target="_blank"
+              >
+                <img
+                  className="img-fluid mx-auto d-block rounded-3"
+                  src={`${process.env.PUBLIC_URL}/img/facebook.svg`}
+                  width={"75px"}
+                  alt="LinkedIn"
                 />
               </a>
             </div>

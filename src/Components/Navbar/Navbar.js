@@ -101,7 +101,7 @@ const Navbar = () => {
                 </ul>
               </div>
               <ul className="navbar-nav mx-auto fs-4 gap-1">
-                <li class="nav-item">
+                <li className="nav-item">
                   <Link
                     className={`nav-link ${
                       isOpen === "home" ? "text-warning" : "text-secondary"
@@ -114,8 +114,8 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <span className="nav-link d-none d-xl-block">|</span>
-                {/* <li class="nav-item">
-                <Link class="nav-link" to={"/about"}>
+                {/* <li className="nav-item">
+                <Link className="nav-link" to={"/about"}>
                   O mě
                 </Link>
               </li> */}
