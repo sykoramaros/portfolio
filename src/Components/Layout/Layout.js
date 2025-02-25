@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom"
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
-import FacebookMessenger from "../FacebookMessenger/FacebookMessenger"
 
 const Layout = () => {
   return (
@@ -11,7 +10,6 @@ const Layout = () => {
         <Outlet />
       </div>
       <Footer />
-      <FacebookMessenger />
     </div>
   )
 }
