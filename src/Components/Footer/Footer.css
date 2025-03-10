@@ -1,0 +1,17 @@
+.audio-player {
+    position: fixed;
+    bottom: -190px;
+    left: 50px;
+    z-index: 3;
+    transform: scale(1);
+    transition: all 0.7s ease-in-out;
+}
+
+.audio-player:hover {
+    bottom: 60px;
+    left: 50px;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.7s ease-in-out;
+}
+

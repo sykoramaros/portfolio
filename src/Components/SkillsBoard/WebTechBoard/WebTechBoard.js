@@ -7,7 +7,7 @@ const WebTechBoard = () => {
   return (
     <div className="container">
       <div
-        className="row display-1 text-center border border-warning bg-warning rounded-1 align-items-center m-auto p-4 shadow-sm"
+        className="row display-1 text-center border border-warning bg-warning-light rounded-1 align-items-center m-auto p-4 shadow-sm"
         style={{ transform: "rotate(1.5deg)" }}
       >
         {dataSkills.map((card, index) => (

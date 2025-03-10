@@ -1,11 +1,13 @@
 import React from "react"
+import "./Footer.css"
+import AudioPlayer from "../AudioPlayer/AudioPlayer";
 
 const Footer = () => {
   return (
     <div>
       <div
         className="footer container-fluid bg-success d-flex align-items-center fixed-bottom p-2"
-        style={{ borderRadius: "20px 20px 0px 0px" }}
+        style={{ borderRadius: "20px 20px 0px 0px", zIndex: "999" }}
       >
         <div className="row w-100 m-auto">
           <div className="col-8 col-md-9 col-lg-9 col-xl-10"></div>
@@ -14,6 +16,7 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/sykoramaros/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   className="img-fluid mx-auto d-block rounded-3"
@@ -24,7 +27,9 @@ const Footer = () => {
               </a>
             </div>
             <div className="">
-              <a href="https://github.com/sykoramaros" target="_blank">
+              <a href="https://github.com/sykoramaros"
+                 target="_blank"
+                 rel="noopener noreferrer">
                 <img
                   className="img-fluid mx-auto d-block rounded-3"
                   src={`${process.env.PUBLIC_URL}/img/github.svg`}
@@ -37,6 +42,7 @@ const Footer = () => {
               <a
                 href="https://www.facebook.com/marian.sykora.75/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   className="img-fluid mx-auto d-block rounded-3"
@@ -49,6 +55,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+        <div  className="audio-player">
+        <AudioPlayer/>
+        </div>
+
     </div>
   )
 }

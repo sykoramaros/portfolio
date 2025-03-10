@@ -35,7 +35,7 @@ const Contact = () => {
     <div>
       <div className="container">
         <h1 className="display-3 mt-5 text-center text-primary text-shadow">
-          <Trans id="contact.h1" />
+          <Trans id="contact.h1"/>
         </h1>
         <div className="row rounded-5 shadow mt-4">
           <div className="col-md-6 my-5 d-flex g-1">
@@ -46,71 +46,71 @@ const Contact = () => {
           <div className="col-md-6 d-flex">
             <div className="mb-3">
               <form
-                className="row g-2 p-3 m-auto"
-                id="contactForm"
-                onSubmit={sendEmail}
-                ref={form}
+                  className="row g-2 p-3 m-auto"
+                  id="contactForm"
+                  onSubmit={sendEmail}
+                  ref={form}
               >
                 <div className="col-sm-12 col-md-6">
                   <input
-                    id="from_name"
-                    name="from_name"
-                    type="text"
-                    className="form-control"
-                    placeholder={i18n._("contact.placeholder.name")}
-                    required
+                      id="from_name"
+                      name="from_name"
+                      type="text"
+                      className="form-control"
+                      placeholder={i18n._("contact.placeholder.name")}
+                      required
                   />
                 </div>
                 <div className="col-sm-12 col-md-6">
                   <input
-                    id="from_email"
-                    name="from_email"
-                    type="email"
-                    className="form-control"
-                    placeholder="Email*"
-                    required
+                      id="from_email"
+                      name="from_email"
+                      type="email"
+                      className="form-control"
+                      placeholder="Email*"
+                      required
                   />
                 </div>
                 <div className="col-sm-12">
                   <input
-                    name="subject"
-                    type="text"
-                    className="form-control"
-                    id="subject"
-                    placeholder="Předmět*"
+                      name="subject"
+                      type="text"
+                      className="form-control"
+                      id="subject"
+                      placeholder="Předmět*"
                   />
                 </div>
 
                 <div className="col-md-12">
                   <textarea
-                    name="message"
-                    id="message"
-                    className="form-control"
-                    rows="5"
-                    placeholder="Vaše zpráva"
-                    required
+                      name="message"
+                      id="message"
+                      className="form-control"
+                      rows="5"
+                      placeholder="Vaše zpráva"
+                      required
                   ></textarea>
                 </div>
                 <div>
                   <button
-                    className="mt-2 py-2 px-3 text-white bg-info rounded-3 border-0"
-                    type="submit"
+                      className="mt-2 py-2 px-3 text-white bg-info rounded-3 border-0"
+                      type="submit"
                   >
-                    <Trans id="contact.button" />
+                    <Trans id="contact.button"/>
                   </button>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <br />
+        <br/>
         <img
-          className="img-fluid opacity-75 mx-auto d-block w-75 mt-5"
-          src={`${process.env.PUBLIC_URL}/img/contact/pencil_paper.png`}
-          alt="Pencil and paper"
+            className="img-fluid opacity-75 mx-auto d-block w-75 mt-5"
+            src={`${process.env.PUBLIC_URL}/img/contact/pencil_paper.png`}
+            alt="Pencil and paper"
         />
       </div>
-      <SentEmailModal show={modalShow} onHide={() => setModalShow(false)} />
+      <SentEmailModal show={modalShow} onHide={() => setModalShow(false)}/>
     </div>
   )
 }

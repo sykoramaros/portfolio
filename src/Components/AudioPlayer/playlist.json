@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Starlings",
+    "image": "/img/songs/happy_flitting.png",
+    "src": "/mp3/starlings.mp3"
+  },
+  {
+    "title": "Bluegrass Mandolin",
+    "image": "/img/songs/happy_mandolin.png",
+    "src": "/mp3/bluegrass_mandolin_instrumental.m4a"
+  },
+  {
+    "title": "Goose Flock",
+    "image": "/img/songs/happy_flitting.png",
+    "src": "/mp3/goose_flock.mp3"
+  }
+]
