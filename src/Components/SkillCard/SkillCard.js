@@ -1,6 +1,5 @@
 import React from "react"
 import { useState } from "react"
-import "./SkillCard.css"
 
 const SkillCard = ({ imageSrc, hoverImageSrc, backText }) => {
   const [isHovered, setIsHovered] = useState(false)

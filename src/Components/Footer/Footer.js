@@ -6,8 +6,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className="footer container-fluid bg-success d-flex align-items-center fixed-bottom p-2"
-        style={{ borderRadius: "20px 20px 0px 0px", zIndex: "999" }}
+        className="footer footer-container container-fluid bg-success  d-flex align-items-center p-2"
       >
         <div className="row w-100 m-auto">
           <div className="col-8 col-md-9 col-lg-9 col-xl-10"></div>
@@ -56,9 +55,8 @@ const Footer = () => {
         </div>
       </div>
         <div  className="audio-player">
-        <AudioPlayer/>
+          <AudioPlayer/>
         </div>
-
     </div>
   )
 }

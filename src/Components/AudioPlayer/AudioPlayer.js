@@ -61,10 +61,11 @@ const AudioPlayer = () => {
     return (
         <div className="rounded-top-5 row d-flex justify-content-center align-items-center shadow px-5 pb-5"
              style={{ width: "350px" , height: "300px", backgroundColor: "#ffaa0090" }}>
-            <a className="fs-1 text-decoration-none text-primary text-center"
-               style={{ position: "absolute", top: "-10px", right: "0" }}
-               type="button"
-               rel="noopener noreferrer" >▾</a>
+            <hr className="border-4 border-dark w-25 mt-3"/>
+            {/*<a className="fs-1 text-decoration-none text-primary text-center"*/}
+            {/*   style={{ position: "absolute", top: "-10px", right: "0" }}*/}
+            {/*   type="button"*/}
+            {/*   rel="noopener noreferrer" >▾</a>*/}
             <h3 className="col-12 text-center fs-6 text-primary text-uppercase fw-bold mt-5">{playlist[currentSong].title}</h3>
             <div className="col-12 text-center">
             <img src={`${process.env.PUBLIC_URL}${playlist[currentSong].image}`} alt="Album cover" height={"95px"}/>

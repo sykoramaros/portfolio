@@ -1,8 +1,25 @@
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    z-index: 2;
+}
+
+@media (max-width: 743px) {
+    .footer-container {
+        position: unset;
+    }
+    .audio-player {
+        visibility: hidden;
+    }
+}
+
 .audio-player {
     position: fixed;
     bottom: -190px;
     left: 50px;
-    z-index: 3;
+    z-index: 1;
     transform: scale(1);
     transition: all 0.7s ease-in-out;
 }
