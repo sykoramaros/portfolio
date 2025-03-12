@@ -32,21 +32,21 @@
 
 .github-sticker {
   /*filter: drop-shadow(-2px -2px 7px #5b5b5b);*/
-  opacity: 0.95;
-  width: 100px;
+  opacity: 0.75;
+  width: 75px;
   height: auto;
   transform: rotate(5deg);
   position: absolute;
   bottom: -20px;
-  right: -20px;
+  right: -15px;
   z-index: 1;
   transform-origin: bottom right;
   transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .github-sticker {
-    width: 120px;
+    width: 90px;
   }
 }
 

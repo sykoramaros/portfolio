@@ -27,7 +27,7 @@ const Projects = () => {
       : csBackendProjects
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <h1 className="display-3 mt-5 text-center text-primary text-shadow">
         <Trans id="projects.h1" />
       </h1>
@@ -68,7 +68,7 @@ const Projects = () => {
       </div>
       <hr className="w-75 mx-auto mt-4 border-muted" />
       <br />
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mx-1 mx-sm-2 mx-md-4">
         {(isFrontendListVisible
           ? frontendProjectsData
           : backendProjectsData
