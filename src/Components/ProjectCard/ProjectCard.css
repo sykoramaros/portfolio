@@ -31,7 +31,7 @@
 }
 
 .github-sticker {
-  filter: drop-shadow(-2px -2px 7px #5b5b5b);
+  /*filter: drop-shadow(-2px -2px 7px #5b5b5b);*/
   opacity: 0.95;
   width: 100px;
   height: auto;

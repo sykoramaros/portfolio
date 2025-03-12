@@ -21,17 +21,17 @@ const ProjectCard = ({
           rel="noreferrer noopener"
         >
           <div className="card h-100" >
-            <img
-              className="img-fluid top-paper-tape"
-              src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}
-              alt="Paper tape"
-            />
+            {/*<img*/}
+            {/*  className="img-fluid top-paper-tape"*/}
+            {/*  src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}*/}
+            {/*  alt="Paper tape"*/}
+            {/*/>*/}
 
-            <img
-              className="img-fluid bottom-paper-tape"
-              src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}
-              alt="Paper tape"
-            />
+            {/*<img*/}
+            {/*  className="img-fluid bottom-paper-tape"*/}
+            {/*  src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}*/}
+            {/*  alt="Paper tape"*/}
+            {/*/>*/}
 
             <img
               src={`${process.env.PUBLIC_URL}${image}`}
