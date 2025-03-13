@@ -1,5 +1,10 @@
 [
   {
+    "imageSrc": "/img/skills/classics/Ms.png",
+    "hoverImageSrc": "/img/skills/blackwhite/Ms.png",
+    "backText": "MsSQL"
+  },
+  {
     "imageSrc": "/img/skills/classics/Ma.png",
     "hoverImageSrc": "/img/skills/blackwhite/Ma.png",
     "backText": "MariaDB"

@@ -3,7 +3,7 @@
   height: auto;
   filter: drop-shadow(1px 0px 5px grey);
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: -40px;
   left: 50%;
   transform: translateX(-50%);
