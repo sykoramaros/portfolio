@@ -59,8 +59,8 @@ const AudioPlayer = () => {
     };
 
     return (
-        <div className="rounded-top-5 row d-flex justify-content-center align-items-center shadow px-5 pb-5"
-             style={{ width: "350px" , height: "300px", backgroundColor: "rgba(255,170,0,0.87)" }}>
+        <div className="rounded-top-5 row d-flex justify-content-center align-items-center shadow"
+             style={{ width: "100%" , height: "100%" }}>
             <hr className="border-4 border-dark w-25 mt-3"/>
             {/*<a className="fs-1 text-decoration-none text-primary text-center"*/}
             {/*   style={{ position: "absolute", top: "-10px", right: "0" }}*/}
@@ -70,8 +70,8 @@ const AudioPlayer = () => {
             <div className="col-12 text-center">
             <img src={`${process.env.PUBLIC_URL}${playlist[currentSong].image}`} alt="Album cover" height={"95px"}/>
             </div>
-            <hr className="col-12 border-1 border-secondary mt-3"/>
-            <div className="col-12 text-center d-none">
+            <hr className="border-1 border-secondary mt-3"/>
+            <div className="col-12 text-center d-none" >
             <ReactAudioPlayer
                 ref={audioRef}
                 src={`${process.env.PUBLIC_URL}${playlist[currentSong].src}`}
@@ -83,14 +83,56 @@ const AudioPlayer = () => {
                 className="w-50 border border-primary"
             />
             </div>
-            <div className="col-4 text-center">
-            <a className="fs-1 text-decoration-none" onClick={prevSong} type="button" rel="noopener noreferrer">⏪</a>
+            <div className="row row-cols-3 mb-5">
+            <div className="text-center">
+            <a
+                className="fs-1 text-decoration-none"
+                onClick={prevSong}
+                type="button"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src={`${process.env.PUBLIC_URL}/img/audio_player/previous.svg`}
+                    alt="Previous song"
+                    height={"40px"}
+                />
+            </a>
             </div>
-            <div className="col-4 text-center">
-            <a className="fs-1 text-decoration-none" onClick={togglePlayPause} type="button" rel="noopener noreferrer">{isPlaying ? "⏸️" : "▶️"}</a>
+            <div className="text-center">
+            <a
+                className="fs-1 text-decoration-none"
+                onClick={togglePlayPause}
+                type="button"
+                rel="noopener noreferrer"
+            >
+                {isPlaying
+                    ?
+                    <img
+                        src={`${process.env.PUBLIC_URL}/img/audio_player/pause.svg`}
+                        alt="Pause"
+                        height={"40px"}
+                    />
+                    :
+                    <img
+                        src={`${process.env.PUBLIC_URL}/img/audio_player/play.svg`}
+                        alt="Play"
+                        height={"40px"}
+                    />}
+            </a>
             </div>
-            <div className="col-4 text-center">
-            <a className="fs-1 text-decoration-none" onClick={nextSong} type="button" rel="noopener noreferrer">⏩</a>
+            <div className="text-center">
+            <a
+                className="fs-1 text-decoration-none"
+                onClick={nextSong}
+                type="button"
+                rel="noopener noreferrer">
+                <img
+                    src={`${process.env.PUBLIC_URL}/img/audio_player/next.svg`}
+                    alt="Next song"
+                    height={"40px"}
+                />
+            </a>
+            </div>
             </div>
         </div>
     )

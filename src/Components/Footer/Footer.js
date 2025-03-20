@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className="footer footer-container container-fluid bg-success  d-flex align-items-center p-2"
+        className="footer footer-container container-fluid bg-success d-flex align-items-center p-2 shadow-lg"
       >
         <div className="w-100">
           {/*<div className="col-8 col-md-9 col-lg-9 col-xl-10"></div>*/}
@@ -37,7 +37,7 @@ const Footer = () => {
                 />
               </a>
             </div>
-            <div className="">
+            <div>
               <a
                 href="https://www.facebook.com/marian.sykora.75/"
                 target="_blank"
@@ -54,8 +54,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-        <div  className="audio-player">
-          <AudioPlayer/>
+        <div  className="audio-player rounded-top-5">
+          <AudioPlayer />
         </div>
     </div>
   )

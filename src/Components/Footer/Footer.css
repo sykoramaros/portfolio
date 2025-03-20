@@ -17,19 +17,32 @@
 }
 
 .audio-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
     position: fixed;
-    bottom: -190px;
+    bottom: -230px;
     left: 50px;
     z-index: 1;
     transform: scale(1);
     transition: all 0.7s ease-in-out;
+    background-image: linear-gradient(
+            85deg,
+            #ffffff -100%,
+            rgba(148, 170, 99, 0.91) 20%,
+            #FFAA00DF 100%
+    );
+    rotate: 2deg;
 }
 
 .audio-player:hover {
-    bottom: 60px;
+    bottom: 40px;
     left: 50px;
     cursor: pointer;
     transform: scale(1.03);
     transition: all 0.7s ease-in-out;
+    border: 3px solid #5D6B48BE;
 }
 
