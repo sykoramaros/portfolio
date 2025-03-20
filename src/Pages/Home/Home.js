@@ -40,7 +40,7 @@ const Home = () => {
                   onMouseEnter={handleSvgDownloadHover}
                   onMouseLeave={handleSvgDownloadLeave}
                   download
-              >Download CV{" "}
+              ><Trans id="home.download">download</Trans>{" "}
                 <img
                     className="text-danger"
                     src={`${process.env.PUBLIC_URL}/img/home/${svgDownloadHovered}`}
