@@ -1,8 +1,21 @@
 import React from "react"
+import { useState } from "react";
 import { Trans } from "@lingui/react"
+import "./Home.css"
 import TypedTextSkills from "../../Components/TypedText/TypedTextSkills"
 
 const Home = () => {
+  const [svgDownloadHovered, setSvgDownloadHovered] = useState("download_white.svg");
+
+  const handleSvgDownloadHover = () => {
+    setSvgDownloadHovered("download_info.svg");
+  };
+
+  const handleSvgDownloadLeave = () => {
+    setSvgDownloadHovered("download_white.svg");
+  };
+
+
   return (
     <div>
       <div className="container">
@@ -20,6 +33,22 @@ const Home = () => {
             <p className="fs-1 text-center">
               <TypedTextSkills />
             </p>
+            <div className="d-flex justify-content-center position-relative">
+              <a
+                  className="download-button btn button-info fs-5 rounded-4 w-auto px-4 mt-4"
+                  href={`${process.env.PUBLIC_URL}/documents/marian_sykora_cv_2025_3.pdf`}
+                  onMouseEnter={handleSvgDownloadHover}
+                  onMouseLeave={handleSvgDownloadLeave}
+                  download
+              >Download CV{" "}
+                <img
+                    className="text-danger"
+                    src={`${process.env.PUBLIC_URL}/img/home/${svgDownloadHovered}`}
+                    width="30px"
+                    alt="Download CV"
+                />
+              </a>
+            </div>
             <p className="fs-3 text-center mt-5">
               <Trans id="home.p1a">p1a</Trans>
               <br />
