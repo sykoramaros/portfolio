@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className="footer footer-container container-fluid bg-success d-flex align-items-center p-2 shadow-lg"
+        className="footer footer-container container-fluid d-flex align-items-center p-2 shadow-lg"
       >
         <div className="w-100">
           {/*<div className="col-8 col-md-9 col-lg-9 col-xl-10"></div>*/}

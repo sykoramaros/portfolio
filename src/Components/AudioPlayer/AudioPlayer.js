@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useRef } from "react";
 import ReactAudioPlayer from "react-audio-player";
+import "./AudioPlayer.css";
 import playlist from "./playlist.json"
 
 const AudioPlayer = () => {
@@ -61,16 +62,16 @@ const AudioPlayer = () => {
     return (
         <div className="rounded-top-5 row d-flex justify-content-center align-items-center shadow"
              style={{ width: "100%" , height: "100%" }}>
-            <hr className="border-4 border-dark w-25 mt-3"/>
+            <hr className="top-line border-4 border-dark w-25 mt-3"/>
             {/*<a className="fs-1 text-decoration-none text-primary text-center"*/}
             {/*   style={{ position: "absolute", top: "-10px", right: "0" }}*/}
             {/*   type="button"*/}
             {/*   rel="noopener noreferrer" >▾</a>*/}
             <h3 className="col-12 text-center fs-6 text-white text-uppercase fw-lighter">{playlist[currentSong].title}</h3>
-            <div className="col-12 text-center">
-            <img src={`${process.env.PUBLIC_URL}${playlist[currentSong].image}`} alt="Album cover" height={"95px"}/>
+            <div className=" col-12 text-center">
+            <img className="img-container" src={`${process.env.PUBLIC_URL}${playlist[currentSong].image}`} alt="Album cover" height={"95px"}/>
             </div>
-            <hr className="border-1 border-secondary mt-3"/>
+            <hr className="audio-player-line border-1 border-white mt-3"/>
             <div className="col-12 text-center d-none" >
             <ReactAudioPlayer
                 ref={audioRef}

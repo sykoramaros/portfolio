@@ -57,7 +57,7 @@ i18n.load("cs", csBackendProjects)
 i18n.load("mn", mnBackendProjects)
 i18n.activate("en")
 
-console.log(i18n.language)
+// console.log(i18n.language)
 
 const App = () => {
   return (

@@ -1,0 +1,8 @@
+.img-container {
+    box-shadow: 0 0 15px #ffffff;
+    border-radius: 50%;
+}
+
+.audio-player-line {
+    box-shadow: 0 2px 15px #ffffff;
+}

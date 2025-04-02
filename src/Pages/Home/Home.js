@@ -15,7 +15,6 @@ const Home = () => {
     setSvgDownloadHovered("download_white.svg");
   };
 
-
   return (
     <div>
       <div className="container">
