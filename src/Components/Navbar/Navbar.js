@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="container">
         <nav
           ref={navRef}
-          className="nav-container navbar navbar-expand-lg fixed-top bg-body-tertiary mt-3 mx-3 mx-sm-5 shadow-sm"
+          className="nav-container navbar navbar-expand-lg fixed-top mt-3 mx-3 mx-sm-5 shadow-sm border border-1 border-opacity-10 border-black"
         >
           <div className="container-fluid">
             <Link className="navbar-brand fs-1 text-secondary" to={"/"}>

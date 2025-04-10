@@ -7,9 +7,10 @@
     max-height: 75px;
     background-image: linear-gradient(
             to right,
-            #ffaa00 -200%,
-            #94aa63 50%
+            #FFAA00D6 -200%,
+            #94AA63F4 50%
     );
+    box-shadow: 0 -4px 24px #0000004C;
 }
 
 @media (max-width: 743px) {
