@@ -16,59 +16,11 @@
     "githubLink": "https://github.com/sykoramaros/wildlife-reserve-webapi-csharp"
   },
   {
-    "webLink": "http://weather.unaux.com/",
-    "image": "/img/projects/projects/backend/weather_react_java.jpeg",
-    "title": "Цаг агаар🌤️ (Түр хугацаагаар зогсоосон backend хостинг)",
-    "text": "Дэлхийн янз бүрийн хэсгүүдийн цаг агаарыг харуулах вэб програм. Backend нь weatherapi.com-той холбогдсон.",
-    "technologies": "Bootstrap, React, Java Spring, weatherapi API, Swagger UI",
-    "githubLink": "https://github.com/sykoramaros/weatherapp-react"
-  },
-  {
     "webLink": "https://school-webapp-marosh.runasp.net",
     "image": "/img/projects/projects/backend/school_razor_csharp.jpeg",
     "title": "Сургууль",
     "text": "Оюутнуудын хичээлийн бүртгэл ба үнэлгээг хийх вэб програм.",
     "technologies": "Bootstrap, Razor, ASP.NET Core (Identity)",
     "githubLink": "https://github.com/sykoramaros/magistri-razor-csharp"
-  },
-  {
-    "webLink": "http://schoolapp.unaux.com",
-    "image": "/img/projects/projects/backend/school_react_java.jpeg",
-    "title": "Сургууль",
-    "text": "Оюутнуудын хичээлийн бүртгэл ба үнэлгээг хийх вэб програм.",
-    "technologies": "Bootstrap, React, Java Spring",
-    "githubLink": "https://github.com/sykoramaros/magistri-react"
-  },
-  {
-    "webLink": "https://magistri-spring.azurewebsites.net/swagger-ui/index.html",
-    "image": "/img/projects/projects/backend/school_swagger_ui_java.jpeg",
-    "title": "Сургууль (Swagger_UI)",
-    "text": "Сургуулийн backend Java програмын endpoint-уудыг Swagger_UI хэлбэрээр харуулсан.",
-    "technologies": "Swagger_UI, Java Spring",
-    "githubLink": "https://github.com/sykoramaros/magistri-java"
-  },
-  {
-    "webLink": "https://waeatherapp-java-spring.up.railway.app/swagger-ui/index.html",
-    "image": "/img/projects/projects/backend/weather_swagger_ui_java.jpeg",
-    "title": "Цаг агаар (Swagger_UI)",
-    "text": "Дэлхийн янз бүрийн хэсгүүдийн цаг агаарын endpoint-уудыг Swagger_UI-д харуулсан. Backend нь weatherapi.com-той холбогдсон.",
-    "technologies": "Swagger_UI, Java Spring",
-    "githubLink": "https://github.com/sykoramaros/weatherapp-java-spring"
-  },
-  {
-    "webLink": "http://booklist.unaux.com",
-    "image": "/img/projects/projects/frontend/books.jpeg",
-    "title": "Номнууд",
-    "text": "PHP ба MySQL ашиглан ном бүртгэлийн систем.",
-    "technologies": "Bootstrap, PHP, MySQL",
-    "githubLink": "https://github.com/sykoramaros/books-php"
-  },
-  {
-    "webLink": "http://carsdb.unaux.com",
-    "image": "/img/projects/projects/frontend/car_garage.jpeg",
-    "title": "Гараж",
-    "text": "PHP ба MySQL-т холбогдсон автомашины жагсаалтыг удирдах систем.",
-    "technologies": "Bootstrap, PHP, MySQL",
-    "githubLink": "https://github.com/sykoramaros/cars-web-php"
   }
 ]

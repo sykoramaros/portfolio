@@ -1,33 +1,25 @@
 [
   {
-    "webLink": "https://sykoramaros.github.io/tzb/",
-    "image": "/img/projects/projects/frontend/tzb.png",
-    "title": "TZB Orlová",
-    "text": "Koncept vývoje prezentační webové stránky pro firmu TZB Orlová s.r.o.",
-    "technologies": "React, Bootstrap",
-    "githubLink": "https://github.com/sykoramaros/tzb"
-  },
-  {
     "webLink": "https://sykoramaros.github.io/beekeeper-web/",
     "image": "/img/projects/projects/frontend/beekeeper.jpeg",
-    "title": "Včelařství",
-    "text": "Informační statická webová stránka včelaře.",
+    "title": "Beekeeper",
+    "text": "Informational static webpage of a beekeeper.",
     "technologies": "Bootstrap",
     "githubLink": "https://github.com/sykoramaros/beekeeper-web"
   },
   {
     "webLink": "https://sykoramaros.github.io/dentist/",
     "image": "/img/projects/projects/frontend/dentist.jpg",
-    "title": "Zubař",
-    "text": "Statické webové stránky se základními informacemi zubařství. S možností rozšíření o backend web API a evidenci pacientů.",
+    "title": "Dentist",
+    "text": "Static website with basic information about a dental practice. Can be expanded with backend web API and patient management.",
     "technologies": "React, Bootstrap",
     "githubLink": "https://github.com/sykoramaros/dentist"
   },
   {
     "webLink": "https://sykoramaros.github.io/time_records_react/",
     "image": "/img/projects/projects/frontend/time_records.jpg",
-    "title": "Časové záznamy",
-    "text": "Frontend web v Reactu připojený k C# backendu TimeRecords web API, s JWT tokeny uloženými v localStorage a obsahem zobrazeným na základě uživatelských rolí. Také komponenta ReactDatePicker je stylována podle mého vlastního návrhu.",
+    "title": "Time Records",
+    "text": "Frontend React web connected to a C# backend TimeRecords web API, with JWT tokens stored in localStorage and content displayed based on user roles. Also, the ReactDatePicker component is styled based on my custom design.",
     "technologies": "React, Bootstrap",
     "githubLink": "https://github.com/sykoramaros/time_records_react"
   },
@@ -35,23 +27,31 @@
     "webLink": "https://sykoramaros.github.io/wildlife-reserve-react/#/login",
     "image": "/img/projects/projects/frontend/wildlife_reserve_react.jpg",
     "title": "Wildlife Reserve",
-    "text": "Frontend React web napojeny na backend C# web api a nastaveno předávání Jwt tokenů do localStorage a zobrazování obsahu podle rolí.",
+    "text": "Frontend React web connected to a C# backend web API with JWT tokens passed to localStorage and content displayed based on roles.",
     "technologies": "React, Bootstrap",
     "githubLink": "https://github.com/sykoramaros/wildlife-reserve-react"
   },
   {
     "webLink": "https://sykoramaros.github.io/staff-form-web/",
     "image": "/img/projects/projects/frontend/it_manager.jpeg",
-    "title": "IT Manažer",
-    "text": "Kontrola kapacity IT pracovníků (uložených lokálně) a nových projektů.",
+    "title": "IT Manager",
+    "text": "Capacity management of IT workers (stored locally) and new projects.",
     "technologies": "Bootstrap, React",
     "githubLink": "https://github.com/sykoramaros/staff-form-web"
   },
   {
+    "webLink": "https://sykoramaros.github.io/book-flights-web/",
+    "image": "/img/projects/projects/frontend/fly_tickets.jpeg",
+    "title": "Flight Tickets",
+    "text": "Form for booking flight tickets.",
+    "technologies": "Bootstrap, JavaScript",
+    "githubLink": "https://github.com/sykoramaros/book-flights-web"
+  },
+  {
     "webLink": "https://sykoramaros.github.io/saihan-hotool-web/",
     "image": "/img/projects/projects/frontend/saihan_hotool.jpeg",
-    "title": "Сайханы хөтөл",
-    "text": "Statická webová informáční stránka o krásném říčním údolí v mongolském Сайхананы хөтөл",
+    "title": "Saihan Hotol",
+    "text": "Static informational webpage about a beautiful river valley in Mongolian Saihan Hotol.",
     "technologies": "Bootstrap",
     "githubLink": "https://github.com/sykoramaros/saihan-hotool-web"
   }

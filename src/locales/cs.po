@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-04-14 16:49+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: cs\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: src/Pages/Try/Try.js:22
+#: src/Pages/Projects/Projects.js:32
+msgid "projects.h1"
+msgstr "projects.h1"
+
+#. js-lingui-explicit-id
+#: src/Pages/Skills/Skills.js:15
+msgid "skills.h1"
+msgstr "skills.h1"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:24
+msgid "home.welcome"
+msgstr "home.welcome"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:27
+msgid "home.name"
+msgstr "home.name"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:30
+msgid "home.junior"
+msgstr "home.junior"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:42
+msgid "home.download"
+msgstr "home.download"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:52
+msgid "home.p1a"
+msgstr "home.p1a"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:54
+msgid "home.p1b"
+msgstr "home.p1b"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:57
+msgid "home.span1"
+msgstr "home.span1"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:76
+msgid "home.p2a"
+msgstr "home.p2a"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:78
+msgid "home.span2a"
+msgstr "home.span2a"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:80
+msgid "home.p2b"
+msgstr "home.p2b"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:83
+msgid "home.span2b"
+msgstr "home.span2b"
+
+#. js-lingui-explicit-id
+#: src/Pages/Home/Home.js:85
+msgid "home.p2c"
+msgstr "home.p2c"
+
+#. js-lingui-explicit-id
+#: src/Pages/Hobbies/Hobbies.js:22
+msgid "hobbies.h1"
+msgstr "hobbies.h1"
+
+#. js-lingui-explicit-id
+#: src/Pages/Contact/Contact.js:39
+msgid "contact.h1"
+msgstr "contact.h1"
+
+#. js-lingui-explicit-id
+#: src/Pages/Contact/Contact.js:44
+msgid "contact.p1"
+msgstr "contact.p1"
+
+#. js-lingui-explicit-id
+#: src/Pages/Contact/Contact.js:61
+msgid "contact.placeholder.name"
+msgstr "contact.placeholder.name"
+
+#. js-lingui-explicit-id
+#: src/Pages/Contact/Contact.js:100
+msgid "contact.button"
+msgstr "contact.button"
+
+#. js-lingui-explicit-id
+#: src/Components/ProjectCard/ProjectCard.js:46
+msgid "project_card.p1"
+msgstr "project_card.p1"
+
+#. js-lingui-explicit-id
+#: src/Components/Navbar/Navbar.js:133
+msgid "navbar.home"
+msgstr "navbar.home"
+
+#. js-lingui-explicit-id
+#: src/Components/Navbar/Navbar.js:150
+msgid "navbar.skills"
+msgstr "navbar.skills"
+
+#. js-lingui-explicit-id
+#: src/Components/Navbar/Navbar.js:162
+msgid "navbar.projects"
+msgstr "navbar.projects"
+
+#. js-lingui-explicit-id
+#: src/Components/Navbar/Navbar.js:174
+msgid "navbar.hobbies"
+msgstr "navbar.hobbies"
+
+#. js-lingui-explicit-id
+#: src/Components/Navbar/Navbar.js:186
+msgid "navbar.contact"
+msgstr "navbar.contact"

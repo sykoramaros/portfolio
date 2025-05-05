@@ -1,0 +1,74 @@
+[
+  {
+    "webLink": "https://recordsapi.runasp.net/swagger/index.html",
+    "image": "/img/projects/projects/backend/time_records_csharp.jpg",
+    "title": "Time Records",
+    "text": "Backend C# WEB API utilizing MariaDB database. Endpoints connected to the React frontend (see Frontend portfolio)",
+    "technologies": "C# ASP.NET Core, MariaDB, Swagger UI",
+    "githubLink": "https://github.com/sykoramaros/Time_Records"
+  },
+  {
+    "webLink": "https://wildlife-reserve.runasp.net/swagger/index.html",
+    "image": "/img/projects/projects/backend/wildlife_reserve_swagger_csharp.jpg",
+    "title": "Wildlife Reserve",
+    "text": "Backend C# WEB API utilizing MariaDB database and connected to the external iNaturalist WEB API. Endpoints integrated with React frontend (see Frontend portfolio).",
+    "technologies": "C# ASP.NET Core, iNaturalist API, MariaDB, Swagger UI",
+    "githubLink": "https://github.com/sykoramaros/wildlife-reserve-webapi-csharp"
+  },
+  {
+    "webLink": "http://weather.unaux.com/",
+    "image": "/img/projects/projects/backend/weather_react_java.jpeg",
+    "title": "Weather🌤️ (Temporarily suspended backend hosting)",
+    "text": "A web application displaying the weather of various parts of the world. Backend connected to weatherapi.com.",
+    "technologies": "Bootstrap, React, Java Spring, weatherapi API, Swagger UI",
+    "githubLink": "https://github.com/sykoramaros/weatherapp-react"
+  },
+  {
+    "webLink": "https://school-webapp-marosh.runasp.net",
+    "image": "/img/projects/projects/backend/school_razor_csharp.jpeg",
+    "title": "School",
+    "text": "A web application for tracking and grading students based on subjects.",
+    "technologies": "Bootstrap, Razor, ASP.NET Core (Identity)",
+    "githubLink": "https://github.com/sykoramaros/magistri-razor-csharp"
+  },
+  {
+    "webLink": "http://schoolapp.unaux.com",
+    "image": "/img/projects/projects/backend/school_react_java.jpeg",
+    "title": "School",
+    "text": "A web application for tracking and grading students based on subjects.",
+    "technologies": "Bootstrap, React, Java Spring",
+    "githubLink": "https://github.com/sykoramaros/magistri-react"
+  },
+  {
+    "webLink": "https://magistri-spring.azurewebsites.net/swagger-ui/index.html",
+    "image": "/img/projects/projects/backend/school_swagger_ui_java.jpeg",
+    "title": "School (Swagger_UI)",
+    "text": "Endpoints of the backend Java application 'School' displayed via Swagger_UI.",
+    "technologies": "Swagger_UI, Java Spring",
+    "githubLink": "https://github.com/sykoramaros/magistri-java"
+  },
+  {
+    "webLink": "https://waeatherapp-java-spring.up.railway.app/swagger-ui/index.html",
+    "image": "/img/projects/projects/backend/weather_swagger_ui_java.jpeg",
+    "title": "Weather (Swagger_UI)",
+    "text": "Endpoints for weather data of various parts of the world displayed in Swagger_UI. Backend connected to weatherapi.com.",
+    "technologies": "Swagger_UI, Java Spring",
+    "githubLink": "https://github.com/sykoramaros/weatherapp-java-spring"
+  },
+  {
+    "webLink": "http://booklist.unaux.com",
+    "image": "/img/projects/projects/frontend/books.jpeg",
+    "title": "Books",
+    "text": "Book tracking system using PHP and MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/books-php"
+  },
+  {
+    "webLink": "http://carsdb.unaux.com",
+    "image": "/img/projects/projects/frontend/car_garage.jpeg",
+    "title": "Garage",
+    "text": "Car list managed using PHP connected to MySQL.",
+    "technologies": "Bootstrap, PHP, MySQL",
+    "githubLink": "https://github.com/sykoramaros/cars-web-php"
+  }
+]

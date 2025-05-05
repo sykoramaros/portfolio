@@ -1,13 +1,5 @@
 [
   {
-    "webLink": "https://sykoramaros.github.io/tzb/",
-    "image": "/img/projects/projects/frontend/tzb.png",
-    "title": "TZB Orlová",
-    "text": "TZB Orlová s.r.o. компанийн танилцуулгын вэбсайтын хөгжүүлэлтийн концепц.",
-    "technologies": "React, Bootstrap",
-    "githubLink": "https://github.com/sykoramaros/tzb"
-  },
-  {
     "webLink": "https://sykoramaros.github.io/beekeeper-web/",
     "image": "/img/projects/projects/frontend/beekeeper.jpeg",
     "title": "Зөгийчин",
@@ -46,6 +38,14 @@
     "text": "Локал хадгалсан IT ажилчдын багтаамж болон шинэ төслүүдийг хянах систем.",
     "technologies": "Bootstrap, React",
     "githubLink": "https://github.com/sykoramaros/staff-form-web"
+  },
+  {
+    "webLink": "https://sykoramaros.github.io/book-flights-web/",
+    "image": "/img/projects/projects/frontend/fly_tickets.jpeg",
+    "title": "Нислэгийн тасалбар",
+    "text": "Нислэгийн тасалбар захиалах маягт.",
+    "technologies": "Bootstrap, JavaScript",
+    "githubLink": "https://github.com/sykoramaros/book-flights-web"
   },
   {
     "webLink": "https://sykoramaros.github.io/saihan-hotool-web/",

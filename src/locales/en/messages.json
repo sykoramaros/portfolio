@@ -1,0 +1,281 @@
+{
+  "projects.h1": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Try/Try.js",
+        22
+      ],
+      [
+        "src/Pages/Projects/Projects.js",
+        32
+      ]
+    ],
+    "translation": ""
+  },
+  "skills.h1": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Skills/Skills.js",
+        15
+      ]
+    ],
+    "translation": ""
+  },
+  "home.welcome": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        24
+      ]
+    ],
+    "translation": ""
+  },
+  "home.name": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        27
+      ]
+    ],
+    "translation": ""
+  },
+  "home.junior": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        30
+      ]
+    ],
+    "translation": ""
+  },
+  "home.download": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        42
+      ]
+    ],
+    "translation": ""
+  },
+  "home.p1a": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        52
+      ]
+    ],
+    "translation": ""
+  },
+  "home.p1b": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        54
+      ]
+    ],
+    "translation": ""
+  },
+  "home.span1": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        57
+      ]
+    ],
+    "translation": ""
+  },
+  "home.p2a": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        76
+      ]
+    ],
+    "translation": ""
+  },
+  "home.span2a": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        78
+      ]
+    ],
+    "translation": ""
+  },
+  "home.p2b": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        80
+      ]
+    ],
+    "translation": ""
+  },
+  "home.span2b": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        83
+      ]
+    ],
+    "translation": ""
+  },
+  "home.p2c": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Home/Home.js",
+        85
+      ]
+    ],
+    "translation": ""
+  },
+  "hobbies.h1": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Hobbies/Hobbies.js",
+        22
+      ]
+    ],
+    "translation": ""
+  },
+  "contact.h1": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Contact/Contact.js",
+        39
+      ]
+    ],
+    "translation": ""
+  },
+  "contact.p1": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Contact/Contact.js",
+        44
+      ]
+    ],
+    "translation": ""
+  },
+  "contact.placeholder.name": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Contact/Contact.js",
+        61
+      ]
+    ],
+    "translation": ""
+  },
+  "contact.button": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Pages/Contact/Contact.js",
+        100
+      ]
+    ],
+    "translation": ""
+  },
+  "project_card.p1": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Components/ProjectCard/ProjectCard.js",
+        46
+      ]
+    ],
+    "translation": ""
+  },
+  "navbar.home": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Components/Navbar/Navbar.js",
+        133
+      ]
+    ],
+    "translation": ""
+  },
+  "navbar.skills": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Components/Navbar/Navbar.js",
+        150
+      ]
+    ],
+    "translation": ""
+  },
+  "navbar.projects": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Components/Navbar/Navbar.js",
+        162
+      ]
+    ],
+    "translation": ""
+  },
+  "navbar.hobbies": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Components/Navbar/Navbar.js",
+        174
+      ]
+    ],
+    "translation": ""
+  },
+  "navbar.contact": {
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/Components/Navbar/Navbar.js",
+        186
+      ]
+    ],
+    "translation": ""
+  }
+}
