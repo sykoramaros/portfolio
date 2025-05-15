@@ -1,7 +1,15 @@
 import React, { useState } from "react"
 import "./HobbyCard.css"
 
-const HobbyCard = ({ rotation, image, title, backText, link, textLink }) => {
+const HobbyCard = ({
+  rotation,
+  image,
+  title,
+  backText,
+  link,
+  textLink,
+  imgAlt,
+}) => {
   const [flipped, setFlipped] = useState(false)
 
   // Funkce pro přepnutí stavu karty (flip)
@@ -23,9 +31,10 @@ const HobbyCard = ({ rotation, image, title, backText, link, textLink }) => {
           >
             <div className="card-front">
               <img
-                src={`${process.env.PUBLIC_URL}${image}`}
+                // src={`${process.env.PUBLIC_URL}${image}`}
+                src={image}
                 className="card-img-top"
-                alt="..."
+                alt={imgAlt}
               />{" "}
               {/* opravené class na className */}
             </div>

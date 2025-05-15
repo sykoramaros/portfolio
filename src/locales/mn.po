@@ -14,14 +14,19 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: src/Pages/Try/Try.js:22
-#: src/Pages/Projects/Projects.js:32
-msgid "projects.h1"
+#: src/Pages/Try/Try.js:62
+#: src/Pages/Hobbies/Hobbies.js:22
+msgid "hobbies.h1"
 msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Pages/Skills/Skills.js:15
 msgid "skills.h1"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/Pages/Projects/Projects.js:32
+msgid "projects.h1"
 msgstr ""
 
 #. js-lingui-explicit-id
@@ -82,11 +87,6 @@ msgstr ""
 #. js-lingui-explicit-id
 #: src/Pages/Home/Home.js:85
 msgid "home.p2c"
-msgstr ""
-
-#. js-lingui-explicit-id
-#: src/Pages/Hobbies/Hobbies.js:22
-msgid "hobbies.h1"
 msgstr ""
 
 #. js-lingui-explicit-id

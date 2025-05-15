@@ -6,14 +6,18 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 import "./App.css"
 
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client"
+import { BaseUrlProvider } from "./context/BaseUrlProvider"
+
 import Layout from "../src/Components/Layout/Layout"
 import Home from "../src/Pages/Home/Home"
 import About from "../src/Pages/About/About"
 import Skills from "../src/Pages/Skills/Skills"
 import Projects from "../src/Pages/Projects/Projects"
-import Hobbies from "../src/Pages/Hobbies/Hobbies"
+import Hobbies from "../src/Pages/Hobbies/Hobbies_strapi"
 import Contact from "../src/Pages/Contact/Contact"
-import Try from "../src/Pages/Try/Try"
+import Try from "./Pages/Try/Try"
+import Test from "./Pages/Try/Test"
 
 import enPages from "./locales/en/pages.json"
 import csPages from "./locales/cs/pages.json"
@@ -80,23 +84,37 @@ i18n.activate("cs")
 
 // console.log(i18n.language)
 
+const client = new ApolloClient({
+  uri: "http://192.168.100.9:1341/graphql",
+  cache: new InMemoryCache(),
+})
+
+const BASE_URL = "http://192.168.100.9:1341"
+
 const App = () => {
   return (
-    <I18nProvider i18n={i18n}>
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/hobbies" element={<Hobbies />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/try" element={<Try />} />
-          </Route>
-        </Routes>
-      </HashRouter>
-    </I18nProvider>
+    <HashRouter>
+      <I18nProvider i18n={i18n}>
+        <ApolloProvider client={client}>
+          <BaseUrlProvider value={BASE_URL}>
+            <div className="App">
+              <Routes>
+                <Route path="/" element={<Layout />}>
+                  <Route index element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/skills" element={<Skills />} />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/hobbies" element={<Hobbies />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/try" element={<Try />} />
+                  <Route path="/test" element={<Test />} />
+                </Route>
+              </Routes>
+            </div>
+          </BaseUrlProvider>
+        </ApolloProvider>
+      </I18nProvider>
+    </HashRouter>
   )
 }
 

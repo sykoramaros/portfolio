@@ -18,5 +18,10 @@
     "imageSrc": "/img/skills/classics/Re.png",
     "hoverImageSrc": "/img/skills/blackwhite/Re.png",
     "backText": "React"
+  },
+  {
+    "imageSrc": "/img/skills/classics/St.png",
+    "hoverImageSrc": "/img/skills/blackwhite/St.png",
+    "backText": "Strapi"
   }
 ]
