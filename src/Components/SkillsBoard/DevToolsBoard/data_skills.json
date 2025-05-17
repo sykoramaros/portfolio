@@ -10,6 +10,11 @@
     "backText": "Docker"
   },
   {
+    "imageSrc": "/img/skills/classics/Cf.png",
+    "hoverImageSrc": "/img/skills/blackwhite/Cf.png",
+    "backText": "Claudflare"
+  },
+  {
     "imageSrc": "/img/skills/classics/Az.png",
     "hoverImageSrc": "/img/skills/blackwhite/Az.png",
     "backText": "Azure"

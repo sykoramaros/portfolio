@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./HobbyCard.css"
 
-const HobbyCard = ({
+const HobbyCardStrapi = ({
   rotation,
   image,
   title,
@@ -31,8 +31,8 @@ const HobbyCard = ({
           >
             <div className="card-front">
               <img
-                src={`${process.env.PUBLIC_URL}${image}`}
-                // src={image}
+                // src={`${process.env.PUBLIC_URL}${image}`}
+                src={image}
                 className="card-img-top"
                 alt={imgAlt}
               />
@@ -66,4 +66,4 @@ const HobbyCard = ({
   )
 }
 
-export default HobbyCard
+export default HobbyCardStrapi

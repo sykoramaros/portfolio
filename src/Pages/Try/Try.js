@@ -7,7 +7,7 @@ import csFrontendProjects from "../../locales/cs/frontend_projects.json"
 import enBackendProjects from "../../locales/en/backend_projects.json"
 import csBackendProjects from "../../locales/cs/backend_projects.json"
 
-import HobbyCard from "../../Components/HobbyCard/HobbyCard"
+import HobbyCardStrapi from "../../Components/HobbyCard/HobbyCardStrapi"
 
 import { useQuery, gql } from "@apollo/client"
 import { useParams, Link } from "react-router-dom"
@@ -64,7 +64,7 @@ const Try = () => {
         <br />
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0 mt-1">
           {data.hobbies.map((inside) => (
-            <HobbyCard
+            <HobbyCardStrapi
               key={inside.documentId}
               rotation={inside.rotation}
               image={`${BASE_URL}${inside.image.url}`}
