@@ -1,6 +1,6 @@
 import React from "react"
 import { Trans, useLingui } from "@lingui/react"
-import HobbyCard from "../../Components/HobbyCard/HobbyCard"
+import HobbyCardStrapi from "../../Components/HobbyCard/HobbyCardStrapi"
 
 import enHobbiesData from "../../locales/en/hobbies.json"
 import csHobbiesData from "../../locales/cs/hobbies.json"
@@ -27,7 +27,7 @@ const HOBBIES = gql`
   }
 `
 
-const Hobbies = () => {
+const HobbiesStrapi = () => {
   const { i18n } = useLingui()
   const currentLanguage = i18n.locale
   const hobbiesData =
@@ -59,7 +59,7 @@ const Hobbies = () => {
       <br />
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0 mt-1">
         {data.hobbies.map((inside) => (
-          <HobbyCard
+          <HobbyCardStrapi
             key={inside.documentId}
             rotation={inside.rotation}
             image={`${BASE_URL}${inside.image.url}`}
@@ -74,4 +74,4 @@ const Hobbies = () => {
   )
 }
 
-export default Hobbies
+export default HobbiesStrapi

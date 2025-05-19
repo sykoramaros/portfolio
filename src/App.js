@@ -19,6 +19,9 @@ import Contact from "../src/Pages/Contact/Contact"
 import Try from "./Pages/Try/Try"
 import Test from "./Pages/Try/Test"
 
+import HobbiesStrapi from "./Pages/Hobbies/HobbiesStrapi"
+import SkillsStrapi from "./Pages/Skills/SkillsStrapi"
+
 import enPages from "./locales/en/pages.json"
 import csPages from "./locales/cs/pages.json"
 import mnPages from "./locales/mn/pages.json"
@@ -85,11 +88,13 @@ i18n.activate("cs")
 // console.log(i18n.language)
 
 const client = new ApolloClient({
-  uri: "http://192.168.100.9:1341/graphql",
+  // uri: "http://192.168.100.9:1341/graphql",
+  uri: "http://strapi.portfolio.marosh.uk/graphql",
   cache: new InMemoryCache(),
 })
 
-const BASE_URL = "http://192.168.100.9:1341"
+// const BASE_URL = "http://192.168.100.9:1341"
+const BASE_URL = "http://strapi.portfolio.marosh.uk"
 
 const App = () => {
   return (
@@ -103,8 +108,10 @@ const App = () => {
                   <Route index element={<Home />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/skills" element={<Skills />} />
+                  <Route path="/skills-strapi" element={<SkillsStrapi />} />
                   <Route path="/projects" element={<Projects />} />
                   <Route path="/hobbies" element={<Hobbies />} />
+                  <Route path="/hobbies-strapi" element={<HobbiesStrapi />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/try" element={<Try />} />
                   <Route path="/test" element={<Test />} />
