@@ -145,7 +145,7 @@ const Navbar = () => {
                       isOpen === "skills" ? "text-warning" : "text-secondary"
                     }`}
                     onClick={() => handleIsOpen("skills")}
-                    to={"/skills-strapi"}
+                    to={"/skills"}
                   >
                     <Trans id="navbar.skills" />
                   </Link>
@@ -169,7 +169,7 @@ const Navbar = () => {
                       isOpen === "hobbies" ? "text-warning" : "text-secondary"
                     }`}
                     onClick={() => handleIsOpen("hobbies")}
-                    to={"/hobbies-strapi"}
+                    to={"/hobbies"}
                   >
                     <Trans id="navbar.hobbies" />
                   </Link>

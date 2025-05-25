@@ -15,12 +15,13 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Pages/Try/Try.js:62
-#: src/Pages/Hobbies/Hobbies_strapi.js:57
+#: src/Pages/Hobbies/HobbiesStrapi.js:57
 #: src/Pages/Hobbies/Hobbies.js:22
 msgid "hobbies.h1"
 msgstr ""
 
 #. js-lingui-explicit-id
+#: src/Pages/Skills/SkillsStrapi.js:15
 #: src/Pages/Skills/Skills.js:15
 msgid "skills.h1"
 msgstr ""

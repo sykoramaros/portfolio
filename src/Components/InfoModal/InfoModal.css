@@ -1,0 +1,21 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00000099;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.modal-box {
+  background: white;
+  max-width: 500px;
+  box-shadow: 0 10px 30px #0000004d;
+  text-align: center;
+  cursor: default;
+}
