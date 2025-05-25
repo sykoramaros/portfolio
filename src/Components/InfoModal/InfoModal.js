@@ -1,12 +1,12 @@
 import React from "react"
 import "./InfoModal.css"
 
-const InfoModal = ({ modalTitle, modalText, onClose }) => {
+const InfoModal = ({ modalTitle, modalText, buttonText, onClose }) => {
   const modalBoxClick = (event) => {
     event.stopPropagation() //zachyti kliknuti a neudela nic
   }
 
-  
+
 
   return (
     <>
@@ -22,7 +22,7 @@ const InfoModal = ({ modalTitle, modalText, onClose }) => {
           <hr className="border border-1 border-secondary" />
           <div className="px-5 pb-3">
             <button className="btn button-secondary px-4" onClick={onClose}>
-              Zavřít
+              {buttonText}
             </button>
           </div>
         </div>

@@ -1,12 +1,23 @@
 import React from "react"
 import { useState, useEffect } from "react"
 import { Outlet } from "react-router-dom"
+import { useQuery, gql } from "@apollo/client"
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
 import InfoModal from "../InfoModal/InfoModal"
 
+const MODAL = gql`
+  query GetModal($documentId: ID!) {
+    infoModal(documentId: $documentId) {
+      modalTitle
+      modalText
+      buttonText
+    }
+  }
+`
+
 const Layout = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
 
   useEffect(() => {
     // Zkontroluj localStorage
@@ -18,9 +29,13 @@ const Layout = () => {
     }
   }, [])
 
-  const modal_title = "Vitam Vas na mem webu"
-  const info_text =
-    "CMS backend funguje na mem domacim serveru, prosim o strpeni, pokud reguje pomaleji☺️"
+  const documentId = "ng3r328ul4gs581tvzgjeg10"
+
+  const { data } = useQuery(MODAL, {
+    variables: { documentId: documentId },
+  })
+
+  console.log(data)
 
   return (
     <>
@@ -39,8 +54,9 @@ const Layout = () => {
       </div>
       {isOpen && (
         <InfoModal
-          modalTitle={modal_title}
-          modalText={info_text}
+          modalTitle={data?.infoModal?.modalTitle || "Loading..."}
+          modalText={data?.infoModal?.modalText || "Loading..."}
+          buttonText={data?.infoModal?.buttonText || "Loading..."}
           onClose={() => setIsOpen(false)}
         />
       )}
