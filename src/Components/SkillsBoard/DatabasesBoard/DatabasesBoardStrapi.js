@@ -3,20 +3,20 @@ import SkillCardStrapi from "../../SkillCard/SkillCardStrapi"
 import "./DatabasesBoard.css"
 
 import { useQuery, gql } from "@apollo/client"
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../../context/BaseUrlProvider"
 
 const SKILLS = gql`
   query GetSkills {
-    skillsBoards {
+    databasesBoard {
       documentId
       SkillCard {
-        backText
-        imageSrc {
+        BackText
+        ClassicImage {
           url
           alternativeText
         }
-        hoverImageSrc {
+        HoverImage {
           url
           alternativeText
         }
@@ -26,11 +26,11 @@ const SKILLS = gql`
 `
 const DatabasesBoardStrapi = () => {
   const BASE_URL = useBaseUrl()
-  const { id } = useParams()
+  const { documentId } = useParams()
 
   const { loading, error, data } = useQuery(SKILLS, {
     variables: {
-      id,
+      documentId,
     },
   })
 
@@ -41,20 +41,20 @@ const DatabasesBoardStrapi = () => {
 
   return (
     <div className="container">
+      {/* <p>Back Text: {data.documentId}</p> */}
       <div
         className="row display-1 text-center border border-warning bg-warning-light  align-items-center m-auto p-4 shadow-sm"
         style={{ transform: "rotate(-1.5deg)" }}
       >
-        {data.skillsBoards[1] &&
-          data.skillsBoards[1].SkillCard.map((card) => (
-            <SkillCardStrapi
-              key={card.id}
-              imageSrc={`${BASE_URL}${card.imageSrc.url}`}
-              hoverImageSrc={`${BASE_URL}${card.hoverImageSrc.url}`}
-              backText={card.backText}
-              alternativeText={card.imageSrc.alternativeText}
-            />
-          ))}
+        {data.databasesBoard.SkillCard.map((card) => (
+          <SkillCardStrapi
+            key={card.id}
+            imageSrc={`${BASE_URL}${card.ClassicImage.url}`}
+            hoverImageSrc={`${BASE_URL}${card.HoverImage.url}`}
+            backText={card.BackText}
+            alternativeText={card.ClassicImage.alternativeText}
+          />
+        ))}
       </div>
     </div>
   )

@@ -3,7 +3,8 @@ import { useState, useEffect } from "react"
 import { Outlet } from "react-router-dom"
 import { useQuery, gql } from "@apollo/client"
 import Navbar from "../Navbar/Navbar"
-import Footer from "../Footer/Footer"
+// import Footer from "../Footer/Footer"
+import FooterStrapi from "../Footer/FooterStrapi"
 import InfoModal from "../InfoModal/InfoModal"
 
 const MODAL = gql`
@@ -17,15 +18,23 @@ const MODAL = gql`
 `
 
 const Layout = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     // Zkontroluj localStorage
-    const modalWasShown = localStorage.getItem("modalShown")
+    // const modalWasShown = localStorage.getItem("modalShown")
+    const modalTimestamp = localStorage.getItem("modalShown")
+    const currentTime = Date.now()
+    const oneHour = 60 * 60 * 1000 // 1 hodina v milisekundách
 
-    if (!modalWasShown) {
+    // if (!modalWasShown) {
+    //   setIsOpen(true) // modal se zobrazí
+    //   localStorage.setItem("modalShown", "true") // označ, že modal už byl zobrazen
+    // }
+
+    if (!modalTimestamp || currentTime - parseInt(modalTimestamp) > oneHour) {
       setIsOpen(true) // modal se zobrazí
-      localStorage.setItem("modalShown", "true") // označ, že modal už byl zobrazen
+      localStorage.setItem("modalShown", currentTime.toString()) // ulož aktuální čas
     }
   }, [])
 
@@ -35,7 +44,7 @@ const Layout = () => {
     variables: { documentId: documentId },
   })
 
-  console.log(data)
+  // console.log(data)
 
   return (
     <>
@@ -50,7 +59,8 @@ const Layout = () => {
           />
           <Outlet />
         </div>
-        <Footer />
+        {/* <Footer /> */}
+        <FooterStrapi />
       </div>
       {isOpen && (
         <InfoModal

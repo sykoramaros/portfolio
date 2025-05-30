@@ -22,6 +22,7 @@ import Test2 from "./Pages/Try/Test2"
 
 import HobbiesStrapi from "./Pages/Hobbies/HobbiesStrapi"
 import SkillsStrapi from "./Pages/Skills/SkillsStrapi"
+import ContactStrapi from "./Pages/Contact/ContactStrapi"
 
 import enPages from "./locales/en/pages.json"
 import csPages from "./locales/cs/pages.json"
@@ -96,7 +97,7 @@ const client = new ApolloClient({
 })
 
 // const BASE_URL = "http://192.168.100.9:1341"
-const BASE_URL = "https://strapi-portfolio.marosh.uk/api"
+const BASE_URL = "https://strapi-portfolio.marosh.uk"
 // const BASE_URL = "https://strapi-light.marosh.uk/api"
 
 const App = () => {
@@ -116,6 +117,7 @@ const App = () => {
                   <Route path="/hobbies" element={<Hobbies />} />
                   <Route path="/hobbies-strapi" element={<HobbiesStrapi />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="/contact-strapi" element={<ContactStrapi />} />
                   <Route path="/try" element={<Try />} />
                   <Route path="/test" element={<Test />} />
                   <Route path="/test2" element={<Test2 />} />

@@ -92,21 +92,25 @@ msgid "home.p2c"
 msgstr "home.p2c"
 
 #. js-lingui-explicit-id
+#: src/Pages/Contact/ContactStrapi.js:77
 #: src/Pages/Contact/Contact.js:39
 msgid "contact.h1"
 msgstr "contact.h1"
 
 #. js-lingui-explicit-id
+#: src/Pages/Contact/ContactStrapi.js:82
 #: src/Pages/Contact/Contact.js:44
 msgid "contact.p1"
 msgstr "contact.p1"
 
 #. js-lingui-explicit-id
+#: src/Pages/Contact/ContactStrapi.js:99
 #: src/Pages/Contact/Contact.js:61
 msgid "contact.placeholder.name"
 msgstr "contact.placeholder.name"
 
 #. js-lingui-explicit-id
+#: src/Pages/Contact/ContactStrapi.js:138
 #: src/Pages/Contact/Contact.js:100
 msgid "contact.button"
 msgstr "contact.button"

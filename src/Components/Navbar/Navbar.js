@@ -169,7 +169,7 @@ const Navbar = () => {
                       isOpen === "hobbies" ? "text-warning" : "text-secondary"
                     }`}
                     onClick={() => handleIsOpen("hobbies")}
-                    to={"/hobbies"}
+                    to={"/hobbies-strapi"}
                   >
                     <Trans id="navbar.hobbies" />
                   </Link>
@@ -181,7 +181,7 @@ const Navbar = () => {
                       isOpen === "contact" ? "text-warning" : "text-secondary"
                     }`}
                     onClick={() => handleIsOpen("contact")}
-                    to={"/contact"}
+                    to={"/contact-strapi"}
                   >
                     <Trans id="navbar.contact" />
                   </Link>
