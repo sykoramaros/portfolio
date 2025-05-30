@@ -20,6 +20,7 @@ import Try from "./Pages/Try/Try"
 import Test from "./Pages/Try/Test"
 import Test2 from "./Pages/Try/Test2"
 
+import HomeStrapi from "./Pages/Home/HomeStrapi"
 import HobbiesStrapi from "./Pages/Hobbies/HobbiesStrapi"
 import SkillsStrapi from "./Pages/Skills/SkillsStrapi"
 import ContactStrapi from "./Pages/Contact/ContactStrapi"
@@ -109,7 +110,8 @@ const App = () => {
             <div className="App">
               <Routes>
                 <Route path="/" element={<Layout />}>
-                  <Route index element={<Home />} />
+                  <Route index element={<HomeStrapi />} />
+                  <Route path="/home" element={<Home />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/skills" element={<Skills />} />
                   <Route path="/skills-strapi" element={<SkillsStrapi />} />

@@ -49,7 +49,7 @@ const Navbar = () => {
                 style={{ listStyle: "none" }}
               >
                 <li className="my-auto">
-                  <a
+                  <Link
                     href="#"
                     onClick={(e) => {
                       e.preventDefault() // Zabrání výchozímu chování odkazu
@@ -64,10 +64,10 @@ const Navbar = () => {
                       width="35"
                       height="auto"
                     />
-                  </a>
+                  </Link>
                 </li>
                 <li className="my-auto">
-                  <a
+                  <Link
                     href="#"
                     onClick={(e) => {
                       e.preventDefault() // Zabrání výchozímu chování odkazu
@@ -82,10 +82,10 @@ const Navbar = () => {
                       width="35"
                       height="auto"
                     />
-                  </a>
+                  </Link>
                 </li>
                 <li className="my-auto">
-                  <a
+                  <Link
                     href="#"
                     onClick={(e) => {
                       e.preventDefault() // Zabrání výchozímu chování odkazu
@@ -100,7 +100,7 @@ const Navbar = () => {
                       width="35"
                       height="auto"
                     />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

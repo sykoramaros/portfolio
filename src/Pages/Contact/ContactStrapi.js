@@ -7,7 +7,7 @@ import emailjs from "emailjs-com"
 import "./Contact.css"
 
 import { useQuery, gql } from "@apollo/client"
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 
 const CONTACT_FORM = gql`

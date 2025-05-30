@@ -2,12 +2,12 @@ import React from "react"
 import { useEffect, useRef } from "react"
 import Typed from "typed.js"
 
-const TypedTextSkills = ({ texts }) => {
+const TypedTextSkillsStrapi = ({ texts }) => {
   const typedRef = useRef(null)
 
   useEffect(() => {
     const options = {
-      strings: ["Backend developer", "Frontend developer", "Graphic designer"],
+      strings: texts,
       startDelay: 1000,
       typeSpeed: 100,
       backSpeed: 80,
@@ -20,9 +20,9 @@ const TypedTextSkills = ({ texts }) => {
     return () => {
       typed.destroy()
     }
-  }, [])
+  }, [texts])
 
   return <span ref={typedRef}></span>
 }
 
-export default TypedTextSkills
+export default TypedTextSkillsStrapi

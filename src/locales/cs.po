@@ -15,7 +15,7 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Pages/Try/Try.js:62
-#: src/Pages/Hobbies/HobbiesStrapi.js:57
+#: src/Pages/Hobbies/HobbiesStrapi.js:46
 #: src/Pages/Hobbies/Hobbies.js:22
 msgid "hobbies.h1"
 msgstr "hobbies.h1"
