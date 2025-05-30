@@ -1,42 +1,31 @@
 import React from "react"
-import { Trans, useLingui } from "@lingui/react"
+import { Trans } from "@lingui/react"
 import HobbyCardStrapi from "../../Components/HobbyCard/HobbyCardStrapi"
 
-import enHobbiesData from "../../locales/en/hobbies.json"
-import csHobbiesData from "../../locales/cs/hobbies.json"
-import mnHobbiesData from "../../locales/mn/hobbies.json"
-
 import { useQuery, gql } from "@apollo/client"
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 
 const HOBBIES = gql`
   query GetHobbies {
-    hobbies {
+    hobbiesList {
       documentId
-      rotation
-      title
-      backText
-      link
-      textLink
-      image {
-        url
-        alternativeText
+      hobbyCard {
+        rotation
+        image {
+          url
+          alternativeText
+        }
+        title
+        backText
+        link
+        textLink
       }
     }
   }
 `
 
 const HobbiesStrapi = () => {
-  const { i18n } = useLingui()
-  const currentLanguage = i18n.locale
-  const hobbiesData =
-    currentLanguage === "en"
-      ? enHobbiesData
-      : i18n.locale === "mn"
-      ? mnHobbiesData
-      : csHobbiesData
-
   const BASE_URL = useBaseUrl()
   const { documentId } = useParams()
 
@@ -58,7 +47,7 @@ const HobbiesStrapi = () => {
       </h1>
       <br />
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0 mt-1">
-        {data.hobbies.map((inside) => (
+        {data.hobbiesList.hobbyCard.map((inside) => (
           <HobbyCardStrapi
             key={inside.documentId}
             rotation={inside.rotation}
