@@ -23,6 +23,7 @@ import Test2 from "./Pages/Try/Test2"
 import HomeStrapi from "./Pages/Home/HomeStrapi"
 import HobbiesStrapi from "./Pages/Hobbies/HobbiesStrapi"
 import SkillsStrapi from "./Pages/Skills/SkillsStrapi"
+import ProjectsStrapi from "./Pages/Projects/ProjectsStrapi"
 import ContactStrapi from "./Pages/Contact/ContactStrapi"
 
 import enPages from "./locales/en/pages.json"
@@ -116,6 +117,7 @@ const App = () => {
                   <Route path="/skills" element={<Skills />} />
                   <Route path="/skills-strapi" element={<SkillsStrapi />} />
                   <Route path="/projects" element={<Projects />} />
+                  <Route path="/projects-strapi" element={<ProjectsStrapi />} />
                   <Route path="/hobbies" element={<Hobbies />} />
                   <Route path="/hobbies-strapi" element={<HobbiesStrapi />} />
                   <Route path="/contact" element={<Contact />} />
