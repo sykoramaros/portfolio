@@ -6,6 +6,7 @@ import Navbar from "../Navbar/Navbar"
 // import Footer from "../Footer/Footer"
 import FooterStrapi from "../Footer/FooterStrapi"
 import InfoModal from "../InfoModal/InfoModal"
+import CookiesModalStrapi from "../CookiesModal/CookiesModalStrapi"
 
 const MODAL = gql`
   query GetModal($documentId: ID!) {
@@ -18,7 +19,8 @@ const MODAL = gql`
 `
 
 const Layout = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [infoModalIsOpen, setInfoModalIsOpen] = useState(false)
+  const [cookiesModalIsOpen, setCookiesModalIsOpen] = useState(false)
 
   useEffect(() => {
     // Zkontroluj localStorage
@@ -38,8 +40,11 @@ const Layout = () => {
       !modalTimestamp ||
       currentTime - parseInt(modalTimestamp) > fiveSeconds
     ) {
-      setIsOpen(true) // modal se zobrazí
+      setInfoModalIsOpen(true) // modal se zobrazí
       localStorage.setItem("modalShown", currentTime.toString()) // ulož aktuální čas
+    }
+    if (!infoModalIsOpen) {
+      setCookiesModalIsOpen(true)
     }
   }, [])
 
@@ -67,13 +72,16 @@ const Layout = () => {
         {/* <Footer /> */}
         <FooterStrapi />
       </div>
-      {isOpen && (
+      {infoModalIsOpen && (
         <InfoModal
           modalTitle={data?.infoModal?.modalTitle || "Loading..."}
           modalText={data?.infoModal?.modalText || "Loading..."}
           buttonText={data?.infoModal?.buttonText || "Loading..."}
-          onClose={() => setIsOpen(false)}
+          onClose={() => setInfoModalIsOpen(false)}
         />
+      )}
+      {cookiesModalIsOpen && !infoModalIsOpen && (
+        <CookiesModalStrapi onClose={() => setCookiesModalIsOpen(false)} />
       )}
     </>
   )

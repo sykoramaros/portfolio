@@ -1,0 +1,38 @@
+.cookies-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00000099;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.cookies-modal {
+  height: auto;
+  /* max-height: 15rem; */
+  box-shadow: 2px 0 20px #000000;
+  overflow: hidden;
+  cursor: default;
+}
+
+.cookies-img-container {
+  height: 100%;
+  /* max-height: calc(15rem - 2rem); Odečteme padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookies-img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
