@@ -116,6 +116,7 @@ msgid "contact.button"
 msgstr ""
 
 #. js-lingui-explicit-id
+#: src/Components/ProjectCard/ProjectCardStrapi.js:50
 #: src/Components/ProjectCard/ProjectCard.js:46
 msgid "project_card.p1"
 msgstr ""

@@ -1,10 +1,13 @@
 import React from "react"
-import { HashRouter, Routes, Route } from "react-router-dom"
+import { useEffect } from "react"
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom"
 import { I18nProvider } from "@lingui/react"
 import { i18n } from "@lingui/core"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 import "./App.css"
+
+import { initGA, logPageView } from "./utils/Analytics"
 
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client"
 import { BaseUrlProvider } from "./context/BaseUrlProvider"
@@ -102,13 +105,26 @@ const client = new ApolloClient({
 const BASE_URL = "https://strapi-portfolio.marosh.uk"
 // const BASE_URL = "https://strapi-light.marosh.uk/api"
 
+const AnalyticsTracker = () => {
+  const location = useLocation()
+  useEffect(() => {
+    logPageView()
+  }, [location])
+  return null
+}
+
 const App = () => {
+  useEffect(() => {
+    initGA()
+  }, [])
+
   return (
     <HashRouter>
       <I18nProvider i18n={i18n}>
         <ApolloProvider client={client}>
           <BaseUrlProvider value={BASE_URL}>
             <div className="App">
+              <AnalyticsTracker />
               <Routes>
                 <Route path="/" element={<Layout />}>
                   <Route index element={<HomeStrapi />} />

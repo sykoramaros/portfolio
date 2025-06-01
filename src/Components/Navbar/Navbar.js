@@ -157,7 +157,7 @@ const Navbar = () => {
                       isOpen === "projects" ? "text-warning" : "text-secondary"
                     }`}
                     onClick={() => handleIsOpen("projects")}
-                    to={"/projects"}
+                    to={"/projects-strapi"}
                   >
                     <Trans id="navbar.projects" />
                   </Link>

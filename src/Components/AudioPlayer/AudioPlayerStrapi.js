@@ -40,7 +40,7 @@ const AudioPlayerStrapi = () => {
   if (error) return <p>Error: {error.message}</p>
   if (!data?.playlists?.length) return <p>No songs found</p>
 
-  console.log("Data structure:", data)
+  // console.log("Data structure:", data)
 
   const togglePlayPause = () => {
     if (isPlaying) {

@@ -21,6 +21,7 @@
     "react-audio-player": "^0.17.0",
     "react-dom": "^18.0.0",
     "react-facebook": "^9.0.12",
+    "react-ga4": "^2.1.0",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.1.0",
     "react-scripts": "^5.0.1",

@@ -26,13 +26,18 @@ const Layout = () => {
     const modalTimestamp = localStorage.getItem("modalShown")
     const currentTime = Date.now()
     const oneHour = 60 * 60 * 1000 // 1 hodina v milisekundách
+    const fifteenMinutes = 15 * 60 * 1000 // 15 minut v milisekundách
+    const fiveSeconds = 5 * 1000 // 5 sekund v milisekundách
 
     // if (!modalWasShown) {
     //   setIsOpen(true) // modal se zobrazí
     //   localStorage.setItem("modalShown", "true") // označ, že modal už byl zobrazen
     // }
 
-    if (!modalTimestamp || currentTime - parseInt(modalTimestamp) > oneHour) {
+    if (
+      !modalTimestamp ||
+      currentTime - parseInt(modalTimestamp) > fiveSeconds
+    ) {
       setIsOpen(true) // modal se zobrazí
       localStorage.setItem("modalShown", currentTime.toString()) // ulož aktuální čas
     }
