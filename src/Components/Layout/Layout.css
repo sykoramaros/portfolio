@@ -1,0 +1,33 @@
+.cookies-modal-container {
+  box-shadow: 2px 0 20px #000000;
+  overflow: hidden;
+  cursor: default;
+  width: 300px;
+  font-size: 1.15rem;
+  border-radius: 2.5rem 0 0 1.5rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 428px) {
+  .cookies-modal-container {
+    width: 400px;
+  }
+}
+
+@media (min-width: 575px) {
+  .cookies-modal-container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 767px) {
+  .cookies-modal-container {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cookies-modal-container {
+    width: 900px;
+  }
+}

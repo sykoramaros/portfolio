@@ -76,7 +76,7 @@ const ProjectsStrapi = () => {
   // console.log(data)
 
   return (
-    <div className="container-fluid">
+    <div className="">
       <h1 className="display-3 mt-5 text-center text-primary text-shadow">
         {data.projectsPage.title}
       </h1>

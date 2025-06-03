@@ -59,7 +59,7 @@ const HomeStrapi = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className="">
         <div className="row g-2 g-md-0 align-items-center m-auto mt-5">
           <div className="col-lg-6">
             <h1 className="display-6 text-primary text-center">

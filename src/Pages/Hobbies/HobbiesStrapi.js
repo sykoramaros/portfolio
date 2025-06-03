@@ -41,7 +41,7 @@ const HobbiesStrapi = () => {
   // console.log(data)
 
   return (
-    <div className="container">
+    <div className="">
       <h1 className="display-3 mt-5 text-center text-primary text-shadow">
         <Trans id="hobbies.h1" />
       </h1>

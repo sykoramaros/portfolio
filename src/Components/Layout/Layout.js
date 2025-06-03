@@ -2,6 +2,8 @@ import React from "react"
 import { useState, useEffect } from "react"
 import { Outlet } from "react-router-dom"
 import { useQuery, gql } from "@apollo/client"
+import "./Layout.css"
+
 import Navbar from "../Navbar/Navbar"
 // import Footer from "../Footer/Footer"
 import FooterStrapi from "../Footer/FooterStrapi"
@@ -21,6 +23,10 @@ const MODAL = gql`
 const Layout = () => {
   const [infoModalIsOpen, setInfoModalIsOpen] = useState(false)
   const [cookiesModalIsOpen, setCookiesModalIsOpen] = useState(false)
+  const [cookiesModalPosition, setCookiesModalPosition] = useState({
+    top: "25vh",
+    right: "0",
+  })
 
   useEffect(() => {
     // Zkontroluj localStorage
@@ -46,7 +52,7 @@ const Layout = () => {
     if (!infoModalIsOpen) {
       setCookiesModalIsOpen(true)
     }
-  }, [])
+  }, [infoModalIsOpen])
 
   const documentId = "ng3r328ul4gs581tvzgjeg10"
 
@@ -56,21 +62,45 @@ const Layout = () => {
 
   // console.log(data)
 
+  const handleCookiesClose = () => {
+    // Spusť animaci skrytí
+    setCookiesModalPosition({ top: "25vh", right: "-100vw" })
+
+    // Po dokončení animace (1s) skutečně skryj modal a ulož do localStorage
+    setTimeout(() => {
+      setCookiesModalIsOpen(false)
+      // localStorage.setItem("cookiesAccepted", "true")
+    }, 1000) // 1000ms odpovídá transition času
+  }
+
   return (
     <>
-      <div className="layout-container">
+      <img
+        className="position-fixed d-none d-lg-block"
+        style={{
+          opacity: "0.07",
+          top: "-100px",
+          // zIndex: "-999",
+          width: "100vw",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "none",
+        }}
+        src={`${process.env.PUBLIC_URL}/img/background.svg`}
+        alt="Background"
+      />
+
+      <div className="container-fluid" style={{ margin: "150px 0" }}>
         <Navbar />
-        <div className="position-relative" style={{ margin: "150px 0" }}>
-          <img
-            className="position-absolute w-100 d-none d-lg-block"
-            style={{ opacity: "0.07", top: "-100px", zIndex: "-999" }}
-            src={`${process.env.PUBLIC_URL}/img/background.svg`}
-            alt="Background"
-          />
+
+        <div className="container">
           <Outlet />
         </div>
+
         {/* <Footer /> */}
-        <FooterStrapi />
+        <div>
+          <FooterStrapi />
+        </div>
       </div>
       {infoModalIsOpen && (
         <InfoModal
@@ -81,7 +111,20 @@ const Layout = () => {
         />
       )}
       {cookiesModalIsOpen && !infoModalIsOpen && (
-        <CookiesModalStrapi onClose={() => setCookiesModalIsOpen(false)} />
+        <div
+          className="cookies-modal-container position-absolute"
+          style={{
+            top: cookiesModalPosition.top,
+            right: cookiesModalPosition.right,
+            transition: "all 1s ease-in-out",
+            zIndex: "999",
+          }}
+        >
+          <CookiesModalStrapi
+            // onClose={() => setCookiesModalIsOpen(false)}
+            onClose={handleCookiesClose}
+          />
+        </div>
       )}
     </>
   )

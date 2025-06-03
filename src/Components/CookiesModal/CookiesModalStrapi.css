@@ -1,4 +1,4 @@
-.cookies-modal-overlay {
+/* .cookies-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,29 +10,31 @@
   justify-content: center;
   z-index: 9999;
   cursor: pointer;
-}
+} */
 
-.cookies-modal {
-  height: auto;
-  /* max-height: 15rem; */
+/* .cookies-modal {
   box-shadow: 2px 0 20px #000000;
   overflow: hidden;
   cursor: default;
 }
 
-.cookies-img-container {
-  height: 100%;
-  /* max-height: calc(15rem - 2rem); Odečteme padding */
+@media (min-width: 767px) {
+  .cookies-modal {
+    min-width: 500px;
+  }
+} */
+
+/* .cookies-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.cookies-img {
+/* .cookies-img {
   max-height: 100%;
   max-width: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
   display: block;
-}
+} */

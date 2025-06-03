@@ -10,7 +10,7 @@ import OthersBoardStrapi from "../../Components/SkillsBoard/OthersBoard/OthersBo
 const SkillsStrapi = () => {
   return (
     <div>
-      <div className="container">
+      <div className="">
         <h1 className="display-3 mt-5 text-center text-primary text-shadow">
           <Trans id="skills.h1">skills.title</Trans>
         </h1>
