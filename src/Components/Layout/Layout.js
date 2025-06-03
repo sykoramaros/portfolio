@@ -4,7 +4,8 @@ import { Outlet } from "react-router-dom"
 import { useQuery, gql } from "@apollo/client"
 import "./Layout.css"
 
-import Navbar from "../Navbar/Navbar"
+// import Navbar from "../Navbar/Navbar"
+import NavbarStrapi from "../Navbar/NavbarStrapi"
 // import Footer from "../Footer/Footer"
 import FooterStrapi from "../Footer/FooterStrapi"
 import InfoModal from "../InfoModal/InfoModal"
@@ -91,7 +92,7 @@ const Layout = () => {
       />
 
       <div className="container-fluid" style={{ margin: "150px 0" }}>
-        <Navbar />
+        <NavbarStrapi />
 
         <div className="container">
           <Outlet />

@@ -1,5 +1,4 @@
 import React from "react"
-import { Trans } from "@lingui/react"
 import "./Skills.css"
 import ProgLangBoardStrapi from "../../Components/SkillsBoard/ProgLangBoard/ProgLangBoardStrapi"
 import WebTechBoardStrapi from "../../Components/SkillsBoard/WebTechBoard/WebTechBoardStrapi"
@@ -12,7 +11,7 @@ const SkillsStrapi = () => {
     <div>
       <div className="">
         <h1 className="display-3 mt-5 text-center text-primary text-shadow">
-          <Trans id="skills.h1">skills.title</Trans>
+          {/* <Trans id="skills.h1">skills.title</Trans> */}
         </h1>
         <div className="row gy-5 gx-0 mt-2">
           <div className="col-lg-6 w-auto" style={{ position: "relative" }}>

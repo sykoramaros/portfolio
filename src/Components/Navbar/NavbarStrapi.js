@@ -1,10 +1,37 @@
 import React from "react"
 import { useState, useEffect, useRef } from "react"
-import { Link } from "react-router-dom"
-// import { i18n } from "@lingui/core"
-// import { Trans } from "@lingui/react"
+
+import { useQuery, gql } from "@apollo/client"
+import { useParams, Link } from "react-router-dom"
+import { useBaseUrl } from "../../context/BaseUrlProvider"
+import { useLanguage } from "../../context/LanguageProvider"
+
 import "./Navbar.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
+
+const NAVBAR = gql`
+  query NavbarQuery {
+    navbar {
+      documentId
+      logoImg {
+        url
+        alternativeText
+      }
+      langImage {
+        lang
+        langImage {
+          url
+          alternativeText
+        }
+      }
+      home
+      skills
+      projects
+      hobbies
+      contact
+    }
+  }
+`
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,6 +53,22 @@ const Navbar = () => {
     }
   }, [])
 
+  const BASE_URL = useBaseUrl()
+  const { documentId } = useParams()
+  const { currentLocale, setCurrentLocale } = useLanguage()
+
+  const { loading, error, data } = useQuery(NAVBAR, {
+    variables: {
+      documentId,
+      locale: currentLocale.toUpperCase(),
+    },
+  })
+
+  if (loading) return <p>Loading...</p>
+  if (error) return <p>Error :(</p>
+
+  // console.log(data)
+
   return (
     <div>
       <div className="container">
@@ -36,8 +79,9 @@ const Navbar = () => {
           <div className="container-fluid">
             <Link className="navbar-brand fs-1 text-secondary" to={"/"}>
               <img
-                src={`${process.env.PUBLIC_URL}/img/logo.png`}
-                alt="Logo"
+                // src={`${process.env.PUBLIC_URL}/img/logo.png`}
+                src={`${BASE_URL}${data.navbar.logoImg.url}`}
+                alt={data.navbar.logoImg.alternativeText}
                 width="55px"
                 height="auto"
                 style={{ boxShadow: "0px 0px 8px", borderRadius: "50%" }}
@@ -52,15 +96,16 @@ const Navbar = () => {
                   <Link
                     href="#"
                     onClick={(e) => {
-                      e.preventDefault() // Zabrání výchozímu chování odkazu
-                      i18n.activate("cs") // Aktivuje češtinu
+                      e.preventDefault()
+                      setCurrentLocale("cs") // Pouze vlastní řešení
                     }}
                     aria-label="Switch to Czech language"
                   >
                     <img
                       className="border rounded-5 shadow-sm"
-                      src={`${process.env.PUBLIC_URL}/img/lang/czech.png`}
-                      alt="Czech language"
+                      // src={`${process.env.PUBLIC_URL}/img/lang/czech.png`}
+                      src={`${BASE_URL}${data.navbar.langImage[0].langImage.url}`}
+                      alt={data.navbar.langImage[0].langImage.alternativeText}
                       width="35"
                       height="auto"
                     />
@@ -70,15 +115,16 @@ const Navbar = () => {
                   <Link
                     href="#"
                     onClick={(e) => {
-                      e.preventDefault() // Zabrání výchozímu chování odkazu
-                      i18n.activate("en") // Aktivuje češtinu
+                      e.preventDefault()
+                      setCurrentLocale("en") // Pouze vlastní řešení
                     }}
                     aria-label="Switch to English language"
                   >
                     <img
                       className="border rounded-5 shadow-sm"
-                      src={`${process.env.PUBLIC_URL}/img/lang/english.png`}
-                      alt="English language"
+                      // src={`${process.env.PUBLIC_URL}/img/lang/english.png`}
+                      src={`${BASE_URL}${data.navbar.langImage[1].langImage.url}`}
+                      alt={data.navbar.langImage[1].langImage.alternativeText}
                       width="35"
                       height="auto"
                     />
@@ -88,15 +134,16 @@ const Navbar = () => {
                   <Link
                     href="#"
                     onClick={(e) => {
-                      e.preventDefault() // Zabrání výchozímu chování odkazu
-                      i18n.activate("mn") // Aktivuje češtinu
+                      e.preventDefault()
+                      setCurrentLocale("mn") // Pouze vlastní řešení
                     }}
                     aria-label="Switch to Mongolian language"
                   >
                     <img
                       className="border rounded-5 shadow-sm"
-                      src={`${process.env.PUBLIC_URL}/img/lang/mongolian.png`}
-                      alt="Mongolian language"
+                      // src={`${process.env.PUBLIC_URL}/img/lang/mongolian.png`}
+                      src={`${BASE_URL}${data.navbar.langImage[2].langImage.url}`}
+                      alt={data.navbar.langImage[2].langImage.alternativeText}
                       width="35"
                       height="auto"
                     />
@@ -130,7 +177,7 @@ const Navbar = () => {
                     aria-current="page"
                     to={"/"}
                   >
-                    {/* <Trans id="navbar.home" /> */}
+                    {data.navbar.home}
                   </Link>
                 </li>
                 <span className="nav-link d-none d-xl-block">|</span>
@@ -147,7 +194,7 @@ const Navbar = () => {
                     onClick={() => handleIsOpen("skills")}
                     to={"/skills-strapi"}
                   >
-                    {/* <Trans id="navbar.skills" /> */}
+                    {data.navbar.skills}
                   </Link>
                 </li>
                 <span className="nav-link d-none d-xl-block">|</span>
@@ -159,7 +206,7 @@ const Navbar = () => {
                     onClick={() => handleIsOpen("projects")}
                     to={"/projects-strapi"}
                   >
-                    <Trans id="navbar.projects" />
+                    {data.navbar.projects}
                   </Link>
                 </li>
                 <span className="nav-link d-none d-xl-block">|</span>
@@ -171,7 +218,7 @@ const Navbar = () => {
                     onClick={() => handleIsOpen("hobbies")}
                     to={"/hobbies-strapi"}
                   >
-                    {/* <Trans id="navbar.hobbies" /> */}
+                    {data.navbar.hobbies}
                   </Link>
                 </li>
                 <span className="nav-link d-none d-xl-block">|</span>
@@ -183,7 +230,7 @@ const Navbar = () => {
                     onClick={() => handleIsOpen("contact")}
                     to={"/contact-strapi"}
                   >
-                    {/* <Trans id="navbar.contact" /> */}
+                    {data.navbar.contact}
                   </Link>
                 </li>
                 {/* <span className="nav-link d-none d-xl-block">|</span>

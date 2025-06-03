@@ -1,5 +1,5 @@
 import React from "react"
-import { Trans } from "@lingui/react"
+
 import HobbyCardStrapi from "../../Components/HobbyCard/HobbyCardStrapi"
 
 import { useQuery, gql } from "@apollo/client"
@@ -43,7 +43,7 @@ const HobbiesStrapi = () => {
   return (
     <div className="">
       <h1 className="display-3 mt-5 text-center text-primary text-shadow">
-        <Trans id="hobbies.h1" />
+        {/* <Trans id="hobbies.h1" /> */}
       </h1>
       <br />
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0 mt-1">
