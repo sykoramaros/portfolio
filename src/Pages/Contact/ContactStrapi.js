@@ -12,6 +12,7 @@ const CONTACT_FORM = gql`
   query GetContactForm {
     contactForm {
       documentId
+      title
       paragraph
       name
       email
@@ -74,7 +75,9 @@ const ContactStrapi = () => {
   return (
     <div>
       <div className="container">
-        <h1 className="display-3 mt-5 text-center text-primary text-shadow"></h1>
+        <h1 className="display-3 mt-5 text-center text-primary text-shadow">
+          {data?.contactForm.title}
+        </h1>
         <div className="contact-container row rounded-5 shadow mt-4 border border-1 border-opacity-10 border-white">
           <div className="col-md-6 my-5 d-flex g-1">
             <p className="fs-3 m-auto w-75 text-shadow">

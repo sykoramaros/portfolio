@@ -15,13 +15,11 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Pages/Try/Try.js:62
-#: src/Pages/Hobbies/HobbiesStrapi.js:46
 #: src/Pages/Hobbies/Hobbies.js:22
 msgid "hobbies.h1"
 msgstr "hobbies.h1"
 
 #. js-lingui-explicit-id
-#: src/Pages/Skills/SkillsStrapi.js:15
 #: src/Pages/Skills/Skills.js:15
 msgid "skills.h1"
 msgstr "skills.h1"
@@ -92,56 +90,51 @@ msgid "home.p2c"
 msgstr "home.p2c"
 
 #. js-lingui-explicit-id
-#: src/Pages/Contact/ContactStrapi.js:77
 #: src/Pages/Contact/Contact.js:39
 msgid "contact.h1"
 msgstr "contact.h1"
 
 #. js-lingui-explicit-id
-#: src/Pages/Contact/ContactStrapi.js:82
 #: src/Pages/Contact/Contact.js:44
 msgid "contact.p1"
 msgstr "contact.p1"
 
 #. js-lingui-explicit-id
-#: src/Pages/Contact/ContactStrapi.js:99
 #: src/Pages/Contact/Contact.js:61
 msgid "contact.placeholder.name"
 msgstr "contact.placeholder.name"
 
 #. js-lingui-explicit-id
-#: src/Pages/Contact/ContactStrapi.js:138
 #: src/Pages/Contact/Contact.js:100
 msgid "contact.button"
 msgstr "contact.button"
 
 #. js-lingui-explicit-id
-#: src/Components/ProjectCard/ProjectCardStrapi.js:50
 #: src/Components/ProjectCard/ProjectCard.js:46
 msgid "project_card.p1"
 msgstr "project_card.p1"
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:133
-msgid "navbar.home"
-msgstr "navbar.home"
+#~ msgid "navbar.home"
+#~ msgstr "navbar.home"
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:150
-msgid "navbar.skills"
-msgstr "navbar.skills"
+#~ msgid "navbar.skills"
+#~ msgstr "navbar.skills"
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:162
-msgid "navbar.projects"
-msgstr "navbar.projects"
+#~ msgid "navbar.projects"
+#~ msgstr "navbar.projects"
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:174
-msgid "navbar.hobbies"
-msgstr "navbar.hobbies"
+#~ msgid "navbar.hobbies"
+#~ msgstr "navbar.hobbies"
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:186
-msgid "navbar.contact"
-msgstr "navbar.contact"
+#~ msgid "navbar.contact"
+#~ msgstr "navbar.contact"

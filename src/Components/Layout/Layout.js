@@ -81,7 +81,7 @@ const Layout = () => {
         style={{
           opacity: "0.07",
           top: "-100px",
-          // zIndex: "-999",
+          zIndex: "-999",
           width: "100vw",
           backgroundPosition: "center",
           backgroundSize: "cover",

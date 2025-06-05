@@ -1,5 +1,4 @@
 import React from "react"
-import { Trans } from "@lingui/react"
 import "./ProjectCard.css"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 
@@ -47,7 +46,7 @@ const ProjectCardStrapi = ({
               <p className="card-text text-muted">{text}</p>
               <div className="card-footer">
                 <p className="card-text text-secondary">
-                  <Trans id="project_card.p1" />{" "}
+                  {/* <Trans id="project_card.p1" />{" "} */}
                   <span className="text-success">{technologies}</span>
                 </p>
               </div>

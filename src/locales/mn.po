@@ -15,13 +15,11 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Pages/Try/Try.js:62
-#: src/Pages/Hobbies/HobbiesStrapi.js:46
 #: src/Pages/Hobbies/Hobbies.js:22
 msgid "hobbies.h1"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: src/Pages/Skills/SkillsStrapi.js:15
 #: src/Pages/Skills/Skills.js:15
 msgid "skills.h1"
 msgstr ""
@@ -92,56 +90,51 @@ msgid "home.p2c"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: src/Pages/Contact/ContactStrapi.js:77
 #: src/Pages/Contact/Contact.js:39
 msgid "contact.h1"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: src/Pages/Contact/ContactStrapi.js:82
 #: src/Pages/Contact/Contact.js:44
 msgid "contact.p1"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: src/Pages/Contact/ContactStrapi.js:99
 #: src/Pages/Contact/Contact.js:61
 msgid "contact.placeholder.name"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: src/Pages/Contact/ContactStrapi.js:138
 #: src/Pages/Contact/Contact.js:100
 msgid "contact.button"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: src/Components/ProjectCard/ProjectCardStrapi.js:50
 #: src/Components/ProjectCard/ProjectCard.js:46
 msgid "project_card.p1"
 msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:133
-msgid "navbar.home"
-msgstr ""
+#~ msgid "navbar.home"
+#~ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:150
-msgid "navbar.skills"
-msgstr ""
+#~ msgid "navbar.skills"
+#~ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:162
-msgid "navbar.projects"
-msgstr ""
+#~ msgid "navbar.projects"
+#~ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:174
-msgid "navbar.hobbies"
-msgstr ""
+#~ msgid "navbar.hobbies"
+#~ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/Components/Navbar/Navbar.js:186
-msgid "navbar.contact"
-msgstr ""
+#~ msgid "navbar.contact"
+#~ msgstr ""

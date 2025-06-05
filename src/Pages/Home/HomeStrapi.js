@@ -1,5 +1,5 @@
 import React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./Home.css"
 import TypedTextSkillsStrapi from "../../Components/TypedText/TypedTextSkillsStrapi"
 
@@ -29,22 +29,20 @@ const HOME_CONTENT = gql`
         url
         alternativeText
       }
+      pdfFile {
+        url
+        alternativeText
+      }
+      downloadButton {
+        documentId
+        url
+        alternativeText
+      }
     }
   }
 `
 
 const HomeStrapi = () => {
-  const [svgDownloadHovered, setSvgDownloadHovered] =
-    useState("download_white.svg")
-
-  const handleSvgDownloadHover = () => {
-    setSvgDownloadHovered("download_info.svg")
-  }
-
-  const handleSvgDownloadLeave = () => {
-    setSvgDownloadHovered("download_white.svg")
-  }
-
   const BASE_URL = useBaseUrl()
   const { documentId } = useParams()
 
@@ -53,6 +51,21 @@ const HomeStrapi = () => {
       documentId,
     },
   })
+
+  const [svgDownloadHovered, setSvgDownloadHovered] = useState("")
+
+  useEffect(() => {
+    if (data?.homePage?.downloadButton?.[1]?.url) {
+      setSvgDownloadHovered(data.homePage.downloadButton[1].url)
+    }
+  }, [data])
+
+  const handleSvgDownloadHover = () => {
+    setSvgDownloadHovered(`${data?.homePage?.downloadButton[0].url}`)
+  }
+  const handleSvgDownloadLeave = () => {
+    setSvgDownloadHovered(`${data?.homePage?.downloadButton[1].url}`)
+  }
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :(</p>
@@ -79,7 +92,8 @@ const HomeStrapi = () => {
             <div className="d-flex justify-content-center position-relative">
               <Link
                 className="download-button btn button-info fs-5 rounded-4 w-auto px-4 mt-4"
-                href={`${process.env.PUBLIC_URL}/documents/marian_sykora_cv_2025_3.pdf`}
+                href={`${BASE_URL}${data.homePage.pdfFile.url}`}
+                alternativeText={data.homePage.pdfFile.alternativeText}
                 onMouseEnter={handleSvgDownloadHover}
                 onMouseLeave={handleSvgDownloadLeave}
                 download
@@ -87,7 +101,8 @@ const HomeStrapi = () => {
                 {data.homePage.downloadCvButton}{" "}
                 <img
                   className="text-danger"
-                  src={`${process.env.PUBLIC_URL}/img/home/${svgDownloadHovered}`}
+                  src={`${BASE_URL}${svgDownloadHovered}`}
+                  // src={`${BASE_URL}${data.homePage.downloadButton[1].url}`}
                   width="30px"
                   alt="Download CV"
                 />
