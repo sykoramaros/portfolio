@@ -92,11 +92,13 @@ const HomeStrapi = () => {
             <div className="d-flex justify-content-center position-relative">
               <Link
                 className="download-button btn button-info fs-5 rounded-4 w-auto px-4 mt-4"
-                href={`${BASE_URL}${data.homePage.pdfFile.url}`}
-                alternativeText={data.homePage.pdfFile.alternativeText}
+                to={`${BASE_URL}${data.homePage.pdfFile.url}`}
+                // alternativeText={data.homePage.pdfFile.alternativeText}
                 onMouseEnter={handleSvgDownloadHover}
                 onMouseLeave={handleSvgDownloadLeave}
                 download
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {data.homePage.downloadCvButton}{" "}
                 <img
