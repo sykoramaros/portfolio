@@ -43,14 +43,14 @@ const Layout = () => {
     //   localStorage.setItem("modalShown", "true") // označ, že modal už byl zobrazen
     // }
 
-    if (
-      !modalTimestamp ||
-      currentTime - parseInt(modalTimestamp) > fiveSeconds
-    ) {
+    if (!modalTimestamp || currentTime - parseInt(modalTimestamp) > oneHour) {
       setInfoModalIsOpen(true) // modal se zobrazí
       localStorage.setItem("modalShown", currentTime.toString()) // ulož aktuální čas
     }
-    if (!infoModalIsOpen) {
+    if (
+      !infoModalIsOpen &&
+      currentTime - parseInt(modalTimestamp) > oneHour + fiveSeconds
+    ) {
       setCookiesModalIsOpen(true)
     }
   }, [infoModalIsOpen])

@@ -5,10 +5,11 @@ import ProjectCardStrapi from "../../Components/ProjectCard/ProjectCardStrapi"
 import { useQuery, gql } from "@apollo/client"
 import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
+import { useLanguage } from "../../context/LanguageProvider"
 
 const PROJECTS = gql`
-  query GetProjects {
-    projectsPage {
+  query GetProjects($locale: I18NLocaleCode!) {
+    projectsPage(locale: $locale) {
       documentId
       title
       frontendText
@@ -63,17 +64,19 @@ const ProjectsStrapi = () => {
   const BASE_URL = useBaseUrl()
 
   const { documentId } = useParams()
+  const { currentLocale } = useLanguage()
 
   const { loading, error, data } = useQuery(PROJECTS, {
     variables: {
-      documentId,
+      // documentId,
+      locale: currentLocale,
     },
   })
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :(</p>
 
-  // console.log(data)
+  console.log(data)
 
   return (
     <div className="">
@@ -121,16 +124,16 @@ const ProjectsStrapi = () => {
         {(isFrontendListVisible
           ? data.frontendProject.ProjectCard
           : data.backendProject.ProjectCard
-        ).map((card, index) => (
+        ).map((inside, index) => (
           <ProjectCardStrapi
-            key={index}
-            webLink={card.webLink}
-            image={card.image}
-            title={card.title}
-            text={card.text}
-            technologies={card.technologies}
+            key={inside.documentId || index}
+            webLink={inside.webLink}
+            image={inside.image}
+            title={inside.title}
+            text={inside.text}
+            technologies={inside.technologies}
             githubImage={data.projectsPage.githubImage}
-            githubLink={card.githubLink}
+            githubLink={inside.githubLink}
           />
         ))}
       </div>

@@ -5,10 +5,11 @@ import HobbyCardStrapi from "../../Components/HobbyCard/HobbyCardStrapi"
 import { useQuery, gql } from "@apollo/client"
 import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
+import { useLanguage } from "../../context/LanguageProvider"
 
 const HOBBIES = gql`
-  query GetHobbies {
-    hobbiesList {
+  query GetHobbies($locale: I18NLocaleCode!) {
+    hobbiesList(locale: $locale) {
       documentId
       hobbyCard {
         rotation
@@ -28,10 +29,12 @@ const HOBBIES = gql`
 const HobbiesStrapi = () => {
   const BASE_URL = useBaseUrl()
   const { documentId } = useParams()
+  const { currentLocale } = useLanguage()
 
   const { loading, error, data } = useQuery(HOBBIES, {
     variables: {
       documentId,
+      locale: currentLocale,
     },
   })
 

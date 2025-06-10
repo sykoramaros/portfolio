@@ -10,13 +10,14 @@ import { useBaseUrl } from "../../context/BaseUrlProvider"
 const HOME_CONTENT = gql`
   query GetHomeContent {
     homePage {
+      documentId
       h1
       h2
       h3
       typedTexts {
         typedText
       }
-      downloadCvButton
+      downloadButton
       p1a
       p1b
       span1
@@ -33,7 +34,7 @@ const HOME_CONTENT = gql`
         url
         alternativeText
       }
-      downloadButton {
+      downloadButtonImage {
         documentId
         url
         alternativeText
@@ -52,19 +53,21 @@ const HomeStrapi = () => {
     },
   })
 
+  console.log(data)
+
   const [svgDownloadHovered, setSvgDownloadHovered] = useState("")
 
   useEffect(() => {
-    if (data?.homePage?.downloadButton?.[1]?.url) {
-      setSvgDownloadHovered(data.homePage.downloadButton[1].url)
+    if (data?.homePage.downloadButton?.[1]?.url) {
+      setSvgDownloadHovered(data.homePage.downloadButtonImage[1].url)
     }
   }, [data])
 
   const handleSvgDownloadHover = () => {
-    setSvgDownloadHovered(`${data?.homePage?.downloadButton[0].url}`)
+    setSvgDownloadHovered(`${data.homePage.downloadButtonImage[0].url}`)
   }
   const handleSvgDownloadLeave = () => {
-    setSvgDownloadHovered(`${data?.homePage?.downloadButton[1].url}`)
+    setSvgDownloadHovered(`${data.homePage.downloadButtonImage[1].url}`)
   }
 
   if (loading) return <p>Loading...</p>
@@ -76,13 +79,13 @@ const HomeStrapi = () => {
         <div className="row g-2 g-md-0 align-items-center m-auto mt-5">
           <div className="col-lg-6">
             <h1 className="display-6 text-primary text-center">
-              {data.homePage.h1}
+              {data?.homePage?.h1}
             </h1>
             <h2 className="display-3 text-secondary text-center">
-              {data.homePage.h2}
+              {data?.homePage?.h2}
             </h2>
             <h3 className="fs-2 text-center text-uppercase">
-              {data.homePage.h3}
+              {data?.homePage?.h3}
             </h3>
             <p className="fs-1 text-center">
               <TypedTextSkillsStrapi
@@ -100,7 +103,7 @@ const HomeStrapi = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {data.homePage.downloadCvButton}{" "}
+                {data.homePage.downloadButton}{" "}
                 <img
                   className="text-danger"
                   src={`${BASE_URL}${svgDownloadHovered}`}
@@ -127,7 +130,7 @@ const HomeStrapi = () => {
                   "radial-gradient(circle at center, black 60%, transparent 100%)",
               }}
               // src={`${process.env.PUBLIC_URL}/img/computer.jpg`}
-              src={`${BASE_URL}${data.homePage.image.url}`}
+              src={`${BASE_URL}${data.homePage?.image.url}`}
               alt={data.homePage.image.alternativeText}
             />
           </div>

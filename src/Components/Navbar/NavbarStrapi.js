@@ -5,24 +5,22 @@ import { useQuery, gql } from "@apollo/client"
 import { useParams, Link } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 import { useLanguage } from "../../context/LanguageProvider"
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher"
+
+// import TestLocale from "../TestLocale/TestLocale"
 
 import "./Navbar.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
+// if (typeof currentLocale !== "string") throw new Error("locale není string")
+
 const NAVBAR = gql`
-  query NavbarQuery {
-    navbar {
+  query NavbarQuery($locale: I18NLocaleCode!) {
+    navbar(locale: $locale) {
       documentId
       logoImg {
         url
         alternativeText
-      }
-      langImage {
-        lang
-        langImage {
-          url
-          alternativeText
-        }
       }
       home
       skills
@@ -55,22 +53,44 @@ const Navbar = () => {
 
   const BASE_URL = useBaseUrl()
   const { documentId } = useParams()
-  const { currentLocale, setCurrentLocale } = useLanguage()
+  const { currentLocale } = useLanguage()
+  // console.log("currentLocale", currentLocale) // Mělo by být třeba: "cs"
+  // console.log("Type of currentLocale:", typeof currentLocale)
+  // console.log("Value of currentLocale:", JSON.stringify(currentLocale))
+  // console.log("Length:", currentLocale?.length)
+  // console.log("currentLocale type:", typeof currentLocale)
+  // console.log("currentLocale length:", currentLocale.length)
+  // console.log("currentLocale charAt(0):", currentLocale.charAt(0))
+  // console.log("currentLocale charAt(1):", currentLocale.charAt(1))
+  // console.log(
+  //   "Raw bytes:",
+  //   [...currentLocale].map((c) => c.charCodeAt(0))
+  // )
+  // console.log("Query vars", { locale: currentLocale })
+  // console.log("Type:", typeof currentLocale) // string?
+  // console.log("Raw chars:", [...currentLocale]) // ['c', 's']
 
   const { loading, error, data } = useQuery(NAVBAR, {
     variables: {
-      documentId,
-      locale: currentLocale.toUpperCase(),
+      // documentId,
+      // locale: "en",
+      locale: currentLocale, id: documentId
     },
+    // fetchPolicy: "no-cache",
   })
 
   if (loading) return <p>Loading...</p>
-  if (error) return <p>Error :(</p>
+  if (error) {
+    return console.log(error)
+    // return <p>Error :( {error.message}</p>
+  }
 
   // console.log(data)
 
   return (
     <div>
+      {/* <TestLocale /> */}
+      {/* <p>{currentLocale}</p> */}
       <div className="container">
         <nav
           ref={navRef}
@@ -80,76 +100,15 @@ const Navbar = () => {
             <Link className="navbar-brand fs-1 text-secondary" to={"/"}>
               <img
                 // src={`${process.env.PUBLIC_URL}/img/logo.png`}
-                src={`${BASE_URL}${data.navbar.logoImg.url}`}
-                alt={data.navbar.logoImg.alternativeText}
+                src={`${BASE_URL}${data?.navbar?.logoImg?.url}`}
+                alt={data?.navbar?.logoImg?.alternativeText}
                 width="55px"
                 height="auto"
                 style={{ boxShadow: "0px 0px 8px", borderRadius: "50%" }}
               />
             </Link>
             <div className="me-auto">
-              <ul
-                className="my-auto row row-cols-3 g-2"
-                style={{ listStyle: "none" }}
-              >
-                <li className="my-auto">
-                  <Link
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      setCurrentLocale("cs") // Pouze vlastní řešení
-                    }}
-                    aria-label="Switch to Czech language"
-                  >
-                    <img
-                      className="border rounded-5 shadow-sm"
-                      // src={`${process.env.PUBLIC_URL}/img/lang/czech.png`}
-                      src={`${BASE_URL}${data.navbar.langImage[0].langImage.url}`}
-                      alt={data.navbar.langImage[0].langImage.alternativeText}
-                      width="35"
-                      height="auto"
-                    />
-                  </Link>
-                </li>
-                <li className="my-auto">
-                  <Link
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      setCurrentLocale("en") // Pouze vlastní řešení
-                    }}
-                    aria-label="Switch to English language"
-                  >
-                    <img
-                      className="border rounded-5 shadow-sm"
-                      // src={`${process.env.PUBLIC_URL}/img/lang/english.png`}
-                      src={`${BASE_URL}${data.navbar.langImage[1].langImage.url}`}
-                      alt={data.navbar.langImage[1].langImage.alternativeText}
-                      width="35"
-                      height="auto"
-                    />
-                  </Link>
-                </li>
-                <li className="my-auto">
-                  <Link
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      setCurrentLocale("mn") // Pouze vlastní řešení
-                    }}
-                    aria-label="Switch to Mongolian language"
-                  >
-                    <img
-                      className="border rounded-5 shadow-sm"
-                      // src={`${process.env.PUBLIC_URL}/img/lang/mongolian.png`}
-                      src={`${BASE_URL}${data.navbar.langImage[2].langImage.url}`}
-                      alt={data.navbar.langImage[2].langImage.alternativeText}
-                      width="35"
-                      height="auto"
-                    />
-                  </Link>
-                </li>
-              </ul>
+              <LanguageSwitcher />
             </div>
             <button
               className="navbar-toggler"

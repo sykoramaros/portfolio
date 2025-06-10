@@ -7,10 +7,11 @@ import "./Contact.css"
 import { useQuery, gql } from "@apollo/client"
 import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
+import { useLanguage } from "../../context/LanguageProvider"
 
 const CONTACT_FORM = gql`
-  query GetContactForm {
-    contactForm {
+  query GetContactForm($locale: I18NLocaleCode!) {
+    contactForm(locale: $locale) {
       documentId
       title
       paragraph
@@ -19,9 +20,7 @@ const CONTACT_FORM = gql`
       subject
       message
       sendButton
-    }
-    contactImage {
-      image {
+      contactImage {
         url
         alternativeText
       }
@@ -35,15 +34,25 @@ const ContactStrapi = () => {
 
   const BASE_URL = useBaseUrl()
   const { documentId } = useParams()
+  const { currentLocale } = useLanguage()
+
+  console.log("currentLocale", currentLocale)
 
   const { loading, error, data } = useQuery(CONTACT_FORM, {
+    // skip: !currentLocale,
     variables: {
+      // documentId,
+      locale: currentLocale,
       documentId,
     },
   })
 
-  const imageUrl = `${BASE_URL}${data?.contactImage.image.url}`
-  const altText = data?.contactImage.image.alternativeText
+  const imageUrl = `${BASE_URL}${data?.contactForm.contactImage.url}`
+  const altText = data?.contactForm.alternativeText
+
+  // useEffect(() => {
+  //   console.log("Aktuální locale:", currentLocale)
+  // }, [currentLocale])
 
   // console.log(data)
 

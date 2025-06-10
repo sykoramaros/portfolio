@@ -5,7 +5,7 @@ const SentEmailModal = ({ show, onClose }) => {
     <div
       className={`modal fade ${show ? "d-block" : "d-none"}`}
       id="alertModal"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="alertModalLabel"
     >
       <div className="modal-dialog modal-dialog-centered">
