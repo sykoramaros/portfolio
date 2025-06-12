@@ -49,7 +49,7 @@ const Layout = () => {
     }
     if (
       !infoModalIsOpen &&
-      currentTime - parseInt(modalTimestamp) > oneHour + fiveSeconds
+      currentTime - parseInt(modalTimestamp) > oneHour
     ) {
       setCookiesModalIsOpen(true)
     }

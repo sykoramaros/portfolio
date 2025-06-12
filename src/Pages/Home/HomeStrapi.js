@@ -6,10 +6,11 @@ import TypedTextSkillsStrapi from "../../Components/TypedText/TypedTextSkillsStr
 import { useQuery, gql } from "@apollo/client"
 import { useParams, Link } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
+import { useLanguage } from "../../context/LanguageProvider"
 
 const HOME_CONTENT = gql`
-  query GetHomeContent {
-    homePage {
+  query GetHomeContent($locale: I18NLocaleCode!) {
+    homePage(locale: $locale) {
       documentId
       h1
       h2
@@ -46,19 +47,21 @@ const HOME_CONTENT = gql`
 const HomeStrapi = () => {
   const BASE_URL = useBaseUrl()
   const { documentId } = useParams()
+  const { currentLocale } = useLanguage()
 
   const { loading, error, data } = useQuery(HOME_CONTENT, {
     variables: {
+      locale: currentLocale,
       documentId,
     },
   })
 
   console.log(data)
 
-  const [svgDownloadHovered, setSvgDownloadHovered] = useState("")
+  const [svgDownloadHovered, setSvgDownloadHovered] = useState(null)
 
   useEffect(() => {
-    if (data?.homePage.downloadButton?.[1]?.url) {
+    if (data?.homePage?.downloadButtonImage?.[1]?.url) {
       setSvgDownloadHovered(data.homePage.downloadButtonImage[1].url)
     }
   }, [data])
@@ -104,13 +107,15 @@ const HomeStrapi = () => {
                 rel="noopener noreferrer"
               >
                 {data.homePage.downloadButton}{" "}
-                <img
-                  className="text-danger"
-                  src={`${BASE_URL}${svgDownloadHovered}`}
-                  // src={`${BASE_URL}${data.homePage.downloadButton[1].url}`}
-                  width="30px"
-                  alt="Download CV"
-                />
+                {svgDownloadHovered && (
+                  <img
+                    className="text-danger"
+                    src={`${BASE_URL}${svgDownloadHovered}`}
+                    // src={`${BASE_URL}${data.homePage.downloadButton[1].url}`}
+                    width="30px"
+                    alt="Download CV"
+                  />
+                )}
               </Link>
             </div>
             <p className="fs-3 text-center mt-5">
