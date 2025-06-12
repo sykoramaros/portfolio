@@ -27,7 +27,7 @@ const PROJECTS = gql`
         alternativeText
       }
     }
-    frontendProject {
+    frontendProject(locale: $locale) {
       documentId
       ProjectCard {
         webLink
@@ -41,7 +41,7 @@ const PROJECTS = gql`
         githubLink
       }
     }
-    backendProject {
+    backendProject(locale: $locale) {
       documentId
       ProjectCard {
         webLink
@@ -68,7 +68,7 @@ const ProjectsStrapi = () => {
 
   const { loading, error, data } = useQuery(PROJECTS, {
     variables: {
-      // documentId,
+      documentId,
       locale: currentLocale,
     },
   })
@@ -113,6 +113,7 @@ const ProjectsStrapi = () => {
               : "fs-2 fs-sm-1 col-auto text-center fw-bold text-info"
           }
           onClick={() => setIsFrontendListVisible(!isFrontendListVisible)}
+          alt={"switch"}
           style={{ cursor: "pointer" }}
         >
           Backend
