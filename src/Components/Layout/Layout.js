@@ -33,6 +33,7 @@ const Layout = () => {
     // Zkontroluj localStorage
     // const modalWasShown = localStorage.getItem("modalShown")
     const modalTimestamp = localStorage.getItem("modalShown")
+    const cookiesAccepted = localStorage.getItem("cookiesAccepted")
     const currentTime = Date.now()
     const oneHour = 60 * 60 * 1000 // 1 hodina v milisekundách
     const fifteenMinutes = 15 * 60 * 1000 // 15 minut v milisekundách
@@ -47,13 +48,11 @@ const Layout = () => {
       setInfoModalIsOpen(true) // modal se zobrazí
       localStorage.setItem("modalShown", currentTime.toString()) // ulož aktuální čas
     }
-    if (
-      !infoModalIsOpen &&
-      currentTime - parseInt(modalTimestamp) > oneHour
-    ) {
+    if (!cookiesAccepted || currentTime - parseInt(cookiesAccepted) > oneHour) {
       setCookiesModalIsOpen(true)
+      localStorage.setItem("cookiesAccepted", currentTime.toString())
     }
-  }, [infoModalIsOpen])
+  }, [])
 
   const documentId = "ng3r328ul4gs581tvzgjeg10"
 

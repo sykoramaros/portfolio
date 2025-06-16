@@ -41,10 +41,10 @@ const WebTechBoardStrapi = () => {
   console.log(data)
 
   return (
-    <div className="container">
+    <div className="">
       {/* <p>Back Text: {data.documentId}</p> */}
       <div
-        className="row display-1 text-center border border-warning bg-warning-light  align-items-center m-auto p-4 shadow-sm"
+        className="d-flex flex-wrap gap-4 p-4 border border-warning bg-warning-light justify-content-center align-items-center m-auto shadow-sm"
         style={{ transform: "rotate(-1.5deg)" }}
       >
         {data.webTechBoard.SkillCard.map((card) => (

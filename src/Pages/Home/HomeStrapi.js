@@ -56,7 +56,7 @@ const HomeStrapi = () => {
     },
   })
 
-  console.log(data)
+  // console.log(data)
 
   const [svgDownloadHovered, setSvgDownloadHovered] = useState(null)
 

@@ -11,10 +11,10 @@ const SkillsStrapi = () => {
     <div>
       <div className="">
         <h1 className="display-3 mt-5 text-center text-primary text-shadow">
-          {/* <Trans id="skills.h1">skills.title</Trans> */}
+          Skills
         </h1>
-        <div className="row gy-5 gx-0 mt-2">
-          <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
+        <div className="row gap-4 mt-5">
+          <div className="w-auto" style={{ position: "relative" }}>
             <ProgLangBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
@@ -22,7 +22,7 @@ const SkillsStrapi = () => {
               alt="Right blue pin"
             />
           </div>
-          <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
+          <div className="w-auto" style={{ position: "relative" }}>
             <WebTechBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
@@ -30,7 +30,7 @@ const SkillsStrapi = () => {
               alt="Lef red pin"
             />
           </div>
-          <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
+          <div className="w-auto" style={{ position: "relative" }}>
             <DevToolsBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
@@ -38,7 +38,7 @@ const SkillsStrapi = () => {
               alt="Right green pin"
             />
           </div>
-          <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
+          <div className="w-auto" style={{ position: "relative" }}>
             <DatabasesBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
@@ -46,7 +46,7 @@ const SkillsStrapi = () => {
               alt="Right yellow pin"
             />
           </div>
-          <div className="col-lg-6 w-auto" style={{ position: "relative" }}>
+          <div className="w-auto" style={{ position: "relative" }}>
             <OthersBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
