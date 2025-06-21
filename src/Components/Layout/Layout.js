@@ -38,17 +38,18 @@ const Layout = () => {
     const oneHour = 60 * 60 * 1000 // 1 hodina v milisekundách
     const fifteenMinutes = 15 * 60 * 1000 // 15 minut v milisekundách
     const fiveSeconds = 5 * 1000 // 5 sekund v milisekundách
+    const oneWeek = 7 * 24 * 60 * 60 * 1000 // 1 týden v milisekundách
 
     // if (!modalWasShown) {
     //   setIsOpen(true) // modal se zobrazí
     //   localStorage.setItem("modalShown", "true") // označ, že modal už byl zobrazen
     // }
 
-    if (!modalTimestamp || currentTime - parseInt(modalTimestamp) > oneHour) {
+    if (!modalTimestamp || currentTime - parseInt(modalTimestamp) > oneWeek) {
       setInfoModalIsOpen(true) // modal se zobrazí
       localStorage.setItem("modalShown", currentTime.toString()) // ulož aktuální čas
     }
-    if (!cookiesAccepted || currentTime - parseInt(cookiesAccepted) > oneHour) {
+    if (!cookiesAccepted || currentTime - parseInt(cookiesAccepted) > oneWeek) {
       setCookiesModalIsOpen(true)
       localStorage.setItem("cookiesAccepted", currentTime.toString())
     }
@@ -98,9 +99,9 @@ const Layout = () => {
         </div>
 
         {/* <Footer /> */}
-        <div>
-          <FooterStrapi />
-        </div>
+      </div>
+      <div>
+        <FooterStrapi />
       </div>
       {infoModalIsOpen && (
         <InfoModal
