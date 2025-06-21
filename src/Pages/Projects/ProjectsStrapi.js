@@ -26,6 +26,10 @@ const PROJECTS = gql`
         url
         alternativeText
       }
+      underConstructionImage {
+        url
+        alternativeText
+      }
     }
     frontendProject(locale: $locale) {
       documentId
@@ -39,6 +43,7 @@ const PROJECTS = gql`
         text
         technologies
         githubLink
+        isUnderConstruction
       }
     }
     backendProject(locale: $locale) {
@@ -53,6 +58,7 @@ const PROJECTS = gql`
         text
         technologies
         githubLink
+        isUnderConstruction
       }
     }
   }
@@ -121,7 +127,7 @@ const ProjectsStrapi = () => {
       </div>
       <hr className="w-75 mx-auto mt-4 border-muted" />
       <br />
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mx-1 mx-sm-2 mx-md-4">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         {(isFrontendListVisible
           ? data.frontendProject.ProjectCard
           : data.backendProject.ProjectCard
@@ -135,6 +141,8 @@ const ProjectsStrapi = () => {
             technologies={inside.technologies}
             githubImage={data.projectsPage.githubImage}
             githubLink={inside.githubLink}
+            isUnderConstruction={inside.isUnderConstruction}
+            underConstructionImage={data.projectsPage.underConstructionImage}
           />
         ))}
       </div>

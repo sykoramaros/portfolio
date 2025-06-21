@@ -1,4 +1,5 @@
 import React from "react"
+// import { useState } from "react"
 import "./ProjectCard.css"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 
@@ -10,12 +11,14 @@ const ProjectCardStrapi = ({
   technologies,
   githubImage,
   githubLink,
+  isUnderConstruction,
+  underConstructionImage,
 }) => {
   const BASE_URL = useBaseUrl()
 
   return (
     <div>
-      <div className="col shadow-sm" style={{ position: "relative" }}>
+      <div className="col shadow-sm" style={{ position: "relative", opacity: isUnderConstruction ? 0.5 : 1 }}>
         {/* Hlavní odkaz pro kartu */}
         <a
           href={webLink}
@@ -23,7 +26,7 @@ const ProjectCardStrapi = ({
           target="_blank"
           rel="noreferrer noopener"
         >
-          <div className="card h-100">
+          <div className="card h-100 ">
             {/*<img*/}
             {/*  className="img-fluid top-paper-tape"*/}
             {/*  src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}*/}
@@ -66,6 +69,14 @@ const ProjectCardStrapi = ({
             alt={githubImage?.alternativeText}
           />
         </a>
+        {/* IsUnderConstructionImage */}
+        {isUnderConstruction && (
+          <img
+            className="img-fluid under-construction"
+            src={`${BASE_URL}${underConstructionImage?.url}`}
+            alt={underConstructionImage?.alternativeText}
+          />
+        )}
       </div>
       <br className="my-5" />
     </div>

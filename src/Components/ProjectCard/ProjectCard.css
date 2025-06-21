@@ -19,6 +19,15 @@
   height: auto;
 }
 
+.under-construction {
+  position: absolute;
+  opacity: 1;
+  top: 25%;
+  left: 53%;
+  transform: translateX(-50%);
+  width: 95%;
+}
+
 @media (max-width: 767px) {
   .switch-button {
     width: 100px;
@@ -51,7 +60,7 @@
 }
 
 /* TOP TAPE */
-.top-paper-tape {
+/* .top-paper-tape {
   filter: drop-shadow(1px 0px 5px #5b5b5b);
   opacity: 0.7;
   width: 50%;
@@ -62,31 +71,34 @@
   right: -50px;
   z-index: 1000;
   transform-origin: top right;
-}
+} */
 
+/* Můžete upravit pozici, aby byl obrázek stále na správném místě */
 @media (max-width: 1199px) {
-  .top-paper-tape {
-    top: 60px; /* Můžete upravit pozici, aby byl obrázek stále na správném místě */
+  /* .top-paper-tape {
+    top: 60px;
     right: -45px;
-  }
+  } */
 }
 
+/* Můžete upravit pozici, aby byl obrázek stále na správném místě */
 @media (max-width: 990px) {
-  .top-paper-tape {
-    top: 60px; /* Můžete upravit pozici, aby byl obrázek stále na správném místě */
+  /* .top-paper-tape {
+    top: 60px;
     right: -50px;
-  }
+  } */
 }
 
+/* Můžete upravit pozici, aby byl obrázek stále na správném místě */
 @media (max-width: 767px) {
-  .top-paper-tape {
-    top: 110px; /* Můžete upravit pozici, aby byl obrázek stále na správném místě */
+  /* .top-paper-tape {
+    top: 110px;
     right: -80px;
-  }
+  } */
 }
 
 /* BOTTOM TAPE */
-.bottom-paper-tape {
+/* .bottom-paper-tape {
   filter: drop-shadow(1px 0px 5px #5b5b5b);
   opacity: 0.7;
   width: 50%;
@@ -97,25 +109,25 @@
   z-index: 1000;
   transform-origin: bottom left;
   transform: scale(-1) rotate(43deg);
-}
+} */
 
 @media (max-width: 1199px) {
-  .bottom-paper-tape {
+  /* .bottom-paper-tape {
     bottom: -10px;
     left: 85px;
-  }
+  } */
 }
 
 @media (max-width: 990px) {
-  .bottom-paper-tape {
+  /* .bottom-paper-tape {
     bottom: -20px;
     left: 90px;
-  }
+  } */
 }
 
 @media (max-width: 767px) {
-  .bottom-paper-tape {
+  /* .bottom-paper-tape {
     bottom: -35px;
     left: 140px;
-  }
+  } */
 }
