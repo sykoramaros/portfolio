@@ -1,5 +1,5 @@
 import React from "react"
-// import { useState } from "react"
+import { useState } from "react"
 import "./ProjectCard.css"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 
@@ -13,12 +13,20 @@ const ProjectCardStrapi = ({
   githubLink,
   isUnderConstruction,
   underConstructionImage,
+  isSchoolProject,
+  schoolProjectImage,
+  bubleImage,
+  bubleText,
 }) => {
   const BASE_URL = useBaseUrl()
+  const [showBubble, setShowBubble] = useState(false)
 
   return (
     <div>
-      <div className="col shadow-sm" style={{ position: "relative", opacity: isUnderConstruction ? 0.5 : 1 }}>
+      <div
+        className="col shadow-sm"
+        style={{ position: "relative", opacity: isUnderConstruction ? 0.5 : 1 }}
+      >
         {/* Hlavní odkaz pro kartu */}
         <a
           href={webLink}
@@ -69,6 +77,31 @@ const ProjectCardStrapi = ({
             alt={githubImage?.alternativeText}
           />
         </a>
+        {/* IsSchoolProjectImage */}
+        {isSchoolProject && (
+          <div
+            className="school-project-container"
+            onMouseEnter={() => setShowBubble(true)}
+            onMouseLeave={() => setShowBubble(false)}
+          >
+            <img
+              className="img-fluid school-project"
+              style={{ transform: "scaleX(-1)" }}
+              src={`${BASE_URL}${schoolProjectImage?.url}`}
+              alt={schoolProjectImage?.alternativeText}
+            />
+          </div>
+        )}
+        {showBubble && (
+          <div className="buble-container">
+            <img
+              className="img-fluid"
+              src={`${BASE_URL}${bubleImage?.url}`}
+              alt={bubleImage?.alternativeText}
+            />
+            <span className="buble-text text-center fs-4">{bubleText}</span>
+          </div>
+        )}
         {/* IsUnderConstructionImage */}
         {isUnderConstruction && (
           <img

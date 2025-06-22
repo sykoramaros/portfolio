@@ -30,6 +30,15 @@ const PROJECTS = gql`
         url
         alternativeText
       }
+      schoolProjectImage {
+        url
+        alternativeText
+      }
+      bubleImage {
+        url
+        alternativeText
+      }
+      bubleText
     }
     frontendProject(locale: $locale) {
       documentId
@@ -45,6 +54,9 @@ const PROJECTS = gql`
         githubLink
         isUnderConstruction
       }
+      ProjectCard {
+        isSchoolProject
+      }
     }
     backendProject(locale: $locale) {
       documentId
@@ -59,6 +71,9 @@ const PROJECTS = gql`
         technologies
         githubLink
         isUnderConstruction
+      }
+      ProjectCard {
+        isSchoolProject
       }
     }
   }
@@ -143,6 +158,10 @@ const ProjectsStrapi = () => {
             githubLink={inside.githubLink}
             isUnderConstruction={inside.isUnderConstruction}
             underConstructionImage={data.projectsPage.underConstructionImage}
+            isSchoolProject={inside.isSchoolProject}
+            schoolProjectImage={data.projectsPage.schoolProjectImage}
+            bubleImage={data.projectsPage.bubleImage}
+            bubleText={data.projectsPage.bubleText}
           />
         ))}
       </div>
