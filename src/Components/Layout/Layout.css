@@ -1,3 +1,16 @@
+.footer-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-height: 428px) {
+  .footer-box {
+    position: unset;
+  }
+}
+
 .cookies-modal-container {
   box-shadow: 2px 0 20px #000000;
   overflow: hidden;

@@ -100,7 +100,7 @@ const Layout = () => {
 
         {/* <Footer /> */}
       </div>
-      <div>
+      <div className="footer-box">
         <FooterStrapi />
       </div>
       {infoModalIsOpen && (
