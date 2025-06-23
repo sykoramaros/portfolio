@@ -7,6 +7,8 @@ import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 import { useLanguage } from "../../context/LanguageProvider"
 
+import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner"
+
 const HOBBIES = gql`
   query GetHobbies($locale: I18NLocaleCode!) {
     hobbiesList(locale: $locale) {
@@ -38,7 +40,7 @@ const HobbiesStrapi = () => {
     },
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <LoadingSpinner />
   if (error) return <p>Error :(</p>
 
   // console.log(data)

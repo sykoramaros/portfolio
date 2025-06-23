@@ -7,6 +7,8 @@ import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 import { useLanguage } from "../../context/LanguageProvider"
 
+import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner"
+
 const PROJECTS = gql`
   query GetProjects($locale: I18NLocaleCode!) {
     projectsPage(locale: $locale) {
@@ -94,7 +96,7 @@ const ProjectsStrapi = () => {
     },
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <LoadingSpinner />
   if (error) return <p>Error :(</p>
 
   // console.log(data)

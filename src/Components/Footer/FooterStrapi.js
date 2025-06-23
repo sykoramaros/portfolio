@@ -6,6 +6,8 @@ import { useQuery, gql } from "@apollo/client"
 import { useParams, Link } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner"
+
 const MEDIA_IMG = gql`
   query GetMediaImgs {
     mediaImgs {
@@ -30,7 +32,7 @@ const FooterStrapi = () => {
     },
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <LoadingSpinner />
   if (error) return <p>Error :(</p>
 
   // console.log(data)

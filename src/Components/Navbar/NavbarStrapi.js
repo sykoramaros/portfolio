@@ -12,6 +12,8 @@ import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher"
 import "./Navbar.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner"
+
 // if (typeof currentLocale !== "string") throw new Error("locale není string")
 
 const NAVBAR = gql`
@@ -74,12 +76,13 @@ const Navbar = () => {
     variables: {
       // documentId,
       // locale: "en",
-      locale: currentLocale, id: documentId
+      locale: currentLocale,
+      id: documentId,
     },
     // fetchPolicy: "no-cache",
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <LoadingSpinner />
   if (error) {
     return console.log(error)
     // return <p>Error :( {error.message}</p>

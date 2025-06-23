@@ -9,6 +9,8 @@ import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 import { useLanguage } from "../../context/LanguageProvider"
 
+import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner"
+
 const CONTACT_FORM = gql`
   query GetContactForm($locale: I18NLocaleCode!) {
     contactForm(locale: $locale) {
@@ -57,7 +59,7 @@ const ContactStrapi = () => {
   // console.log(data)
 
   const sendEmail = (event) => {
-    if (loading) return <p>Loading...</p>
+    if (loading) return <LoadingSpinner />
     if (error) return <p>Error :(</p>
 
     event.preventDefault()
@@ -153,6 +155,7 @@ const ContactStrapi = () => {
             </div>
           </div>
         </div>
+
         <br />
         {/* <p>{imageUrl}</p> */}
         <img

@@ -8,6 +8,8 @@ import { useParams, Link } from "react-router-dom"
 import { useBaseUrl } from "../../context/BaseUrlProvider"
 import { useLanguage } from "../../context/LanguageProvider"
 
+import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner"
+
 const HOME_CONTENT = gql`
   query GetHomeContent($locale: I18NLocaleCode!) {
     homePage(locale: $locale) {
@@ -73,7 +75,7 @@ const HomeStrapi = () => {
     setSvgDownloadHovered(`${data.homePage.downloadButtonImage[1].url}`)
   }
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <LoadingSpinner />
   if (error) return <p>Error :(</p>
 
   return (

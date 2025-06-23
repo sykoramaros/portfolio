@@ -6,6 +6,8 @@ import { useQuery, gql } from "@apollo/client"
 import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../../context/BaseUrlProvider"
 
+import LoadingSpinner from "../../LoadingSpinner/LoadingSpinner"
+
 const SKILLS = gql`
   query GetSkills {
     othersBoard {
@@ -34,7 +36,7 @@ const OthersBoardStrapi = () => {
     },
   })
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <LoadingSpinner />
   if (error) return <p>Error :(</p>
 
   // console.log(data)
