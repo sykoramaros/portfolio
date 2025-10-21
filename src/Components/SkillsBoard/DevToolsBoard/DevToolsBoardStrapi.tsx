@@ -1,9 +1,6 @@
-import React from "react"
 import SkillCardStrapi from "../../SkillCard/SkillCardStrapi"
 import "./DevToolsBoard.css"
-
 import { useQuery, gql } from "@apollo/client"
-import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../../providers/BaseUrlProvider"
 
 import LoadingSpinner from "../../LoadingSpinner/LoadingSpinner"
@@ -28,12 +25,9 @@ const SKILLS = gql`
 `
 const DevToolsBoardStrapi = () => {
   const BASE_URL = useBaseUrl()
-  const { documentId } = useParams()
 
   const { loading, error, data } = useQuery(SKILLS, {
-    variables: {
-      documentId,
-    },
+    variables: {},
   })
 
   if (loading) return <LoadingSpinner />
@@ -43,7 +37,6 @@ const DevToolsBoardStrapi = () => {
 
   return (
     <div className="">
-      {/* <p>Back Text: {data.documentId}</p> */}
       <div
         className="d-flex flex-wrap gap-4 p-4 border border-warning bg-warning-light justify-content-center align-items-center m-auto shadow-sm"
         style={{ transform: "rotate(-1.5deg)" }}

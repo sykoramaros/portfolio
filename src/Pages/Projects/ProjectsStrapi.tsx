@@ -1,12 +1,8 @@
-import React from "react"
 import { useState } from "react"
 import ProjectCardStrapi from "../../components/ProjectCard/ProjectCardStrapi"
-
 import { useQuery, gql } from "@apollo/client"
-import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../providers/BaseUrlProvider"
 import { useLanguage } from "../../providers/LanguageProvider"
-
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 
 const PROJECTS = gql`
@@ -83,23 +79,17 @@ const PROJECTS = gql`
 
 const ProjectsStrapi = () => {
   const [isFrontendListVisible, setIsFrontendListVisible] = useState(true)
-
   const BASE_URL = useBaseUrl()
-
-  const { documentId } = useParams()
   const { currentLocale } = useLanguage()
 
   const { loading, error, data } = useQuery(PROJECTS, {
     variables: {
-      documentId,
       locale: currentLocale,
     },
   })
 
   if (loading) return <LoadingSpinner />
   if (error) return <p>Error :(</p>
-
-  // console.log(data)
 
   return (
     <div className="">
@@ -136,7 +126,7 @@ const ProjectsStrapi = () => {
               : "fs-2 fs-sm-1 col-auto text-center fw-bold text-info"
           }
           onClick={() => setIsFrontendListVisible(!isFrontendListVisible)}
-          alt={"switch"}
+          // alt="switch"
           style={{ cursor: "pointer" }}
         >
           Backend

@@ -9,15 +9,7 @@
   transform: scale(1);
 }
 
-.switch-button:hover {
-  filter: brightness(1.2);
-}
 
-.switch-button {
-  filter: drop-shadow(1px 0px 5px #5b5b5b);
-  width: 110px;
-  height: auto;
-}
 
 .under-construction {
   position: absolute;

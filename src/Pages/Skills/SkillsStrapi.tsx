@@ -1,4 +1,3 @@
-import React from "react"
 import "./Skills.css"
 import ProgLangBoardStrapi from "../../components/SkillsBoard/ProgLangBoard/ProgLangBoardStrapi"
 import WebTechBoardStrapi from "../../components/SkillsBoard/WebTechBoard/WebTechBoardStrapi"

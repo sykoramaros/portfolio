@@ -1,9 +1,7 @@
-import React from "react"
 import SkillCardStrapi from "../../SkillCard/SkillCardStrapi"
 import "./WebTechBoard.css"
 
 import { useQuery, gql } from "@apollo/client"
-import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../../providers/BaseUrlProvider"
 
 import LoadingSpinner from "../../LoadingSpinner/LoadingSpinner"
@@ -29,12 +27,9 @@ const SKILLS = gql`
 
 const WebTechBoardStrapi = () => {
   const BASE_URL = useBaseUrl()
-  const { documentId } = useParams()
 
   const { loading, error, data } = useQuery(SKILLS, {
-    variables: {
-      documentId,
-    },
+    variables: {},
   })
 
   if (loading) return <LoadingSpinner />

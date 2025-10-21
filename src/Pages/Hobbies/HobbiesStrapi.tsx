@@ -1,9 +1,6 @@
-import React from "react"
-
 import HobbyCardStrapi from "../../components/HobbyCard/HobbyCardStrapi"
 
 import { useQuery, gql } from "@apollo/client"
-import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../providers/BaseUrlProvider"
 import { useLanguage } from "../../providers/LanguageProvider"
 
@@ -30,20 +27,16 @@ const HOBBIES = gql`
 
 const HobbiesStrapi = () => {
   const BASE_URL = useBaseUrl()
-  const { documentId } = useParams()
   const { currentLocale } = useLanguage()
 
   const { loading, error, data } = useQuery(HOBBIES, {
     variables: {
-      documentId,
       locale: currentLocale,
     },
   })
 
   if (loading) return <LoadingSpinner />
   if (error) return <p>Error :(</p>
-
-  // console.log(data)
 
   return (
     <div className="">
@@ -57,6 +50,7 @@ const HobbiesStrapi = () => {
             key={inside.documentId}
             rotation={inside.rotation}
             image={`${BASE_URL}${inside.image.url}`}
+            imgAlt={inside.image.alternativeText}
             title={inside.title}
             backText={inside.backText}
             link={inside.link}

@@ -5,9 +5,6 @@ body {
     #ffffff 60%,
     #c0b8b0 120%
   );
-}
-
-body {
   font-family: "Ayuthaya", monospace;
 }
 
@@ -140,4 +137,14 @@ body {
 
 .nav-link:hover {
   color: #ffaa00 !important;
+}
+
+.switch-button:hover {
+  filter: brightness(1.2);
+}
+
+.switch-button {
+  filter: drop-shadow(1px 0px 5px #5b5b5b);
+  width: 110px;
+  height: auto;
 }

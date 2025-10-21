@@ -1,4 +1,3 @@
-import React from "react"
 import { useState } from "react"
 import "./ProjectCard.css"
 import { useBaseUrl } from "../../providers/BaseUrlProvider"
