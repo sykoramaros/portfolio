@@ -2,7 +2,6 @@
   "name": "portfolio_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sykoramaros.github.io/portfolio",
   "dependencies": {
     "@apollo/client": "^3.13.8",
     "@lingui/core": "^5.1.2",
@@ -38,7 +37,8 @@
     "compile:locales": "lingui compile",
     "start": "npm run extract && npm run compile:locales && react-scripts start",
     "predeploy": "npm run compile:locales && npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run deploy:server",
+    "deploy:server": "./deploy.sh"
   },
   "eslintConfig": {
     "extends": [
@@ -60,7 +60,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@lingui/cli": "^5.3.1",
-    "gh-pages": "^6.3.0"
+    "@lingui/cli": "^5.3.1"
   }
 }
