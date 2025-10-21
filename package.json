@@ -29,10 +29,9 @@
     "typed.js": "^2.1.0"
   },
   "scripts": {
-    "start:fast": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "extract": "lingui extract",
     "compile:locales": "lingui compile",
     "start": "npm run extract && npm run compile:locales && react-scripts start",
@@ -60,6 +59,8 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@lingui/cli": "^5.3.1"
+    "@lingui/cli": "^5.3.1",
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.11"
   }
 }

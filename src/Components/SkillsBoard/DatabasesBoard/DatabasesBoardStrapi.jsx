@@ -1,16 +1,16 @@
 import React from "react"
 import SkillCardStrapi from "../../SkillCard/SkillCardStrapi"
-import "./WebTechBoard.css"
+import "./DatabasesBoard.css"
 
 import { useQuery, gql } from "@apollo/client"
 import { useParams } from "react-router-dom"
-import { useBaseUrl } from "../../../context/BaseUrlProvider"
+import { useBaseUrl } from "../../../providers/BaseUrlProvider"
 
 import LoadingSpinner from "../../LoadingSpinner/LoadingSpinner"
 
 const SKILLS = gql`
   query GetSkills {
-    webTechBoard {
+    databasesBoard {
       documentId
       SkillCard {
         BackText
@@ -26,8 +26,7 @@ const SKILLS = gql`
     }
   }
 `
-
-const WebTechBoardStrapi = () => {
+const DatabasesBoardStrapi = () => {
   const BASE_URL = useBaseUrl()
   const { documentId } = useParams()
 
@@ -46,10 +45,10 @@ const WebTechBoardStrapi = () => {
     <div className="">
       {/* <p>Back Text: {data.documentId}</p> */}
       <div
-        className="d-flex flex-wrap gap-4 p-4 border border-warning bg-warning-light justify-content-center align-items-center m-auto shadow-sm"
+        className="d-flex flex-wrap gap-4 p-4 border border-warning bg-warning-light justify-content-evenly align-items-center m-auto shadow-sm"
         style={{ transform: "rotate(-1.5deg)" }}
       >
-        {data.webTechBoard.SkillCard.map((card) => (
+        {data.databasesBoard.SkillCard.map((card) => (
           <SkillCardStrapi
             key={card.id}
             imageSrc={`${BASE_URL}${card.ClassicImage.url}`}
@@ -63,4 +62,4 @@ const WebTechBoardStrapi = () => {
   )
 }
 
-export default WebTechBoardStrapi
+export default DatabasesBoardStrapi

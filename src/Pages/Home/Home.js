@@ -35,14 +35,14 @@ const Home = () => {
             <div className="d-flex justify-content-center position-relative">
               <a
                   className="download-button btn button-info fs-5 rounded-4 w-auto px-4 mt-4"
-                  href={`${process.env.PUBLIC_URL}/documents/marian_sykora_cv_2025_3.pdf`}
+                  href={`${import.meta.env.VITE_API_URL}/documents/marian_sykora_cv_2025_3.pdf`}
                   onMouseEnter={handleSvgDownloadHover}
                   onMouseLeave={handleSvgDownloadLeave}
                   download
               ><Trans id="home.download">download</Trans>{" "}
                 <img
                     className="text-danger"
-                    src={`${process.env.PUBLIC_URL}/img/home/${svgDownloadHovered}`}
+                    src={`${import.meta.env.VITE_API_URL}/img/home/${svgDownloadHovered}`}
                     width="30px"
                     alt="Download CV"
                 />
@@ -67,7 +67,7 @@ const Home = () => {
                 maskImage:
                   "radial-gradient(circle at center, black 60%, transparent 100%)",
               }}
-              src={`${process.env.PUBLIC_URL}/img/computer.jpg`}
+              src={`${import.meta.env.VITE_API_URL}/img/computer.jpg`}
               alt="Person sitting behind a computer"
             />
           </div>

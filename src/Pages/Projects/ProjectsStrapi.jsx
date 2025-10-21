@@ -4,8 +4,8 @@ import ProjectCardStrapi from "../../Components/ProjectCard/ProjectCardStrapi"
 
 import { useQuery, gql } from "@apollo/client"
 import { useParams } from "react-router-dom"
-import { useBaseUrl } from "../../context/BaseUrlProvider"
-import { useLanguage } from "../../context/LanguageProvider"
+import { useBaseUrl } from "../../providers/BaseUrlProvider"
+import { useLanguage } from "../../providers/LanguageProvider"
 
 import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner"
 

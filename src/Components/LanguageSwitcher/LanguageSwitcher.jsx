@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { useQuery, gql } from "@apollo/client"
-import { useBaseUrl } from "../../context/BaseUrlProvider"
+import { useBaseUrl } from "../../providers/BaseUrlProvider"
 import { useParams } from "react-router-dom"
-import { useLanguage } from "../../context/LanguageProvider"
+import { useLanguage } from "../../providers/LanguageProvider"
 
 const LANGUAGE_SWITCHER = gql`
   query LanguageSwitcherQuery {

@@ -15,8 +15,8 @@ const SkillCard = ({ imageSrc, hoverImageSrc, backText }) => {
         className="img-thumbnail shadow-sm"
         src={
           isHovered
-            ? `${process.env.PUBLIC_URL}${imageSrc}`
-            : `${process.env.PUBLIC_URL}${hoverImageSrc}`
+            ? `${import.meta.env.VITE_API_URL}${imageSrc}`
+            : `${import.meta.env.VITE_API_URL}${hoverImageSrc}`
         }
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(true)}

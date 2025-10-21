@@ -36,7 +36,7 @@ const Navbar = () => {
           <div className="container-fluid">
             <Link className="navbar-brand fs-1 text-secondary" to={"/"}>
               <img
-                src={`${process.env.PUBLIC_URL}/img/logo.png`}
+                src={`${import.meta.env.VITE_API_URL}/img/logo.png`}
                 alt="Logo"
                 width="55px"
                 height="auto"
@@ -59,7 +59,7 @@ const Navbar = () => {
                   >
                     <img
                       className="border rounded-5 shadow-sm"
-                      src={`${process.env.PUBLIC_URL}/img/lang/czech.png`}
+                      src={`${import.meta.env.VITE_API_URL}/img/lang/czech.png`}
                       alt="Czech language"
                       width="35"
                       height="auto"
@@ -77,7 +77,7 @@ const Navbar = () => {
                   >
                     <img
                       className="border rounded-5 shadow-sm"
-                      src={`${process.env.PUBLIC_URL}/img/lang/english.png`}
+                      src={`${import.meta.env.VITE_API_URL}/img/lang/english.png`}
                       alt="English language"
                       width="35"
                       height="auto"
@@ -95,7 +95,7 @@ const Navbar = () => {
                   >
                     <img
                       className="border rounded-5 shadow-sm"
-                      src={`${process.env.PUBLIC_URL}/img/lang/mongolian.png`}
+                      src={`${import.meta.env.VITE_API_URL}/img/lang/mongolian.png`}
                       alt="Mongolian language"
                       width="35"
                       height="auto"

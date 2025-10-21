@@ -3,8 +3,8 @@ import { useState, useEffect, useRef } from "react"
 
 import { useQuery, gql } from "@apollo/client"
 import { useParams, Link } from "react-router-dom"
-import { useBaseUrl } from "../../context/BaseUrlProvider"
-import { useLanguage } from "../../context/LanguageProvider"
+import { useBaseUrl } from "../../providers/BaseUrlProvider"
+import { useLanguage } from "../../providers/LanguageProvider"
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher"
 
 // import TestLocale from "../TestLocale/TestLocale"
@@ -102,7 +102,6 @@ const Navbar = () => {
           <div className="container-fluid">
             <Link className="navbar-brand fs-1 text-secondary" to={"/"}>
               <img
-                // src={`${process.env.PUBLIC_URL}/img/logo.png`}
                 src={`${BASE_URL}${data?.navbar?.logoImg?.url}`}
                 alt={data?.navbar?.logoImg?.alternativeText}
                 width="55px"

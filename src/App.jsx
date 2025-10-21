@@ -10,10 +10,10 @@ import "./App.css"
 import { initGA, logPageView } from "./utils/Analytics"
 
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client"
-import { BaseUrlProvider } from "./context/BaseUrlProvider"
-import { LanguageProvider } from "./context/LanguageProvider"
+import { BaseUrlProvider } from "./providers/BaseUrlProvider"
+import { LanguageProvider } from "./providers/LanguageProvider"
 
-import Layout from "../src/Components/Layout/Layout"
+import Layout from "./Components/Layout/Layout"
 // import Home from "../src/Pages/Home/Home"
 // import About from "../src/Pages/About/About"
 // import Skills from "../src/Pages/Skills/Skills"

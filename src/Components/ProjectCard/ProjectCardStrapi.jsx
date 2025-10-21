@@ -1,7 +1,7 @@
 import React from "react"
 import { useState } from "react"
 import "./ProjectCard.css"
-import { useBaseUrl } from "../../context/BaseUrlProvider"
+import { useBaseUrl } from "../../providers/BaseUrlProvider"
 
 const ProjectCardStrapi = ({
   webLink,
@@ -35,17 +35,7 @@ const ProjectCardStrapi = ({
           rel="noreferrer noopener"
         >
           <div className="card h-100 ">
-            {/*<img*/}
-            {/*  className="img-fluid top-paper-tape"*/}
-            {/*  src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}*/}
-            {/*  alt="Paper tape"*/}
-            {/*/>*/}
-
-            {/*<img*/}
-            {/*  className="img-fluid bottom-paper-tape"*/}
-            {/*  src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}*/}
-            {/*  alt="Paper tape"*/}
-            {/*/>*/}
+      
 
             <img
               src={`${BASE_URL}${image.url}`}

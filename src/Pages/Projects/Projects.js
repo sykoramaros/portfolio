@@ -47,8 +47,8 @@ const Projects = () => {
           className="switch-button"
           src={
             isFrontendListVisible
-              ? `${process.env.PUBLIC_URL}/img/projects/decorations/switch_off.png`
-              : `${process.env.PUBLIC_URL}/img/projects/decorations/switch_on.png`
+              ? `${import.meta.env.VITE_API_URL}/img/projects/decorations/switch_off.png`
+              : `${import.meta.env.VITE_API_URL}/img/projects/decorations/switch_on.png`
           }
           onClick={() => setIsFrontendListVisible(!isFrontendListVisible)}
           alt={"switch"}

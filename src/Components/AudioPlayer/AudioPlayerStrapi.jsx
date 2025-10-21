@@ -5,7 +5,7 @@ import playlist from "./playlist.json"
 import "./AudioPlayer.css"
 import { useQuery, gql } from "@apollo/client"
 import { useParams, Link } from "react-router-dom"
-import { useBaseUrl } from "../../context/BaseUrlProvider"
+import { useBaseUrl } from "../../providers/BaseUrlProvider"
 
 const PLAYLIST = gql`
   query GetPlaylist {
@@ -107,7 +107,7 @@ const AudioPlayerStrapi = () => {
       <div className=" col-12 text-center">
         <img
           className="img-container"
-          src={`${process.env.PUBLIC_URL}${playlist[currentSong].image}`}
+          src={`${import.meta.env.VITE_API_URL}${playlist[currentSong].image}`}
           alt="Album cover"
           height={"95px"}
         />
@@ -116,7 +116,7 @@ const AudioPlayerStrapi = () => {
       <div className="col-12 text-center d-none">
         <ReactAudioPlayer
           ref={audioRef}
-          src={`${process.env.PUBLIC_URL}${playlist[currentSong].src}`}
+          src={`${import.meta.env.VITE_API_URL}${playlist[currentSong].src}`}
           autoPlay={false}
           controls={false}
           onPlay={() => setIsPlaying(true)}
@@ -134,7 +134,7 @@ const AudioPlayerStrapi = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={`${process.env.PUBLIC_URL}/img/audio_player/previous.svg`}
+              src={`${import.meta.env.VITE_API_URL}/img/audio_player/previous.svg`}
               alt="Previous song"
               height={"40px"}
             />
@@ -149,13 +149,13 @@ const AudioPlayerStrapi = () => {
           >
             {isPlaying ? (
               <img
-                src={`${process.env.PUBLIC_URL}/img/audio_player/pause.svg`}
+                src={`${import.meta.env.VITE_API_URL}/img/audio_player/pause.svg`}
                 alt="Pause"
                 height={"40px"}
               />
             ) : (
               <img
-                src={`${process.env.PUBLIC_URL}/img/audio_player/play.svg`}
+                src={`${import.meta.env.VITE_API_URL}/img/audio_player/play.svg`}
                 alt="Play"
                 height={"40px"}
               />
@@ -170,7 +170,7 @@ const AudioPlayerStrapi = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={`${process.env.PUBLIC_URL}/img/audio_player/next.svg`}
+              src={`${import.meta.env.VITE_API_URL}/img/audio_player/next.svg`}
               alt="Next song"
               height={"40px"}
             />

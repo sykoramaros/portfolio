@@ -21,20 +21,10 @@ const ProjectCard = ({
           rel="noreferrer noopener"
         >
           <div className="card h-100" >
-            {/*<img*/}
-            {/*  className="img-fluid top-paper-tape"*/}
-            {/*  src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}*/}
-            {/*  alt="Paper tape"*/}
-            {/*/>*/}
-
-            {/*<img*/}
-            {/*  className="img-fluid bottom-paper-tape"*/}
-            {/*  src={`${process.env.PUBLIC_URL}/img/projects/decorations/paper_tape.png`}*/}
-            {/*  alt="Paper tape"*/}
-            {/*/>*/}
+            
 
             <img
-              src={`${process.env.PUBLIC_URL}${image}`}
+              src={`${import.meta.env.VITE_API_URL}${image}`}
               className="card-img-top"
               alt="..."
             />
@@ -59,7 +49,7 @@ const ProjectCard = ({
         >
           <img
             className="img-fluid github-sticker"
-            src={`${process.env.PUBLIC_URL}/img/projects/decorations/github_sticker.png`}
+            src={`${import.meta.env.VITE_API_URL}/img/projects/decorations/github_sticker.png`}
             alt="GitHub"
           />
         </a>

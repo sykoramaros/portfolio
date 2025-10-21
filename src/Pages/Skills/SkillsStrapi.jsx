@@ -18,7 +18,9 @@ const SkillsStrapi = () => {
             <ProgLangBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
-              src={`${process.env.PUBLIC_URL}/img/skills/decorations/right_blue_pin.png`}
+              src={`${
+                import.meta.env.VITE_API_URL
+              }/img/skills/decorations/right_blue_pin.png`}
               alt="Right blue pin"
             />
           </div>
@@ -26,7 +28,9 @@ const SkillsStrapi = () => {
             <WebTechBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
-              src={`${process.env.PUBLIC_URL}/img/skills/decorations/left_red_pin.png`}
+              src={`${
+                import.meta.env.VITE_API_URL
+              }/img/skills/decorations/left_red_pin.png`}
               alt="Lef red pin"
             />
           </div>
@@ -34,7 +38,9 @@ const SkillsStrapi = () => {
             <DevToolsBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
-              src={`${process.env.PUBLIC_URL}/img/skills/decorations/right_green_pin.png`}
+              src={`${
+                import.meta.env.VITE_API_URL
+              }/img/skills/decorations/right_green_pin.png`}
               alt="Right green pin"
             />
           </div>
@@ -42,7 +48,9 @@ const SkillsStrapi = () => {
             <DatabasesBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
-              src={`${process.env.PUBLIC_URL}/img/skills/decorations/right_yellow_pin.png`}
+              src={`${
+                import.meta.env.VITE_API_URL
+              }/img/skills/decorations/right_yellow_pin.png`}
               alt="Right yellow pin"
             />
           </div>
@@ -50,7 +58,9 @@ const SkillsStrapi = () => {
             <OthersBoardStrapi />
             <img
               className="img-fluid pin-fixed-size"
-              src={`${process.env.PUBLIC_URL}/img/skills/decorations/right_blue_pin.png`}
+              src={`${
+                import.meta.env.VITE_API_URL
+              }/img/skills/decorations/right_blue_pin.png`}
               alt="Right blue pin"
             />
           </div>

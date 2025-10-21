@@ -19,7 +19,7 @@ const Footer = () => {
               >
                 <img
                   className="mx-auto d-block rounded-3"
-                  src={`${process.env.PUBLIC_URL}/img/linkedin.svg`}
+                  src={`${import.meta.env.VITE_API_URL}/img/linkedin.svg`}
                   width="60px"
                   alt="LinkedIn"
                 />
@@ -31,7 +31,7 @@ const Footer = () => {
                  rel="noopener noreferrer">
                 <img
                   className="mx-auto d-block rounded-3"
-                  src={`${process.env.PUBLIC_URL}/img/github.svg`}
+                  src={`${import.meta.env.VITE_API_URL}/img/github.svg`}
                   width="60px"
                   alt="GitHub"
                 />
@@ -45,7 +45,7 @@ const Footer = () => {
               >
                 <img
                   className="mx-auto d-block rounded-3"
-                  src={`${process.env.PUBLIC_URL}/img/facebook.svg`}
+                  src={`${import.meta.env.VITE_API_URL}/img/facebook.svg`}
                   width="60px"
                   alt="LinkedIn"
                 />

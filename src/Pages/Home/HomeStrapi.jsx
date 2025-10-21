@@ -5,8 +5,8 @@ import TypedTextSkillsStrapi from "../../Components/TypedText/TypedTextSkillsStr
 
 import { useQuery, gql } from "@apollo/client"
 import { useParams, Link } from "react-router-dom"
-import { useBaseUrl } from "../../context/BaseUrlProvider"
-import { useLanguage } from "../../context/LanguageProvider"
+import { useBaseUrl } from "../../providers/BaseUrlProvider"
+import { useLanguage } from "../../providers/LanguageProvider"
 
 import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner"
 
@@ -136,7 +136,7 @@ const HomeStrapi = () => {
                 maskImage:
                   "radial-gradient(circle at center, black 60%, transparent 100%)",
               }}
-              // src={`${process.env.PUBLIC_URL}/img/computer.jpg`}
+              
               src={`${BASE_URL}${data.homePage?.image.url}`}
               alt={data.homePage.image.alternativeText}
             />

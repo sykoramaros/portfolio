@@ -87,7 +87,7 @@ const Layout = () => {
           backgroundSize: "cover",
           backgroundRepeat: "none",
         }}
-        src={`${process.env.PUBLIC_URL}/img/background.svg`}
+        src={`${import.meta.env.VITE_API_URL}/img/background.svg`}
         alt="Background"
       />
 

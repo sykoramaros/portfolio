@@ -10,7 +10,7 @@ const LoadingSpinner = () => {
         <span class="visually-hidden">Loading...</span>
       </div> */}
       <img
-        src={`${process.env.PUBLIC_URL}/img/loading-spinner.svg`}
+        src={`${import.meta.env.VITE_API_URL}/img/loading-spinner.svg`}
         alt="Loading spinner"
       />
     </>

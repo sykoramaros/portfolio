@@ -4,7 +4,7 @@ import SkillCardStrapi from "../../SkillCard/SkillCardStrapi"
 
 import { useQuery, gql } from "@apollo/client"
 import { useParams } from "react-router-dom"
-import { useBaseUrl } from "../../../context/BaseUrlProvider"
+import { useBaseUrl } from "../../../providers/BaseUrlProvider"
 
 import LoadingSpinner from "../../LoadingSpinner/LoadingSpinner"
 

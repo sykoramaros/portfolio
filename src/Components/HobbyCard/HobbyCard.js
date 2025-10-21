@@ -31,7 +31,7 @@ const HobbyCard = ({
           >
             <div className="card-front">
               <img
-                src={`${process.env.PUBLIC_URL}${image}`}
+                src={`${import.meta.env.VITE_API_URL}${image}`}
                 // src={image}
                 className="card-img-top"
                 alt={imgAlt}
@@ -40,7 +40,7 @@ const HobbyCard = ({
             </div>
             <div className="card-back">
               <img
-                src={`${process.env.PUBLIC_URL}/img/hobbies/white.jpg`}
+                src={`${import.meta.env.VITE_API_URL}/img/hobbies/white.jpg`}
                 className="card-img-top"
                 alt="..."
               />

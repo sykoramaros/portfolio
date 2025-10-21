@@ -4,7 +4,7 @@ import "./Footer.css"
 import AudioPlayerStrapi from "../AudioPlayer/AudioPlayerStrapi"
 import { useQuery, gql } from "@apollo/client"
 import { useParams, Link } from "react-router-dom"
-import { useBaseUrl } from "../../context/BaseUrlProvider"
+import { useBaseUrl } from "../../providers/BaseUrlProvider"
 
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner"
 

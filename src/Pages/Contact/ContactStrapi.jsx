@@ -6,8 +6,8 @@ import "./Contact.css"
 
 import { useQuery, gql } from "@apollo/client"
 import { useParams } from "react-router-dom"
-import { useBaseUrl } from "../../context/BaseUrlProvider"
-import { useLanguage } from "../../context/LanguageProvider"
+import { useBaseUrl } from "../../providers/BaseUrlProvider"
+import { useLanguage } from "../../providers/LanguageProvider"
 
 import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner"
 
@@ -157,11 +157,9 @@ const ContactStrapi = () => {
         </div>
 
         <br />
-        {/* <p>{imageUrl}</p> */}
+
         <img
           className="img-fluid opacity-75 mx-auto d-block w-75 mt-5"
-          // src={`${process.env.PUBLIC_URL}/img/contact/pencil_paper.png`}
-          // src={`${BASE_URL}${data?.contactImage?.image?.url}`}
           src={imageUrl}
           alt={altText}
         />
