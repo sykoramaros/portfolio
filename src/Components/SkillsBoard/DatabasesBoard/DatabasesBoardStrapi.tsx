@@ -1,4 +1,3 @@
-import React from "react"
 import SkillCardStrapi from "../../SkillCard/SkillCardStrapi"
 import "./DatabasesBoard.css"
 
@@ -43,7 +42,6 @@ const DatabasesBoardStrapi = () => {
 
   return (
     <div className="">
-      {/* <p>Back Text: {data.documentId}</p> */}
       <div
         className="d-flex flex-wrap gap-4 p-4 border border-warning bg-warning-light justify-content-evenly align-items-center m-auto shadow-sm"
         style={{ transform: "rotate(-1.5deg)" }}

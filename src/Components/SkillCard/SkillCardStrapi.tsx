@@ -1,4 +1,3 @@
-import React from "react"
 import { useState } from "react"
 
 const SkillCard = ({ imageSrc, hoverImageSrc, backText, alternativeText }) => {
