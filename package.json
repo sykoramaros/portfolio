@@ -29,9 +29,9 @@
     "typed.js": "^2.1.0"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "bun run vite",
+    "build": "bun run vite build",
+    "preview": "bun run vite preview",
     "extract": "lingui extract",
     "compile:locales": "lingui compile",
     "start": "npm run extract && npm run compile:locales && react-scripts start",

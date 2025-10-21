@@ -1,3 +1,3 @@
 .PHONY: start
 start:
-	npm run dev || true
+	bun run dev || true
