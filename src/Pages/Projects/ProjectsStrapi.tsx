@@ -1,13 +1,13 @@
 import React from "react"
 import { useState } from "react"
-import ProjectCardStrapi from "../../Components/ProjectCard/ProjectCardStrapi"
+import ProjectCardStrapi from "../../components/ProjectCard/ProjectCardStrapi"
 
 import { useQuery, gql } from "@apollo/client"
 import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../providers/BaseUrlProvider"
 import { useLanguage } from "../../providers/LanguageProvider"
 
-import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner"
+import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 
 const PROJECTS = gql`
   query GetProjects($locale: I18NLocaleCode!) {

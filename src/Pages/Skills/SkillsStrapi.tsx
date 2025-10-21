@@ -1,10 +1,10 @@
 import React from "react"
 import "./Skills.css"
-import ProgLangBoardStrapi from "../../Components/SkillsBoard/ProgLangBoard/ProgLangBoardStrapi"
-import WebTechBoardStrapi from "../../Components/SkillsBoard/WebTechBoard/WebTechBoardStrapi"
-import DevToolsBoardStrapi from "../../Components/SkillsBoard/DevToolsBoard/DevToolsBoardStrapi"
-import DatabasesBoardStrapi from "../../Components/SkillsBoard/DatabasesBoard/DatabasesBoardStrapi"
-import OthersBoardStrapi from "../../Components/SkillsBoard/OthersBoard/OthersBoardStrapi"
+import ProgLangBoardStrapi from "../../components/SkillsBoard/ProgLangBoard/ProgLangBoardStrapi"
+import WebTechBoardStrapi from "../../components/SkillsBoard/WebTechBoard/WebTechBoardStrapi"
+import DevToolsBoardStrapi from "../../components/SkillsBoard/DevToolsBoard/DevToolsBoardStrapi"
+import DatabasesBoardStrapi from "../../components/SkillsBoard/DatabasesBoard/DatabasesBoardStrapi"
+import OthersBoardStrapi from "../../components/SkillsBoard/OthersBoard/OthersBoardStrapi"
 
 const SkillsStrapi = () => {
   return (

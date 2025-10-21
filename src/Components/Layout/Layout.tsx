@@ -1,12 +1,7 @@
-import React from "react"
-import { useState, useEffect } from "react"
-import { Outlet } from "react-router-dom"
+import { useState, useEffect, type PropsWithChildren } from "react"
 import { useQuery, gql } from "@apollo/client"
 import "./Layout.css"
-
-// import Navbar from "../Navbar/Navbar"
 import NavbarStrapi from "../Navbar/NavbarStrapi"
-// import Footer from "../Footer/Footer"
 import FooterStrapi from "../Footer/FooterStrapi"
 import InfoModal from "../InfoModal/InfoModal"
 import CookiesModalStrapi from "../CookiesModal/CookiesModalStrapi"
@@ -21,7 +16,7 @@ const MODAL = gql`
   }
 `
 
-const Layout = () => {
+const Layout = ({ children }: PropsWithChildren) => {
   const [infoModalIsOpen, setInfoModalIsOpen] = useState(false)
   const [cookiesModalIsOpen, setCookiesModalIsOpen] = useState(false)
   const [cookiesModalPosition, setCookiesModalPosition] = useState({
@@ -30,8 +25,6 @@ const Layout = () => {
   })
 
   useEffect(() => {
-    // Zkontroluj localStorage
-    // const modalWasShown = localStorage.getItem("modalShown")
     const modalTimestamp = localStorage.getItem("modalShown")
     const cookiesAccepted = localStorage.getItem("cookiesAccepted")
     const currentTime = Date.now()
@@ -39,11 +32,6 @@ const Layout = () => {
     const fifteenMinutes = 15 * 60 * 1000 // 15 minut v milisekundách
     const fiveSeconds = 5 * 1000 // 5 sekund v milisekundách
     const oneWeek = 7 * 24 * 60 * 60 * 1000 // 1 týden v milisekundách
-
-    // if (!modalWasShown) {
-    //   setIsOpen(true) // modal se zobrazí
-    //   localStorage.setItem("modalShown", "true") // označ, že modal už byl zobrazen
-    // }
 
     if (!modalTimestamp || currentTime - parseInt(modalTimestamp) > oneWeek) {
       setInfoModalIsOpen(true) // modal se zobrazí
@@ -61,17 +49,13 @@ const Layout = () => {
     variables: { documentId: documentId },
   })
 
-  // console.log(data)
-
   const handleCookiesClose = () => {
     // Spusť animaci skrytí
     setCookiesModalPosition({ top: "25vh", right: "-100vw" })
 
-    // Po dokončení animace (1s) skutečně skryj modal a ulož do localStorage
     setTimeout(() => {
       setCookiesModalIsOpen(false)
-      // localStorage.setItem("cookiesAccepted", "true")
-    }, 1000) // 1000ms odpovídá transition času
+    }, 1000)
   }
 
   return (
@@ -94,11 +78,7 @@ const Layout = () => {
       <div className="container-fluid" style={{ margin: "150px 0" }}>
         <NavbarStrapi />
 
-        <div className="container">
-          <Outlet />
-        </div>
-
-        {/* <Footer /> */}
+        <div className="container">{children}</div>
       </div>
       <div className="footer-box">
         <FooterStrapi />
@@ -121,10 +101,7 @@ const Layout = () => {
             zIndex: "999",
           }}
         >
-          <CookiesModalStrapi
-            // onClose={() => setCookiesModalIsOpen(false)}
-            onClose={handleCookiesClose}
-          />
+          <CookiesModalStrapi onClose={handleCookiesClose} />
         </div>
       )}
     </>

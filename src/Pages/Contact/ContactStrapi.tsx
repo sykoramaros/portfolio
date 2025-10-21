@@ -1,6 +1,6 @@
 import React from "react"
 import { useRef, useState } from "react"
-import SentEmailModal from "../../Components/SentEmailModal/SentEmailModal"
+import SentEmailModal from "../../components/SentEmailModal/SentEmailModal"
 import emailjs from "emailjs-com"
 import "./Contact.css"
 
@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom"
 import { useBaseUrl } from "../../providers/BaseUrlProvider"
 import { useLanguage } from "../../providers/LanguageProvider"
 
-import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner"
+import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner"
 
 const CONTACT_FORM = gql`
   query GetContactForm($locale: I18NLocaleCode!) {

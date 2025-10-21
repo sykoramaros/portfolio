@@ -3,7 +3,7 @@ import { useState } from "react"
 import "./CookiesModalStrapi.css"
 
 import { useQuery, gql } from "@apollo/client"
-import { useParams } from "react-router-dom"
+import { useParams } from "@tanstack/react-router"
 import { useBaseUrl } from "../../providers/BaseUrlProvider"
 
 const COOKIES_MODAL = gql`
@@ -22,14 +22,15 @@ const COOKIES_MODAL = gql`
 `
 const CookiesModalStrapi = ({ onClose }) => {
   const BASE_URL = useBaseUrl()
-  const { documentId } = useParams()
+  // const { documentId } = useParams()
 
-  const { loading, error, data } = useQuery(COOKIES_MODAL, {
-    variables: {
-      documentId,
-    },
-  })
+  // const { loading, error, data } = useQuery(COOKIES_MODAL, {
+  //   variables: {
+  //     documentId,
+  //   },
+  // })
 
+  const { loading, error, data } = useQuery(COOKIES_MODAL)
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :(</p>
 

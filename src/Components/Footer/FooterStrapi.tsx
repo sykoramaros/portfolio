@@ -1,9 +1,11 @@
-import React from "react"
 import "./Footer.css"
 // import AudioPlayer from "../AudioPlayer/AudioPlayer"
-import AudioPlayerStrapi from "../AudioPlayer/AudioPlayerStrapi"
+// import AudioPlayerStrapi from "../AudioPlayer/AudioPlayerStrapi"
 import { useQuery, gql } from "@apollo/client"
-import { useParams, Link } from "react-router-dom"
+import {
+  // useParams,
+  Link,
+} from "@tanstack/react-router"
 import { useBaseUrl } from "../../providers/BaseUrlProvider"
 
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner"
@@ -24,13 +26,18 @@ const MEDIA_IMG = gql`
 
 const FooterStrapi = () => {
   const BASE_URL = useBaseUrl()
-  const { documentId } = useParams()
+  // const { documentId } = useParams()
+  // const params = useParams({ strict: false })
+  // const documentId = params.documentId
 
-  const { loading, error, data } = useQuery(MEDIA_IMG, {
-    variables: {
-      documentId,
-    },
-  })
+  // const { loading, error, data } = useQuery(
+  //   MEDIA_IMG, {
+  //   variables: {
+  //     documentId,
+  //   },
+  // }
+  // )
+  const { loading, error, data } = useQuery(MEDIA_IMG)
 
   if (loading) return <LoadingSpinner />
   if (error) return <p>Error :(</p>
@@ -63,7 +70,7 @@ const FooterStrapi = () => {
       </div>
       <div className="audio-player rounded-top-5">
         {/* <AudioPlayer /> */}
-        <AudioPlayerStrapi />
+        {/* <AudioPlayerStrapi /> */}
       </div>
     </div>
   )

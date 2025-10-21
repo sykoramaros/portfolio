@@ -1,7 +1,15 @@
 // context/LanguageProvider.js
 import React, { createContext, useContext, useState } from "react"
 
-const LanguageContext = createContext()
+interface LanguageContextType {
+  currentLocale: string
+  setCurrentLocale: (locale: string) => void
+}
+
+const LanguageContext = createContext<LanguageContextType>({
+  currentLocale: "cs",
+  setCurrentLocale: () => {},
+})
 
 export const LanguageProvider = ({ children }) => {
   const [currentLocale, setCurrentLocale] = useState("cs")

@@ -1,20 +1,14 @@
-import React from "react"
 import { useState, useEffect, useRef } from "react"
 
 import { useQuery, gql } from "@apollo/client"
-import { useParams, Link } from "react-router-dom"
+import { useLocation, Link } from "@tanstack/react-router"
 import { useBaseUrl } from "../../providers/BaseUrlProvider"
 import { useLanguage } from "../../providers/LanguageProvider"
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher"
 
-// import TestLocale from "../TestLocale/TestLocale"
-
 import "./Navbar.css"
-import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner"
-
-// if (typeof currentLocale !== "string") throw new Error("locale není string")
 
 const NAVBAR = gql`
   query NavbarQuery($locale: I18NLocaleCode!) {
@@ -33,13 +27,10 @@ const NAVBAR = gql`
   }
 `
 
-const Navbar = () => {
+const NavbarStrapi = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const navRef = useRef(null)
+  const navRef = useRef<HTMLElement>(null)
 
-  const handleIsOpen = (link) => {
-    setIsOpen(false)
-  }
   const handleClickOutside = (event) => {
     if (navRef.current && !navRef.current.contains(event.target)) {
       setIsOpen(false)
@@ -54,46 +45,23 @@ const Navbar = () => {
   }, [])
 
   const BASE_URL = useBaseUrl()
-  const { documentId } = useParams()
+  const location = useLocation()
   const { currentLocale } = useLanguage()
-  // console.log("currentLocale", currentLocale) // Mělo by být třeba: "cs"
-  // console.log("Type of currentLocale:", typeof currentLocale)
-  // console.log("Value of currentLocale:", JSON.stringify(currentLocale))
-  // console.log("Length:", currentLocale?.length)
-  // console.log("currentLocale type:", typeof currentLocale)
-  // console.log("currentLocale length:", currentLocale.length)
-  // console.log("currentLocale charAt(0):", currentLocale.charAt(0))
-  // console.log("currentLocale charAt(1):", currentLocale.charAt(1))
-  // console.log(
-  //   "Raw bytes:",
-  //   [...currentLocale].map((c) => c.charCodeAt(0))
-  // )
-  // console.log("Query vars", { locale: currentLocale })
-  // console.log("Type:", typeof currentLocale) // string?
-  // console.log("Raw chars:", [...currentLocale]) // ['c', 's']
 
   const { loading, error, data } = useQuery(NAVBAR, {
     variables: {
-      // documentId,
-      // locale: "en",
       locale: currentLocale,
-      id: documentId,
     },
-    // fetchPolicy: "no-cache",
   })
 
   if (loading) return <LoadingSpinner />
   if (error) {
-    return console.log(error)
-    // return <p>Error :( {error.message}</p>
+    console.log(error)
+    return null
   }
-
-  // console.log(data)
 
   return (
     <div>
-      {/* <TestLocale /> */}
-      {/* <p>{currentLocale}</p> */}
       <div className="container">
         <nav
           ref={navRef}
@@ -132,9 +100,10 @@ const Navbar = () => {
                 <li className="nav-item mx-auto">
                   <Link
                     className={`nav-link ${
-                      isOpen === "home" ? "text-warning" : "text-secondary"
+                      location.pathname === "/"
+                        ? "text-warning"
+                        : "text-secondary"
                     }`}
-                    onClick={() => handleIsOpen("home")}
                     aria-current="page"
                     to={"/"}
                   >
@@ -142,18 +111,14 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <span className="nav-link d-none d-xl-block">|</span>
-                {/* <li className="nav-item">
-                <Link className="nav-link" to={"/about"}>
-                  O mě
-                </Link>
-              </li> */}
                 <li className="nav-item mx-auto">
                   <Link
                     className={`nav-link ${
-                      isOpen === "skills" ? "text-warning" : "text-secondary"
+                      location.pathname === "/portfolio/skills"
+                        ? "text-warning"
+                        : "text-secondary"
                     }`}
-                    onClick={() => handleIsOpen("skills")}
-                    to={"/skills-strapi"}
+                    to="/portfolio/skills"
                   >
                     {data.navbar.skills}
                   </Link>
@@ -162,10 +127,11 @@ const Navbar = () => {
                 <li className="nav-item mx-auto">
                   <Link
                     className={`nav-link ${
-                      isOpen === "projects" ? "text-warning" : "text-secondary"
+                      location.pathname === "/portfolio/projects"
+                        ? "text-warning"
+                        : "text-secondary"
                     }`}
-                    onClick={() => handleIsOpen("projects")}
-                    to={"/projects-strapi"}
+                    to="/portfolio/projects"
                   >
                     {data.navbar.projects}
                   </Link>
@@ -174,10 +140,11 @@ const Navbar = () => {
                 <li className="nav-item mx-auto">
                   <Link
                     className={`nav-link ${
-                      isOpen === "hobbies" ? "text-warning" : "text-secondary"
+                      location.pathname === "/portfolio/hobbies"
+                        ? "text-warning"
+                        : "text-secondary"
                     }`}
-                    onClick={() => handleIsOpen("hobbies")}
-                    to={"/hobbies-strapi"}
+                    to="/portfolio/hobbies"
                   >
                     {data.navbar.hobbies}
                   </Link>
@@ -186,20 +153,15 @@ const Navbar = () => {
                 <li className="nav-item mx-auto">
                   <Link
                     className={`nav-link ${
-                      isOpen === "contact" ? "text-warning" : "text-secondary"
+                      location.pathname === "/portfolio/contact"
+                        ? "text-warning"
+                        : "text-secondary"
                     }`}
-                    onClick={() => handleIsOpen("contact")}
-                    to={"/contact-strapi"}
+                    to="/portfolio/contact"
                   >
                     {data.navbar.contact}
                   </Link>
                 </li>
-                {/* <span className="nav-link d-none d-xl-block">|</span>
-                <li className="nav-item">
-                  <Link className="nav-link" to={"/try"}>
-                    Try
-                  </Link>
-                </li> */}
               </ul>
             </div>
           </div>
@@ -209,4 +171,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarStrapi
